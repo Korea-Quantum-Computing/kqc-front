@@ -33,3 +33,8 @@ yarn install
 ```
 yarn start --host 0.0.0.0
 ```
+
+* Connect to (may vary, neeed to figure out)
+```
+localhost:3000
+```
