@@ -9,8 +9,9 @@ import {
   ServicesWrapper,
   ServicesCard,
   ServicesIcon,
-  ServicesH2,
-  ServicesP
+  ServicesP,
+  BtnWrap,
+  Button
 } from './serviceElements';
 
 
@@ -23,16 +24,30 @@ const Services = () => {
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src = {Icon1} />
-          <ServicesH2>Provide cutting-edge Quantum Computing Service</ServicesH2>
+          <ServicesH1>QC Access Service</ServicesH1>
           <ServicesP>
-            Get premium access to Quantum Computers
+            Get premium access to cutting-edge IBM-powered quantum computers
           </ServicesP>
+          <BtnWrap>
+                <Button 
+                  to="home"
+                  big = {false}
+                  smooth = {true}
+                  duration = {500}
+                  spy = {true}
+                  exact = 'true'
+                  offset = {-80}
+                  primary = { 1 }
+                  dark = { 1 }
+                  dark_2 = { 0 }  
+                >More Info</Button>
+              </BtnWrap>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src = {Icon2} />
-          <ServicesH2>Create & Support Quantum Eco-system</ServicesH2>
+          <ServicesH1>QC Education</ServicesH1>
           <ServicesP>
-            We collaborate on research & projects to enhance members' quantum-readiness and share knowledge
+            We support quantum community by maintaining HR pipeline throguh education
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>
@@ -41,3 +56,6 @@ const Services = () => {
 }
 
 export default Services;
+
+
+// on research & projects to enhance members' quantum-readiness and share knowledge

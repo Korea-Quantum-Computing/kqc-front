@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   min-height: 692px;
+  background: #333;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -10,11 +11,6 @@ export const Container = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
-  background: linear-gradient(
-    108deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
-  );
 `;
 
 export const FormWrap = styled.div`
@@ -32,7 +28,7 @@ export const Icon = styled(Link)`
   margin-left: 32px;
   margin-top: 32px;
   text-decoration: none;
-  color: #010606;
+  color: #fff;
   font-weight: 700;
   font-size: 32px;
 
@@ -42,35 +38,30 @@ export const Icon = styled(Link)`
   }
 `;
 
-
-export const Form = styled.form`
-  background: #010101;
-  max-width: 800px;
-  height: auto;
-  width: 100%;
-  z-index: 1;
-  display: grid;
-  margin: 0 auto;
-  padding: 80px 32px;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-
-  @media screen and (max-width: 400px) {
-    padding: 32px 32px;
-  }
+export const ContactusContent = styled.div`
+  margin-top: 300px;
+  z-index: 3;
+  max-width: 1200px;
+  position: absolute;
+  padding: 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
+
 export const FormH1 = styled.h1`
+  margin-top: 100px;
   margin-bottom: 40px;
-  color: #010606;
-  font-size: 20px;
-  font-weight: 400;
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
   text-align: center;
 `;
 
 export const FormP = styled.p`
   margin-bottom: 24px;
-  color: #010606;
+  color: #fff;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
@@ -106,4 +97,25 @@ export const Text = styled.span`
   margin-top: 24px;
   color: #fff;
   font-size: 14px;
+`;
+
+export const ContactusBg = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+`;
+
+
+export const ImgBg = styled.img`
+  with: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a34;
+  z-index: 999
 `;

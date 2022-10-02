@@ -10,26 +10,22 @@ export const ResourcesContainer = styled.div`
 `;
 
 export const ResourcesWrapper = styled.div`
-  display: grid;
+  // display: grid;
   z-index: 1;
   height: 860px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24ps;
+  padding: 0 24px;
   justify-content: center;
 `;
 
 export const ResourcesRow = styled.div`
-  display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
+  max-height: 220px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'` )};
-
-  @media screen and (max-width: 768px) {
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
-  }
 `;
 
 export const Column1 = styled.div`
@@ -61,8 +57,9 @@ export const TopLine = styled.p`
 `;
 
 export const Heading = styled.h1`
+  margin-top: 20px;
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 24px;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? '#f7f8fa': '#010606')};
@@ -94,4 +91,54 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+`;
+
+
+
+export const ResourcesCard = styled.div`
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  max-height: 200px;
+  max-width: 400px;
+  padding: 20px;
+  // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  // transition: all 0.2s ease-in-out;
+
+  // &:hover {
+  //   transform: scale(1.02);
+  //   transition: all 0.2s ease-in-out;
+  //   cursor: poniter;
+  // }
+`;
+
+export const ResourcesIcon = styled.img`
+  height: 120px;
+  width: 120px;
+  margin-bottom: 10px;
+`;
+
+export const ResourcesH1 = styled.h1`
+  font-size: 2.5rem;
+  color: #010606;
+  margin-bottom: 20px;
+
+  @media screen and (max-with: 480px) {
+    font-size: 2rem;
+  }
+`;
+
+export const ResourcesH2 = styled.h2`
+  font-size: 1rem;
+  color: #010606;
+  margin-bottom: 10px;
+`;
+
+export const ResourcesP = styled.p`
+  font-size: 1 rem;
+  color: #010606;
+  text-align: center;
 `;

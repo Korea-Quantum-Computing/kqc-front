@@ -1,24 +1,25 @@
+
 import React from 'react';
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
+import { Button } from '../ButtonElement';
 
 import { 
   AboutusContainer, 
   AboutusWrapper, 
   AboutusRow, 
-  Heading,
-  AboutusCard,
-  AboutusIcon,
-  AboutusH2,
+  Column1, 
+  Column2, 
+  TextWrapper, 
+  FullTextWrapper,
+  TopLine, 
+  Heading, 
+  Subtitle, 
+  // BtnWrap,
+  ImgWrap,
+  FullImgWrap,
+  Img,
+  AboutusH1,
   AboutusP,
  } from './AboutusElements';
-
-
- import Icon1 from '../../images/clouding.svg';
 
 
 const AboutusSection = ({ 
@@ -29,7 +30,10 @@ const AboutusSection = ({
     lightText, 
     headline, 
     darkText, 
-    description, 
+    description_1,
+    description_2,
+    description_3, 
+    description_4,
     buttonLabel, 
     img, 
     alt,
@@ -44,173 +48,51 @@ const AboutusSection = ({
         
         <AboutusWrapper>
           <AboutusRow imgStart = { imgStart }>
-          <Heading lightText = {lightText}>News</Heading>
-          </AboutusRow>
-          <AboutusRow>
-            <Swiper
-              id = 'news'
-              spaceBetween={20}
-              slidesPerView={3}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
-            >
-              <SwiperSlide key = 'slide-1' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>News 1</AboutusH2>
-                  <AboutusP>
-                    KQC Joins IBM
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-              <SwiperSlide key = 'slide-2' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>News 2</AboutusH2>
-                  <AboutusP>
-                    바오밥 join
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-              <SwiperSlide key = 'slide-3' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>News 3</AboutusH2>
-                  <AboutusP>
-                    KQC opens office at Busan
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-              <SwiperSlide key = 'slide-4' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>News 4</AboutusH2>
-                  <AboutusP>
-                    Kion Even Makes Homepage!!
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-            </Swiper>
-
-          </AboutusRow>
-          <AboutusRow>
-            <Heading lightText = { lightText }>Global Trend</Heading>
+            <Column1>
+            <TextWrapper>
+              <TopLine>{topLine}</TopLine>
+              <Heading lightText = {lightText}>{headline}</Heading>
+              <Subtitle darkText = {darkText}>{description_1}</Subtitle>
+              <Subtitle darkText = {darkText}>{description_2}</Subtitle>
+              <Subtitle darkText = {darkText}>{description_3}</Subtitle>
+              {/* <BtnWrap>
+                <Button 
+                  to="home"
+                  smooth = {true}
+                  duration = {500}
+                  spy = {true}
+                  exact = 'true'
+                  offset = {-80}
+                  primary = { primary ? 1 : 0}
+                  dark = { dark ? 1 : 0 }
+                  dark_2 = { dark_2 ? 1 : 0 }  
+                >{buttonLabel}</Button>
+              </BtnWrap> */}
+            </TextWrapper>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Img src = {img} alt = {alt}/>
+              </ImgWrap>
+            </Column2>
           </AboutusRow>
 
-          <AboutusRow>
-            <Swiper
-              id = 'news'
-              spaceBetween={20}
-              slidesPerView={3}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
-            >
-              <SwiperSlide key = 'gt-1' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>News 1</AboutusH2>
-                  <AboutusP>
-                    KQC Joins IBM
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-              <SwiperSlide key = 'gt-2' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>News 2</AboutusH2>
-                  <AboutusP>
-                    바오밥 join
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-              <SwiperSlide key = 'gt-3' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>News 3</AboutusH2>
-                  <AboutusP>
-                    KQC opens office at Busan
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-              <SwiperSlide key = 'gt-4' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>News 4</AboutusH2>
-                  <AboutusP>
-                    Kion Even Makes Homepage!!
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-            </Swiper>
-            
-          </AboutusRow>
-
-
-          <AboutusRow>
-            <Heading lightText = { lightText }>Technical Blogs</Heading>
-          </AboutusRow>
-
-          <AboutusRow>
-            <Swiper
-              id = 'news'
-              spaceBetween={20}
-              slidesPerView={3}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
-            >
-              <SwiperSlide key = 'tb-1' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>Blog 1</AboutusH2>
-                  <AboutusP>
-                    KQC Joins IBM
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-              <SwiperSlide key = 'tb-2' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>Blog 2</AboutusH2>
-                  <AboutusP>
-                    바오밥 join
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-              <SwiperSlide key = 'tb-3' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>Blog 3</AboutusH2>
-                  <AboutusP>
-                    KQC opens office at Busan
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-              <SwiperSlide key = 'tb-4' style = {{ listStyle: 'none'}}>
-                <AboutusCard>
-                  <AboutusIcon src = {Icon1} />
-                  <AboutusH2>Blog 4</AboutusH2>
-                  <AboutusP>
-                    Kion Even Makes Homepage!!
-                  </AboutusP>
-                </AboutusCard>
-              </SwiperSlide>
-
-            </Swiper>
-            
-          </AboutusRow>
-
+          <FullTextWrapper>
+          <AboutusH1>Out of the lab into the real world</AboutusH1>
+          <AboutusP>KQC will take the lead in building a quantum ecosystem
+  so that anyone can easily apply the cutting-edge services to solving the real-world problems.</AboutusP>
+        </FullTextWrapper>
+        <FullImgWrap>
+          <Img src = {img} alt = {alt} />
+        </FullImgWrap>
         </AboutusWrapper>
+
+       
+
+        
+        
+
+        
       </AboutusContainer>
     </>
   )

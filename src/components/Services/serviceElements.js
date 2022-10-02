@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
+
 
 export const ServicesContainer = styled.div`
   height: 800px;
@@ -62,9 +64,10 @@ export const ServicesIcon = styled.img`
 `;
 
 export const ServicesH1 = styled.h1`
-  font-size: 2.5rem;
-  color: #fff;
-  margin-bottom: 64px;
+  font-size: 1.5rem;
+  color: #010505;
+  margin-bottom: 24px;
+  font-weight: bold;
 
   @media screen and (max-with: 480px) {
     font-size: 2rem;
@@ -80,3 +83,30 @@ export const ServicesP = styled.p`
   font-size: 1 rem;
   text-align: center;
 `;
+
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+
+export const Button = styled(Link)`
+  border-radius: 30px;
+  background: ${({primary}) => (primary ? '#01BF71': '#0101606')};
+  white-space: nowrap;
+  padding: '14px 48px';
+  color: ${({dark}) => (dark ? '#010606': '#fff')};
+  font-size: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({primary}) => (primary ? '#010606' : '#01BF71')};
+  }
+`

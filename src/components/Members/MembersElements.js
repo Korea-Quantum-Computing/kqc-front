@@ -33,11 +33,14 @@ export const MembersWrapper = styled.div`
 export const MembersLink = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
 `;
 
 
 export const MembersTitle = styled.h1`
   font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 100px;
   color: #000;
   margin-bottom: 64px;
 
@@ -47,8 +50,8 @@ export const MembersTitle = styled.h1`
 `
 
 export const MemberIcon = styled.img`
-  height: 100px;
-  width: 250px;
+  height: {height};
+  width: {width};
   padding: 20px 20px 20px 20px;
   margin-bottom: 10px;
 `;

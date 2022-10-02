@@ -22,11 +22,10 @@ const Home = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   }
-
   return (
     <>
-      <Sidebar isOpen = {isOpen} toggle = {toggle}/>
       <Navbar toggle = {toggle}/>
+      <Sidebar isOpen = {isOpen} toggle = {toggle}/>
       <HeroSection />
       <Services /> 
       <MembersSection />
