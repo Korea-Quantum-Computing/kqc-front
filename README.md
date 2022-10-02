@@ -17,12 +17,12 @@ nvm install v14.20.1
 ```
 * Select node-version
 ```
-nvm use v14.20.1
+nvm use 14.20.1
 ```
 * (When installing for the first time) Make sure that you don't have the following
 ```
 /modules
-yarn.lock
+package-lock.json
 ```
 * Issue the following to install requirements
 ```
