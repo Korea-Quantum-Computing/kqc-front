@@ -24,32 +24,34 @@ const Footer = () => {
         <FooterWrap>
           <FooterLinksContainer>
             <FooterLinksWrapper>
+            <div style ={{display: 'flex', flexDirection: 'column', width: '400px'}}>
+                <SocialLogo to="/">
+                  KQC
+                </SocialLogo>
+                <p style = {{color: '#fff', fontSize: '14px', marginBottom: '-2px'}} >Address:</p>
+                <p style = {{color: '#fff', fontSize: '14px', marginBottom: '-2px'}} >55 Centumjungang-ro, Haeundae</p>
+                <p style = {{color: '#fff', fontSize: '14px', marginBottom: '-2px'}} >Busan, 48058</p>
+                <p style = {{color: '#fff', fontSize: '14px', marginBottom: '-2px'}} >info@kqchub.com</p>
+              </div>
+            </FooterLinksWrapper>
+            <FooterLinksWrapper>
               <FooterLinkItems>
-                <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to = "/signin">How it works</FooterLink>
-                <FooterLink to = "/signin">Testimonials</FooterLink>
-                <FooterLink to = "/signin">Careers</FooterLink>
-                <FooterLink to = "/signin">Investors</FooterLink>
-                <FooterLink to = "/signin">Terms of Services</FooterLink>
-              </FooterLinkItems>
-
-              <FooterLinkItems>
-                <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to = "/signin">How it works</FooterLink>
-                <FooterLink to = "/signin">Testimonials</FooterLink>
-                <FooterLink to = "/signin">Careers</FooterLink>
-                <FooterLink to = "/signin">Investors</FooterLink>
-                <FooterLink to = "/signin">Terms of Services</FooterLink>
+                <FooterLinkTitle>Menu</FooterLinkTitle>
+                <FooterLink to = "/services">Services</FooterLink>
+                <FooterLink to = "research">Research</FooterLink>
+                <FooterLink to = "/resources">Resources</FooterLink>
+                <FooterLink to = "/aboutus">About Us</FooterLink>
+                <FooterLink to = "/contact">Contact</FooterLink>
+                {/* <FooterLink to = "/signin">Terms of Services</FooterLink> */}
               </FooterLinkItems>
             </FooterLinksWrapper>
 
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to = "/signin">How it works</FooterLink>
-                <FooterLink to = "/signin">Testimonials</FooterLink>
+                <FooterLink to = "/contactus">Become a member</FooterLink>
+                <FooterLink to = "/signin">Team</FooterLink>
                 <FooterLink to = "/signin">Careers</FooterLink>
-                <FooterLink to = "/signin">Investors</FooterLink>
                 <FooterLink to = "/signin">Terms of Services</FooterLink>
               </FooterLinkItems>
 
@@ -66,15 +68,11 @@ const Footer = () => {
           <SocialMedia>
             <SocialMediaWrap>
 
-              <SocialLogo to="/">
-                KQC
-              </SocialLogo>
-
               <WebsiteRights>
                 Korea Quantum Computing  © {new Date().getFullYear()} All rights reserved. 
               </WebsiteRights>
 
-
+              <div style = {{marginTop: '-10px'}}>
               <SocialIcons>
 
                 <SocialIconLink 
@@ -109,7 +107,9 @@ const Footer = () => {
                   <FaLinkedin />
                 </SocialIconLink>
 
-              </SocialIcons>
+                </SocialIcons>
+              </div>
+              
             </SocialMediaWrap>
           </SocialMedia>
         </FooterWrap>

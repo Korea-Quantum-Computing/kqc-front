@@ -6,6 +6,7 @@ import ContactusPage from './pages/contactus';
 import OPenHousePage from './pages/openhouse';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import Services from './components/Services';
 
 function App() {
 
@@ -14,9 +15,9 @@ function App() {
   return (
     <>
       <Router>
-
         <Routes>
           <Route path = "/" element = {<Home/>} exact />
+          {/* <Route path = "/services" element = {<Services/>} exact /> */}
           <Route path = "/contactus" element = {<ContactusPage/>} exact />
           <Route path = "/openhouse" element = {<OPenHousePage/>} exact />
 

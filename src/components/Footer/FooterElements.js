@@ -75,7 +75,7 @@ export const SocialMedia = styled.section `
 export const SocialMediaWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   max-width: 1100px;
   margin: 40px auto 0 auto;
 
