@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Icon,
   FormH1,
@@ -7,11 +7,55 @@ import {
 } from './ContactusElements';
 
 import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ContactUs = () => {
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [email, setEmail] = useState('')
+  const [jobTitle, setJobTitle] = useState('')
+  const [institution, setInstitution] = useState('')
+  const [industry, setIndustry] = useState('')
+
+
+  const handleFirstNameChange = (e) => {  // <- input값으로 text 변경 함수
+    setFirstName(e.target.value);
+  };
+
+  const handleLastNameChange = (e) => {  // <- input값으로 text 변경 함수
+    setLastName(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {  // <- input값으로 text 변경 함수
+    setEmail(e.target.value);
+  };
+
+  const handleJobTitleChange = (e) => {  // <- input값으로 text 변경 함수
+    setJobTitle(e.target.value);
+  };
+
+  const handleInstitutionChange = (e) => {  // <- input값으로 text 변경 함수
+    setInstitution(e.target.value);
+  };
+
+  const handleIndustryChange = (e) => {  // <- input값으로 text 변경 함수
+    setIndustry(e.target.value);
+  };
+
+  const handleSubmit = () => {
+    console.log('=========')
+    console.log(firstName)
+    console.log(lastName)
+    console.log(email)
+    console.log(jobTitle)
+    console.log(institution)
+    console.log(industry)
+    console.log('=========')
+
+  }
+
+  console.log('first name = ', firstName)
   return (
     <>
       <Container>
@@ -32,11 +76,11 @@ const ContactUs = () => {
                 <Form>
                   <Form.Group className="mb-3" controlId="contact-1">
                     <Form.Label style = {{color: '#fff'}}>First Name *</Form.Label>
-                    <Form.Control type="text" placeholder="Enter First Name" />
+                    <Form.Control type="text" placeholder="Enter First Name"  onChange = {e => handleFirstNameChange(e)} />
                     <Form.Label style = {{color: '#fff'}}>Last Name *</Form.Label>
-                    <Form.Control type="text" placeholder="Enter Last Name" />
+                    <Form.Control type="text" placeholder="Enter Last Name" onChange = {e => handleLastNameChange(e)} />
                     <Form.Label style = {{color: '#fff'}}>Email address *</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Control type="email" placeholder="Enter email" onChange = {e => handleEmailChange(e)} />
                     <Form.Text className="text-muted">
                       We'll never share your email with anyone else.
                     </Form.Text>
@@ -47,11 +91,11 @@ const ContactUs = () => {
                 <Form>
                   <Form.Group>
                   <Form.Label style = {{color: '#fff'}}>Job Title</Form.Label>
-                    <Form.Control type="text" placeholder="Enter Job Title" />
+                    <Form.Control type="text" placeholder="Enter Job Title" onChange = {e => handleJobTitleChange(e)} />
                     <Form.Label style = {{color: '#fff'}}>Company/Institution *</Form.Label>
-                    <Form.Control type="text" placeholder="Enter Your Institution" />
+                    <Form.Control type="text" placeholder="Enter Your Institution" onChange = {e => handleInstitutionChange(e)} />
                     <Form.Label style = {{color: '#fff'}}>Industry*</Form.Label>
-                    <Form.Control type="text" placeholder="Enter Industry" />
+                    <Form.Control type="text" placeholder="Enter Industry" onChange = {e => handleIndustryChange(e)} />
                   </Form.Group>
                 </Form>
               </div>
@@ -63,8 +107,8 @@ const ContactUs = () => {
             <p style = {{color:`#fff`, fontSize: `18px`, marginBottom:`0px`}}>By submitting this form, I acknowledge that I have read and understand the KQC Privacy Statement.</p>
             <p style = {{color:`#fff`, fontSize: `18px`}}>I accept the product terms and conditions of this registration form</p>
             
-            <div style = {{display:`flex`, justifyContent: `center`, marginTop: '30px'}}>
-              <Button variant = 'light'>Submit</Button>
+            <div style = {{display:`flex`, justifyContent: `center`, marginTop: '30px', marginBottom: '50px'}}>
+              <Button variant = 'light' onClick = {handleSubmit} >Submit</Button>
             </div>
           </div>
         </div>

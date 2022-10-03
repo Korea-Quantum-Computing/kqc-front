@@ -6,6 +6,7 @@ import {
   VideoBg, 
   HeroContent, 
   HeroH1, 
+  HeroH2,
   HeroP, 
   HeroSP,
   // HeroBtnWrapper, 
@@ -37,11 +38,21 @@ const HeroSection = () => {
           You need to be embraced to new paradigm and potential of quantum computing.
           Your small step today will make huge difference in the future.
         </HeroSP>
-
+        <div style = {{width: `100%`, display: 'flex', justifyContent: 'start', marginTop: '50px'}}>
+          <HeroH2>Why Quantum Computer?</HeroH2>
+        </div>
+        
         <HeroImgWrap>
           <HeroImg src = {img} alt = 'intro'/>
         </HeroImgWrap>
+        <div style = {{display: 'flex', justifyContent: 'flex-start', width: '800px'}}>
+          <p style ={{color: '#fff'}}>
+            Despite how sophisticated digital computing has become, there are many scieitific and business problems for which we've barely scratched the surface
+          </p>
+        </div>
+        
       </HeroContent>
+      
     </HeroContainer>
   )
 }

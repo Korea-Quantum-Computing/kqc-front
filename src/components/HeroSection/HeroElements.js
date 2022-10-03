@@ -46,7 +46,7 @@ export const VideoBg = styled.video`
 
 
 export const HeroContent = styled.div`
-  margin-top: 300px;
+  margin-top: 250px;
   z-index: 3;
   max-width: 1200px;
   position: absolute;
@@ -70,6 +70,20 @@ export const HeroH1 = styled.h1`
     font-size: 32px;
   }
 `;
+export const HeroH2 = styled.h2`
+  color: #fff;
+  font-size: 36px;
+  text-align: left;
+  font-weight: bold;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+`;
+
 
 
 export const HeroP = styled.p`
@@ -90,7 +104,7 @@ export const HeroP = styled.p`
 `;
 
 export const HeroSP = styled.p`
-  margin-top: 12px;
+  margin-top: 4px;
   color: #fff;
   font-size: 18px;
   text-align: left;

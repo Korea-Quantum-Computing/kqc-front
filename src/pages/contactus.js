@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactUs from '../components/ContactUs';
 import ScrollToTop from '../components/ContactUs/ScrollToTop';
-
+import Footer from '../components/Footer';
 
 const ContactusPage = () => {
 
@@ -9,6 +9,7 @@ const ContactusPage = () => {
     <>
       <ScrollToTop />
       <ContactUs/>
+      <Footer />
     </>
   )
 }

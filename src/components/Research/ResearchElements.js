@@ -19,6 +19,7 @@ export const ResearchWrapper = styled.div`
   margin-left: auto;
   padding: 0 24ps;
   justify-content: center;
+  align-items: top;
 `;
 
 export const ResearchRow = styled.div`
@@ -64,7 +65,7 @@ export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 700;
   color: ${({ lightText }) => (lightText ? '#f7f8fa': '#010606')};
 
   @media screen and (max-width: 480px) {
