@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Icon,
   FormH1,
@@ -17,7 +17,6 @@ const ContactUs = () => {
   const [jobTitle, setJobTitle] = useState('')
   const [institution, setInstitution] = useState('')
   const [industry, setIndustry] = useState('')
-
 
   const handleFirstNameChange = (e) => {  // <- input값으로 text 변경 함수
     setFirstName(e.target.value);
@@ -55,7 +54,7 @@ const ContactUs = () => {
 
   }
 
-  console.log('first name = ', firstName)
+  
   return (
     <>
       <Container>

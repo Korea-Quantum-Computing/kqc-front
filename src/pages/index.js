@@ -7,12 +7,11 @@ import HeroSection from '../components/HeroSection';
 import { researchObj } from "../components/Research/Data";
 import { resourceObj } from "../components/Resource/Data";
 import { aboutusObj } from "../components/Aboutus/Data";
-
 import Services from '../components/Services';
 import MembersSection from "../components/Members";
 import Footer from '../components/Footer';
 import ResearchSection from "../components/Research";
-import ResourceSection from "../components/Resource";
+import ResourcesSection from "../components/Resource";
 import AboutusSection from "../components/Aboutus";
 
 
@@ -27,11 +26,11 @@ const Home = () => {
       <Navbar toggle = {toggle}/>
       <Sidebar isOpen = {isOpen} toggle = {toggle}/>
       <HeroSection />
-      <Services /> 
-      <MembersSection />
-      <ResearchSection {...researchObj}/> 
-      <ResourceSection {...resourceObj}/>
       <AboutusSection {...aboutusObj}/>
+      <Services /> 
+      <MembersSection /> 
+      <ResourcesSection {...resourceObj}/>
+
       <Footer />
     
     </>

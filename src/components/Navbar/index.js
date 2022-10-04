@@ -33,50 +33,11 @@ const Navbar = ({ toggle }) => {
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            <NavItem>
-              <NavLinks 
-                to = "services"
-                smooth = { true} 
-                duration = {500} 
-                spy = {true} 
-                exact = 'true' 
-                offset = {-80}
-                activeClass = 'active'
-              >
-                Services
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks 
-                to = "research"
-                smooth = { true} 
-                duration = {500} 
-                spy = {true} 
-                exact = 'true' 
-                offset = {-80}
-                activeClass = 'active'
-              >
-                Research
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks 
-                to = "resources"
-                smooth = { true} 
-                duration = {500} 
-                spy = {true} 
-                exact = 'true' 
-                offset = {-80}
-                activeClass = 'active'
-              >
-                Resources
-            </NavLinks>
-            </NavItem>
-            <NavItem>
+          <NavItem>
               <NavLinks 
                 to = "aboutus"
                 smooth = { true} 
-                duration = {500} 
+                duration = {200} 
                 spy = {true} 
                 exact = 'true' 
                 offset = {-80}
@@ -85,11 +46,58 @@ const Navbar = ({ toggle }) => {
                 About us
               </NavLinks>
             </NavItem>
+
+            <NavItem>
+              <NavLinks 
+                to = "services"
+                smooth = { true} 
+                duration = {200} 
+                spy = {true} 
+                exact = 'true' 
+                offset = {-80}
+                activeClass = 'active'
+              >
+                Services
+              </NavLinks>
+            </NavItem>
+   
+            <NavItem>
+              <NavLinks 
+                to = "members"
+                smooth = { true} 
+                duration = {200} 
+                spy = {true} 
+                exact = 'true' 
+                offset = {-80}
+                activeClass = 'active'
+              >
+              Members
+            </NavLinks>
+            </NavItem>
+            
     
+            <NavItem>
+              <NavLinks 
+                to = "resources"
+                smooth = { true} 
+                duration = {200} 
+                spy = {true} 
+                exact = 'true' 
+                offset = {-80}
+                activeClass = 'active'
+              >
+              News
+            </NavLinks>
+            </NavItem>
+            
+
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to = "/contactus">Contact</NavBtnLink>
-          </NavBtn>
+          <div style ={{width: '100%', display: 'flex', justifyContent: 'flex-end'}}>
+            <NavBtn>
+              <NavBtnLink to = "/contactus">Contact</NavBtnLink>
+            </NavBtn>
+          </div>
+          
         </NavbarContainer>
       </Nav>
     </>

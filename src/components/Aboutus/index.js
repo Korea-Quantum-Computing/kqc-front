@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Button } from '../ButtonElement';
 
 import { 
   AboutusContainer, 
@@ -19,6 +18,8 @@ import {
   Img,
   AboutusH1,
   AboutusP,
+  BtnWrap,
+  Button
  } from './AboutusElements';
 
 
@@ -50,24 +51,21 @@ const AboutusSection = ({
           <AboutusRow imgStart = { imgStart }>
             <Column1>
             <TextWrapper>
-              <TopLine>{topLine}</TopLine>
+              {/* <TopLine>{topLine}</TopLine> */}
               <Heading lightText = {lightText}>{headline}</Heading>
               <Subtitle darkText = {darkText}>{description_1}</Subtitle>
               <Subtitle darkText = {darkText}>{description_2}</Subtitle>
-              <Subtitle darkText = {darkText}>{description_3}</Subtitle>
-              {/* <BtnWrap>
-                <Button 
-                  to="home"
-                  smooth = {true}
-                  duration = {500}
-                  spy = {true}
-                  exact = 'true'
-                  offset = {-80}
-                  primary = { primary ? 1 : 0}
-                  dark = { dark ? 1 : 0 }
-                  dark_2 = { dark_2 ? 1 : 0 }  
-                >{buttonLabel}</Button>
-              </BtnWrap> */}
+              <div style ={{marginTop: '40px'}}>
+                <BtnWrap>
+                  <Button 
+                    href = '/aboutus'
+                    primary = { 1}
+                    dark = { dark ? 1 : 0 }
+                    dark_2 = { dark_2 ? 1 : 0 }  
+                    
+                  >{buttonLabel}</Button>
+                </BtnWrap>
+              </div>
             </TextWrapper>
             </Column1>
             <Column2>
@@ -76,15 +74,6 @@ const AboutusSection = ({
               </ImgWrap>
             </Column2>
           </AboutusRow>
-
-          <FullTextWrapper>
-          <AboutusH1>Out of the lab into the real world</AboutusH1>
-          <AboutusP>KQC will take the lead in building a quantum ecosystem
-  so that anyone can easily apply the cutting-edge services to solving the real-world problems.</AboutusP>
-        </FullTextWrapper>
-        <FullImgWrap>
-          <Img src = {img} alt = {alt} />
-        </FullImgWrap>
         </AboutusWrapper>
 
        

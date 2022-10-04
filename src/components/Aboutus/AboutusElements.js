@@ -12,9 +12,9 @@ export const AboutusContainer = styled.div`
 export const AboutusWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 1500px;
+  height: 800px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24ps;
@@ -45,6 +45,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
+  margin-top: 40px;
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
@@ -90,10 +91,6 @@ export const Subtitle = styled.p`
   color: ${({ darkText}) => (darkText ? '#010606': '#fff')};
 `;
 
-export const BtnWrap = styled.div`
-  display: flex;
-  justify-content: flex-start;
-`;
 
 export const ImgWrap = styled.div`
   max-width: 555px;
@@ -112,7 +109,7 @@ export const Img = styled.img`
 `;
 
 export const AboutusH1 = styled.h1`
-  color: #fff;
+  color: #0b2865;
   font-size: 40px;
   text-align: center;
   font-weight: bold;
@@ -129,7 +126,7 @@ export const AboutusP = styled.p`
   margin-top: 12px;
   margin-bottom: 12px;
   text-align: center;
-  color: #fff;
+  color: #0b2865;
   font-size: 24px;
   max-width: 1000px;
 
@@ -144,7 +141,7 @@ export const AboutusP = styled.p`
 
 export const AboutusSP = styled.p`
   margin-top: 12px;
-  color: #fff;
+  color: #0b2865;
   font-size: 18px;
   text-align: left;
   max-width: 600px;
@@ -157,3 +154,29 @@ export const AboutusSP = styled.p`
     font-size: 18px;
   }
 `;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+
+export const Button = styled.a`
+  border-radius: 50px;
+  background: ${({primary}) => (primary ? '#0b2865': '#555')};
+  white-space: nowrap;
+  padding: ${({big}) => (big ? '14px 48px': '12px 30px')};
+  color: ${({dark}) => (dark ? '#010606': '#fff')};
+  font-size: ${({fontBig}) => (fontBig ? '20px': '16px')};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({primary}) => (primary ? '#555' : '#01BF71')};
+  }
+`

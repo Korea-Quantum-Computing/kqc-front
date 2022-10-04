@@ -66,15 +66,15 @@ const ResearchSection = ({
               </ImgWrap>
             </Column2>
           </ResearchRow>
-          <div style = {{display: 'flex', justifyContent: 'flex-start', marginBottom: '-20px'}}>
-          <h1 style = {{fontSize: '36px'}}>Main research area of quantum computing</h1>
+          <div style = {{display: 'flex', color: '#010606', justifyContent: 'flex-start', marginBottom: '-20px'}}>
+            <h1 style = {{fontSize: '36px'}}>Main research area of quantum computing</h1>
           </div>
-          <div style ={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
+          <div style ={{display: 'flex', color: '#010606', flexDirection: 'row', justifyContent: 'center'}}>
             <div style = {{
               display:'flex', 
               flexDirection: 'column', 
               minWidth: '300px', 
-              height: '250px', 
+              height: '200px', 
               border: 'solid',
               borderRadius: '20px',
               padding: '20px',

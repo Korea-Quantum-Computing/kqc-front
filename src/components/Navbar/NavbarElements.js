@@ -21,7 +21,8 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  width: 100px;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -31,7 +32,7 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)`
   color: #fff;
-  justify-self: fflex-start;
+  justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
   display: flex;

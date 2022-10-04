@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const ResourcesContainer = styled.div`
   color: #fff;
-  background: ${({lightBg}) => (lightBg ? '#f9f9f9': '#010606')};
+  // padding: 100px;
+  background: ${({lightBg}) => (lightBg ? '#fff': '#010606')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -12,7 +13,7 @@ export const ResourcesContainer = styled.div`
 export const ResourcesWrapper = styled.div`
   // display: grid;
   z-index: 1;
-  height: 860px;
+  height: 800px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -58,8 +59,8 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-top: 20px;
-  margin-bottom: 24px;
-  font-size: 24px;
+  margin-bottom: 80px;
+  font-size: 2.5rem;
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? '#f7f8fa': '#010606')};
@@ -96,23 +97,19 @@ export const Img = styled.img`
 
 
 export const ResourcesCard = styled.div`
-  background: #fff;
+  background: #f8f9fa;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  max-height: 200px;
+  height: 300px;
   max-width: 400px;
   padding: 20px;
-  // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  // transition: all 0.2s ease-in-out;
 
-  // &:hover {
-  //   transform: scale(1.02);
-  //   transition: all 0.2s ease-in-out;
-  //   cursor: poniter;
-  // }
+  &:hover {
+    cursor: poniter;
+  }
 `;
 
 export const ResourcesIcon = styled.img`
@@ -122,7 +119,8 @@ export const ResourcesIcon = styled.img`
 `;
 
 export const ResourcesH1 = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 700;
   color: #010606;
   margin-bottom: 20px;
 
@@ -132,13 +130,21 @@ export const ResourcesH1 = styled.h1`
 `;
 
 export const ResourcesH2 = styled.h2`
-  font-size: 1rem;
+  font-size: 1.4rem;;
+  line-height: 1.5;
+  font-weight: 700;
   color: #010606;
   margin-bottom: 10px;
 `;
 
 export const ResourcesP = styled.p`
-  font-size: 1 rem;
+  font-size: 2 rem;
+  color: #010606;
+  text-align: center;
+`;
+
+export const ResourcesDate = styled.p`
+  font-size: 0.8 rem;
   color: #010606;
   text-align: center;
 `;

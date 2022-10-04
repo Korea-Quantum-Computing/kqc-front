@@ -21,15 +21,18 @@ const MembersSection = ({ lightBg, }) => {
       <MembersContainer lightBg = {lightBg} id = 'members'>
         <MembersWrapper>
           <MembersTitle>
+            Partners
+          </MembersTitle>
+          <MembersLink style = {{marginTop: '-150px'}}>
+            <MemberIcon name = "IBM" src = {ibm} width = {200} height = {100}></MemberIcon>
+            <MemberIcon style = {{marginLeft: '-20px', marginTop: '-12px', marginRight: '-20px'}} name = "Busan" src = {busan} width = {350} height = {350}></MemberIcon>
+            <MemberIcon name = "DongseoUniv" src = {dongseoUniv} width = {330} height = {90}></MemberIcon>
+            <MemberIcon style = {{marginTop: '1px'}} name = "Heins" src = {hines} width = {200} height = {200}></MemberIcon>
+          </MembersLink>
+          <MembersTitle style = {{marginTop: '-50px'}}>
             Members
           </MembersTitle>
-          <MembersLink>
-            <MemberIcon name = "IBM" src = {ibm} width = {300} height = {150}></MemberIcon>
-            <MemberIcon name = "Busan" src = {busan} width = {300} height = {300}></MemberIcon>
-            <MemberIcon name = "Heins" src = {hines} width = {300} height = {300}></MemberIcon>
-            <MemberIcon name = "DongseoUniv" src = {dongseoUniv} width = {500} height = {120}></MemberIcon>
-          </MembersLink>
-          <MembersLink>
+          <MembersLink style ={{marginTop: '-50px'}}>
             <MemberIcon name = "BaobabAiBio" src = {baobab}  width = {300} height = {120}></MemberIcon>
             <MemberIcon name = "Hanhwa" src = {hanwha} width = {300} height = {100}></MemberIcon>
           </MembersLink>

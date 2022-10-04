@@ -2,7 +2,7 @@ import React from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import Badge from 'react-bootstrap/Badge';
 // Import Swiper styles
 import 'swiper/css';
 
@@ -13,13 +13,14 @@ import {
   Heading,
   ResourcesCard,
   ResourcesIcon,
+  ResourcesH1,
   ResourcesH2,
   ResourcesP,
+  ResourcesDate
  } from './ResourcesElements';
 
 
  import Icon1 from '../../images/clouding.svg';
-
 
 const ResourcesSection = ({ 
     lightBg, 
@@ -40,11 +41,11 @@ const ResourcesSection = ({
 
   return (
     <>
+
       <ResourcesContainer lightBg = {lightBg} id = {id}>
-        
         <ResourcesWrapper>
           <ResourcesRow imgStart = { imgStart }>
-          <Heading lightText = {lightText}>News</Heading>
+          <Heading style = {{marginLeft: '-20px'}} lightText = {lightText}>Recent News</Heading>
           </ResourcesRow>
           <ResourcesRow>
             <Swiper
@@ -54,18 +55,31 @@ const ResourcesSection = ({
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}
             >
-              <SwiperSlide key = 'slide-1' style = {{ listStyle: 'none'}}>
-                <ResourcesCard>
-                  <ResourcesIcon src = {Icon1} />
-                  <ResourcesH2>News 1</ResourcesH2>
-                  <ResourcesP>
-                    KQC Joins IBM
-                  </ResourcesP>
+              <SwiperSlide key = 'slide-1' style = {{ listStyle: 'none', color: '#f7f8fa'}}>
+                <ResourcesCard onClick = {() => {window.open('http://www.daum.net')}}>
+                  <div style = {{display: 'flex', justifyContent: 'flex-start', width: '100%', marginBottom: '20px'}}>
+                    <Badge pill bg = "primary">Tech</Badge>
+                  </div>
+                  <div style = {{display: 'flex', justifyContent: 'flex-start', height:'50px', width: '100%'}}>
+                    <ResourcesH1 style={{display: 'flex', justifyContent: 'center'}}>KNN</ResourcesH1>
+                  </div>
+                  <div>
+                    <ResourcesH2>
+                    ‘꿈의 컴퓨터’ IBM 퀸텀 KQC 허브부산 개소
+                    </ResourcesH2>
+                  </div>
+                  <div style = {{height:'100%', display: 'flex', justifyContent: 'flex-end', alignItems: 'end', width: '100%'}}>
+                  <ResourcesDate>22/08/26</ResourcesDate>
+                  </div>
+                  
                 </ResourcesCard>
               </SwiperSlide>
 
               <SwiperSlide key = 'slide-2' style = {{ listStyle: 'none'}}>
                 <ResourcesCard>
+                <div style = {{display: 'flex', justifyContent: 'flex-start', width: '100%'}}>
+                    <Badge pill bg = "primary">Biz</Badge>
+                  </div>
                   <ResourcesIcon src = {Icon1} />
                   <ResourcesH2>News 2</ResourcesH2>
                   <ResourcesP>
@@ -76,6 +90,9 @@ const ResourcesSection = ({
 
               <SwiperSlide key = 'slide-3' style = {{ listStyle: 'none'}}>
                 <ResourcesCard>
+                <div style = {{display: 'flex', justifyContent: 'flex-start', width: '100%'}}>
+                    <Badge pill bg = "primary">Blog</Badge>
+                  </div>
                   <ResourcesIcon src = {Icon1} />
                   <ResourcesH2>News 3</ResourcesH2>
                   <ResourcesP>
@@ -97,7 +114,9 @@ const ResourcesSection = ({
             </Swiper>
 
           </ResourcesRow>
-          <ResourcesRow>
+          
+          
+          {/* <ResourcesRow>
             <Heading lightText = { lightText }>Global Trend</Heading>
           </ResourcesRow>
 
@@ -208,7 +227,7 @@ const ResourcesSection = ({
 
             </Swiper>
             
-          </ResourcesRow>
+          </ResourcesRow> */}
 
         </ResourcesWrapper>
       </ResourcesContainer>

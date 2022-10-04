@@ -21,7 +21,7 @@ export const MembersContainer = styled.div`
 export const MembersWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  // height: 8px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -31,6 +31,7 @@ export const MembersWrapper = styled.div`
 `;
 
 export const MembersLink = styled.div`
+  width: 1100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -40,7 +41,7 @@ export const MembersLink = styled.div`
 export const MembersTitle = styled.h1`
   font-size: 2.5rem;
   font-weight: 700;
-  margin-top: 100px;
+  margin-top: 20px;
   color: #000;
   margin-bottom: 64px;
 

@@ -6,17 +6,20 @@ import {
   VideoBg, 
   HeroContent, 
   HeroH1, 
-  HeroH2,
   HeroP, 
   HeroSP,
   // HeroBtnWrapper, 
   // ArrowForward, 
   // ArrowRight,
-  HeroImgWrap,
-  HeroImg,
+  TextWrapper,
+  Heading,
+  Subtitle,
+  TopLine,
+  ImgWrap,
+  Img
 } from './HeroElements';
 
-import img from '../../images/qc_cc.png'
+import Col from 'react-bootstrap/Col';
 
 
 const HeroSection = () => {
@@ -28,28 +31,20 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>Be ready for the era of quantum</HeroH1>
-        <HeroP>
-          Quantum computing, a New Future of computing
-        </HeroP>
-        <HeroSP>
-          Quantum computing harnesses the phenomena of quantum mechanics to deliver a huge leap forward in computation to solve certain problems.
-        </HeroSP>
-        <HeroSP>
-          You need to be embraced to new paradigm and potential of quantum computing.
-          Your small step today will make huge difference in the future.
-        </HeroSP>
-        <div style = {{width: `100%`, display: 'flex', justifyContent: 'start', marginTop: '50px'}}>
-          <HeroH2>Why Quantum Computer?</HeroH2>
-        </div>
         
-        <HeroImgWrap>
-          <HeroImg src = {img} alt = 'intro'/>
-        </HeroImgWrap>
-        <div style = {{display: 'flex', justifyContent: 'flex-start', width: '800px'}}>
-          <p style ={{color: '#fff'}}>
-            Despite how sophisticated digital computing has become, there are many scieitific and business problems for which we've barely scratched the surface
-          </p>
-        </div>
+          <HeroSP style ={{marginTop: '25px'}}>
+            Quantum computing harnesses the phenomena of quantum mechanics
+          </HeroSP>
+          <HeroSP style ={{marginTop: '-15px'}}>
+            to deliver a huge leap forward in computation to solve certain problems.
+          </HeroSP>
+          <HeroSP >
+            You need to be embraced to new paradigm and potential of quantum computing.
+          </HeroSP>
+          <div style = {{display:'flex', justifyContent: 'center', marginTop: '50px'}}>
+            <h2 style = {{color:'#fff', fontWeight: '700'}}>"Out of the lab into the real world"</h2>
+          </div>
+        
         
       </HeroContent>
       

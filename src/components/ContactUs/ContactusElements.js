@@ -8,7 +8,7 @@ export const Container = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  top: 0;
+  top: 80px;
   z-index: 0;
   overflow: hidden;
 `;

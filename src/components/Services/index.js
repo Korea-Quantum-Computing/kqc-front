@@ -15,71 +15,94 @@ import {
   BtnWrap
 } from './serviceElements';
 
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
 
 const Services = () => {
   return (
     <ServicesContainer id = "services">
-      <ServicesH1>
-        Our  Services
-      </ServicesH1>
-      <ServicesWrapper>
-        <ServicesCard>
-          <ServicesIcon src = {accessImage} />
-          <ServicesH2>QC Access Service</ServicesH2>
-          <div style = {{height: '120px'}}>
-            <ServicesP>
-              Get premium access to cutting-edge IBM-powered quantum computers
-            </ServicesP>
-          </div>
-          <BtnWrap>
-            <Button 
-              variant = 'dark'
-              id = 'access-button'
-              onClick = {() => {console.log('button clicked...')}}
-            >
-              More Info
-            </Button>
-          </BtnWrap>
-        </ServicesCard>
+      <div>
+        <ServicesH1 style = {{marginLeft: '150px'}}>
+          Our Services
+        </ServicesH1>
+        <div style ={{
+          display: 'flex', 
+          // borderRadius: '20px',
+          justifyContent: 'center', 
+          alignItems: 'center',
+          height: '80px', 
+          width: '1000px', 
+          color: '#fff', 
+          background: '#0b2865', 
+          fontSize: '30px', 
+          fontWeight: '700',
+          marginLeft: '200px',
+          marginRight: '200px',
+          marginBottom: '20px'
+        }}>
+          KQC as Research-based Company
+        </div>
 
-        <ServicesCard>
-          <ServicesIcon src = {educationImage} />
-          <ServicesH2>Education Service</ServicesH2>
-          <div style = {{height: '120px'}}>
-            <ServicesP>
-            We provide education service to support quantum community by maintaining HR pipeline 
-            </ServicesP>
-          </div>
-          
-          <BtnWrap>
-            <Button 
-              variant = 'dark'
-              id = 'access-button'
-              onClick = {() => {console.log('button clicked...')}}
-            >
-              More Info
-            </Button>
-          </BtnWrap>
-        </ServicesCard>
-
-        <ServicesCard>
-          <ServicesIcon src = {researchImage} />
-          <ServicesH2>Research Program</ServicesH2>
-          <div style = {{height: '120px'}}>
-            <ServicesP>
+        <ServicesWrapper>
+          <ServicesCard >
+            <ServicesIcon style = {{marginTop: '-15px'}} src = {researchImage} />
+            <ServicesH2>Membership</ServicesH2>
+            <div style = {{height: '120px'}}>
+              <ServicesP style = {{marginTop: '-1px'}} >
               As a research-based Company, we colloaborate on go-to market research projects with our members
-            </ServicesP>
-          </div>
-          <Button 
-              variant = 'dark'
-              id = 'community-button'
-              onClick = {() => {console.log('button clicked...')}}
-            >
-              More Info
-            </Button>
-        </ServicesCard>
-      </ServicesWrapper>
+              </ServicesP>
+            </div>
+            <BtnWrap>
+              <Button 
+                variant = 'dark'
+                id = 'access-button'
+                onClick = {() => {console.log('button clicked...')}}
+              >
+                More Info
+              </Button>
+            </BtnWrap>
+          </ServicesCard>
+
+          <ServicesCard>
+            <ServicesIcon src = {accessImage} />
+            <ServicesH2>Cloud Access</ServicesH2>
+            <div style = {{height: '120px'}}>
+              <ServicesP>
+                Get premium access to cutting-edge IBM-powered quantum computers
+              </ServicesP>
+            </div>
+            <Button 
+                variant = 'dark'
+                id = 'community-button'
+                onClick = {() => {console.log('button clicked...')}}
+              >
+                More Info
+              </Button>
+          </ServicesCard>
+
+          <ServicesCard>
+            <ServicesIcon src = {educationImage} />
+            <ServicesH2>Education</ServicesH2>
+            <div style = {{height: '120px'}}>
+              <ServicesP>
+              We provide education service to support quantum community by maintaining HR pipeline 
+              </ServicesP>
+            </div>
+            
+            <BtnWrap>
+              <Button 
+                variant = 'dark'
+                id = 'access-button'
+                onClick = {() => {console.log('button clicked...')}}
+              >
+                More Info
+              </Button>
+            </BtnWrap>
+          </ServicesCard>
+
+          
+        </ServicesWrapper>
+      </div>
+      
     </ServicesContainer>
   )
 }
