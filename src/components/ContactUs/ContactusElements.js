@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  min-height: 692px;
-  background: #333;
-  // position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 1200px;
+  background: #0b2865;
   bottom: 0;
   left: 0;
   right: 0;
-  top: 80px;
   z-index: 0;
   overflow: hidden;
 `;
@@ -24,13 +24,17 @@ export const FormWrap = styled.div`
     }
 `;
 
+
 export const Icon = styled(Link)`
-  margin-left: 32px;
-  margin-top: 32px;
+  display: flex;
+  justify-self: flex-start;
+  cursor: pointer;
+  align-items: center;
   text-decoration: none;
   color: #fff;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 1.5rem;
+  text-decoration: none;
 
   @media screen and (max-width: 480px) {
     margin-left: 16px;
@@ -41,7 +45,7 @@ export const Icon = styled(Link)`
 export const ContactusContent = styled.div`
   margin-top: 300px;
   z-index: 3;
-  max-width: 1200px;
+  max-width: 1000px;
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -51,7 +55,7 @@ export const ContactusContent = styled.div`
 
 
 export const FormH1 = styled.h1`
-  margin-top: 100px;
+  margin-top: 20px;
   margin-bottom: 40px;
   color: #fff;
   font-size: 48px;
@@ -61,10 +65,12 @@ export const FormH1 = styled.h1`
 
 export const FormP = styled.p`
   margin-bottom: 24px;
-  color: #fff;
-  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f7f8fa;
+  font-size: 18px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 `;
 
 

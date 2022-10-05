@@ -45,7 +45,7 @@ const ResourcesSection = ({
       <ResourcesContainer lightBg = {lightBg} id = {id}>
         <ResourcesWrapper>
           <ResourcesRow imgStart = { imgStart }>
-          <Heading style = {{marginLeft: '-20px'}} lightText = {lightText}>Recent News</Heading>
+          <Heading style = {{marginLeft: '-20px', marginTop: '100px'}} lightText = {lightText}>Recent News</Heading>
           </ResourcesRow>
           <ResourcesRow>
             <Swiper
