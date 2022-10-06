@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ResourcesContainer = styled.div`
   color: #fff;
-  background: ${({lightBg}) => (lightBg ? '#fff': '#010606')};
+  background: '#fff';
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -10,15 +10,22 @@ export const ResourcesContainer = styled.div`
 `;
 
 export const ResourcesWrapper = styled.div`
-  // display: grid;
-  z-index: 1;
-  min-height: 600px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
-  justify-content: center;
+  width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: ${({nCols}) => (`repeat(${nCols}, 1fr)`)};
+  align-items: center;
+  grid-gap: 40px;
+  padding: 0 50px;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
 `;
 
 export const ResourcesRow = styled.div`
@@ -102,13 +109,13 @@ export const ResourcesCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  height: 300px;
-  max-width: 400px;
-  padding: 20px;
+  height: ${({image}) => (image === true ? '500px': '300px')};
+  max-width: 600px;
+  padding: 0px;
 
   &:hover {
-    cursor: grab;
-  }
+    cursor: grab; 
+  } 
 `;
 
 export const ResourcesIcon = styled.img`
@@ -118,7 +125,7 @@ export const ResourcesIcon = styled.img`
 `;
 
 export const ResourcesH1 = styled.h1`
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #010606;
   margin-bottom: 20px;
@@ -129,7 +136,7 @@ export const ResourcesH1 = styled.h1`
 `;
 
 export const ResourcesH2 = styled.h2`
-  font-size: 1.4rem;;
+  font-size: 1.2rem;;
   line-height: 1.5;
   font-weight: 700;
   color: #010606;

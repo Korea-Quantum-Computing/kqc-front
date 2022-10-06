@@ -58,7 +58,7 @@ const ContactUs = () => {
   return (
     <>
     <div style ={{display: 'flex', justifyContent: 'center'}}>
-    <Container style = {{width: '1000px'}}>
+     <Container style = {{width: '1000px'}}>
         <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
           <Icon to="/">KQC</Icon> 
         </div>

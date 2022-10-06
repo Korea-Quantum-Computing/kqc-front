@@ -3,7 +3,7 @@ import React from 'react'
 import accessImage from '../../images/clouding.svg';
 import educationImage from '../../images/community.svg';
 import researchImage from '../../images/research.webp';
-
+import { NavBtn, NavBtnLink } from '../../components/Navbar/NavbarElements'
 import {
   ServicesContainer,
   ServicesH1,
@@ -15,7 +15,6 @@ import {
   BtnWrap
 } from './serviceElements';
 
-import Button from 'react-bootstrap/Button';
 
 const Services = () => {
   return (
@@ -51,14 +50,11 @@ const Services = () => {
               As a research-based Company, we colloaborate on go-to market research projects with our members
               </ServicesP>
             </div>
+
             <BtnWrap>
-              <Button 
-                variant = 'dark'
-                id = 'access-button'
-                onClick = {() => {console.log('button clicked...')}}
-              >
-                More Info
-              </Button>
+            <NavBtn>
+              <NavBtnLink to = "/membership">More Info</NavBtnLink>
+            </NavBtn>
             </BtnWrap>
           </ServicesCard>
 
@@ -70,13 +66,13 @@ const Services = () => {
                 Get premium access to cutting-edge IBM-powered quantum computers
               </ServicesP>
             </div>
-            <Button 
+            {/* <Button 
                 variant = 'dark'
                 id = 'community-button'
                 onClick = {() => {console.log('button clicked...')}}
               >
                 More Info
-              </Button>
+              </Button> */}
           </ServicesCard>
 
           <ServicesCard>
@@ -88,7 +84,7 @@ const Services = () => {
               </ServicesP>
             </div>
             
-            <BtnWrap>
+            {/* <BtnWrap>
               <Button 
                 variant = 'dark'
                 id = 'access-button'
@@ -96,7 +92,7 @@ const Services = () => {
               >
                 More Info
               </Button>
-            </BtnWrap>
+            </BtnWrap> */}
           </ServicesCard>
 
           

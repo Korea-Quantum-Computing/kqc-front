@@ -7,7 +7,8 @@ import {
   FooterLinksWrapper,
   FooterLinkItems,
   FooterLinkTitle,
-  FooterLink,
+  FooterLinkS,
+  FooterLinkR,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
@@ -37,11 +38,11 @@ const Footer = () => {
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>Menu</FooterLinkTitle>
-                <FooterLink to = "/services">Services</FooterLink>
-                <FooterLink to = "research">Research</FooterLink>
-                <FooterLink to = "/resources">Resources</FooterLink>
-                <FooterLink to = "/aboutus">About Us</FooterLink>
-                <FooterLink to = "/contact">Contact</FooterLink>
+                <FooterLinkS to = "services">Services</FooterLinkS>
+                <FooterLinkR to = "research">Research</FooterLinkR>
+                <FooterLinkS to = "resources">Resources</FooterLinkS>
+                <FooterLinkS to = "aboutus">About Us</FooterLinkS>
+                <FooterLinkR to = "/contact">Contact</FooterLinkR>
                 {/* <FooterLink to = "/signin">Terms of Services</FooterLink> */}
               </FooterLinkItems>
             </FooterLinksWrapper>
@@ -49,17 +50,17 @@ const Footer = () => {
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to = "/contactus">Become a member</FooterLink>
-                <FooterLink to = "/signin">Team</FooterLink>
-                <FooterLink to = "/signin">Careers</FooterLink>
-                <FooterLink to = "/signin">Terms of Services</FooterLink>
+                <FooterLinkR to = "../membership">Become a member</FooterLinkR>
+                <FooterLinkR to = "../team">Team</FooterLinkR>
+                <FooterLinkR to = "../career">Careers</FooterLinkR>
+                <FooterLinkR to = "../terms">Terms of Services</FooterLinkR>
               </FooterLinkItems>
 
               <FooterLinkItems>
                 <FooterLinkTitle>Social Media</FooterLinkTitle>
-                <FooterLink to = "/">Instagram</FooterLink>
-                <FooterLink to = "/">Facebook</FooterLink>
-                <FooterLink to = "/">Youtube</FooterLink>
+                <FooterLinkR to = "/">Instagram</FooterLinkR>
+                <FooterLinkR to = "/">Facebook</FooterLinkR>
+                <FooterLinkR to = "/">Youtube</FooterLinkR>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
