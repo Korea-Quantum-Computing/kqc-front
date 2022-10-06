@@ -76,7 +76,6 @@ const ResourcesSection = ({
   }) => {
 
   const sliceIntoChunks = (arr, chunkSize) => {
-    console.log('data length = ', Math.min(arr.length, nRows * nCols))
       const res = [];
       for (let i = 0; i < Math.min(arr.length, nRows * nCols); i += chunkSize) {
           const chunk = arr.slice(i, i + chunkSize);
@@ -93,14 +92,13 @@ const ResourcesSection = ({
     alert('No data avaiable')
   }
   
-
-    console.log('data = ', data)
+  
   return (
     <>
       <ResourcesContainer>
         {
           data.map((d, i) => (
-            <div  style = {{marginBottom: '40px'}}>
+            <div key = {`div-newsrow-${i}`} style = {{marginBottom: '40px'}}>
               <NewsRow key = {`newsrow-${i}`} data = {d} image = {image} nCols ={nCols}/>
             </div>)
           )

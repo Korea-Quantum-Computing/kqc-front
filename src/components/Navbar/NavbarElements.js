@@ -40,7 +40,21 @@ export const NavLogo = styled(LinkR)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+
+  &:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration: none;
+    color: #fff;
+  }
 `;
+
+export const Logo = styled.img`
+  height: 55px;
+  width: 55px;
+  background: transparent;
+  margin-top: -2px;
+  margin-right: -10px;
+`;
+
 
 export const MobileIcon = styled.div`
   display: none;
@@ -110,10 +124,4 @@ export const NavBtnLink = styled(LinkR) `
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-  }
 `;

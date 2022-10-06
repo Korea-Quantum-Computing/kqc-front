@@ -69,7 +69,11 @@ const ToggleButton = ( { setter }) => {
       biz === true && setTech(false);
       biz === true && setter('business');
     }
-    console.log('all = ', all, ' tech = ', tech, ' biz = ', biz)
+    
+    if (all === false && tech === false && biz === false){
+      setAll(true)
+    }
+
   }, [all, tech, biz]);
 
   const handleAllClick = () => {

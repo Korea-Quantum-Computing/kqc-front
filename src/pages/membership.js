@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import bg from '../images/membership.png';
+import bg from '../images/membership.svg';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
@@ -24,22 +24,18 @@ const Icon = styled(Link)`
   }
 `;
 const BG = styled.div`
-  // position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 1000px;
+  min-height: 500px;
   overflow: hidden;
   z-index: -1
 `;
 
 export const ImgBg = styled.img`
-  with: 100%;
-  height: 100%;
-  object-fit: cover;
-  background: #232a34;
+  object-fit: fill;
   z-index: 999
 `;
 const Container = styled.div`
@@ -86,8 +82,10 @@ const MemberShipPage = () => {
           </Col>
         </Row>
       </div>
+      <div style = {{marginTop: '40px'}}>
+        <h1 style = {{fontSize: '2.5rem', fontWeight: 'bold'}}>Membership Benefits</h1> 
+      </div>
       
-      <h1 style = {{fontSize: '2.5rem', fontWeight: 'bold'}}>Membership Benefits</h1> 
       <BG>
         <ImgBg src = { bg } />
       </BG>

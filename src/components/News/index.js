@@ -27,17 +27,9 @@ const News = ( {name }) => {
   const [filteredArticles, setFilteredArticles] = useState([])
 
   useEffect(() => {
-    console.log('filterOption = ', filterOption)
-    console.log('-------', filterNews(articles, filterOption));
     setFilteredArticles(filterNews(articles, filterOption));
   }, [filterOption])
   
-
-
-  
-  console.log('articles = ', articles)
-  console.log('filtered articles = ', filteredArticles)
-
   return (
     <>
     <div style ={{display: 'flex', justifyContent: 'center'}}>

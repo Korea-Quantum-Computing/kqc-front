@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, Logo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -28,7 +28,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav = {scrollNav}>
         <NavbarContainer>
-          <NavLogo to = '/' onClick = { toggleHome }>KQC</NavLogo>
+          <NavLogo to = '/' onClick = { toggleHome }><Logo src = {require('../../images/kqc-logo.svg').default}/> KQC</NavLogo>
           <MobileIcon onClick = {toggle}>
             <FaBars />
           </MobileIcon>
