@@ -35,6 +35,7 @@ export const NavLogo = styled(LinkR)`
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
+  font-family: 'Audiowide';
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -51,7 +52,7 @@ export const Logo = styled.img`
   height: 55px;
   width: 55px;
   background: transparent;
-  margin-top: -2px;
+  margin-top: -5px;
   margin-right: -10px;
 `;
 
@@ -97,6 +98,7 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-family: 'Audiowide';
 
   &.active {
     border-bottom: 3px solid #01bf71;

@@ -62,6 +62,7 @@ export const HeroH1 = styled.h1`
   font-size: 48px;
   text-align: center;
   font-weight: bold;
+  // font-family: 'Audiowide';
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }
@@ -92,6 +93,7 @@ export const HeroP = styled.p`
   color: #fff;
   font-size: 24px;
   font-weight: bold;
+  font-family: 'Audiowide';
   max-width: 800px;
 
   @media screen and (max-width: 768px) {

@@ -114,7 +114,7 @@ export const ResourcesCard = styled.div`
   padding: 0px;
 
   &:hover {
-    cursor: grab; 
+    cursor: pointer; 
   } 
 `;
 
@@ -125,7 +125,7 @@ export const ResourcesIcon = styled.img`
 `;
 
 export const ResourcesH1 = styled.h1`
-  font-size: 1.8rem;
+  font-size: ${({size}) => (size === 'small' ? '1.4rem': '1.8rem')};
   font-weight: 700;
   color: #010606;
   margin-bottom: 20px;
@@ -136,7 +136,7 @@ export const ResourcesH1 = styled.h1`
 `;
 
 export const ResourcesH2 = styled.h2`
-  font-size: 1.2rem;;
+  font-size: ${({size}) => (size === 'small' ? '1.0rem': '1.2rem')};
   line-height: 1.5;
   font-weight: 700;
   color: #010606;
@@ -151,6 +151,8 @@ export const ResourcesP = styled.p`
 
 export const ResourcesDate = styled.p`
   font-size: 0.8 rem;
+  align-self: flex-end;
   color: #010606;
   text-align: center;
+  bottom: 0;
 `;

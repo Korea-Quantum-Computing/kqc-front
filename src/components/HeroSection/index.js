@@ -6,20 +6,8 @@ import {
   VideoBg, 
   HeroContent, 
   HeroH1, 
-  HeroP, 
   HeroSP,
-  // HeroBtnWrapper, 
-  // ArrowForward, 
-  // ArrowRight,
-  TextWrapper,
-  Heading,
-  Subtitle,
-  TopLine,
-  ImgWrap,
-  Img
 } from './HeroElements';
-
-import Col from 'react-bootstrap/Col';
 
 
 const HeroSection = () => {

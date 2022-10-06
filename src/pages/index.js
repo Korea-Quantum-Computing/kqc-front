@@ -30,12 +30,12 @@ const Home = () => {
       <div id = 'resources' style = {{width: '100%', height: '600px', display: 'flex', justifyContent: 'center',}}>
         < div style = {{width: '1100px'}}>
             <h1 style = {{fontSize: '2.5rem', fontWeight: 700, marginTop: '50px', marginBottom: '50px'}}>Recent News</h1>
-          <ResourcesSection nRows = {1} nCols = {3} data = {articles} image = {false}/>
+          <ResourcesSection nRows = {1} nCols = {3} data = {articles} image = {false} size = {'small'} />
           <div style = {{width: '1100px', marginTop: '30px', display: 'flex', justifyContent: 'center'}}>
             <BtnWrap>
               <Button 
                 href = '/news'
-                primary = { 1}
+                primary = {1}
                 dark = {0 }
                 dark_2 = { 1 }  
               >

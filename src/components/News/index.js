@@ -39,13 +39,19 @@ const News = ( {name }) => {
         </div>
         <H1>Latest in Quantum World</H1>
 
-        <div style = {{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
-        <ToggleButton setter = {setFilterOption}/>
+        <div style = {{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginTop: '30px'}}>
+          <ToggleButton setter = {setFilterOption}/>
         </div>
-
-        <div style = {{display: 'flex', width: '1000', justifyContent: 'center', marginTop: '50px'}}>
+        <hr
+          style={{
+            marginTop: '20px',
+            color: '#000',
+            height: '5px',
+          }}
+        />
+        <div style = {{display: 'flex', width: '1000', justifyContent: 'center', marginTop: '20px'}}>
           {
-             <ResourcesSection nRows = {5} nCols = {2} data = {filteredArticles} image = { true }/>
+             <ResourcesSection nRows = {10} nCols = {2} data = {filteredArticles} image = { true }/>
           }
         </div>
       </Container>

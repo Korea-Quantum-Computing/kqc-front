@@ -61,13 +61,13 @@ const ToggleButton = ( { setter }) => {
     if (prevTech !== tech) {
       tech === true && setAll(false);
       tech === true && setBiz(false);
-      tech === true && setter('tech');
+      tech === true && setter('Tech');
     }
     
     if (prevBiz !== biz) {
       biz === true && setAll(false);
       biz === true && setTech(false);
-      biz === true && setter('business');
+      biz === true && setter('Business');
     }
     
     if (all === false && tech === false && biz === false){
