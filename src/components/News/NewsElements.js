@@ -35,6 +35,11 @@ export const IconKQC = styled(Link)`
   font-weight: 700;
   font-size: 1.5rem;
 
+  &:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration: none;
+    color: #fff;
+  }
+  
   @media screen and (max-width: 480px) {
     margin-left: 16px;
     margin-top: 8px;

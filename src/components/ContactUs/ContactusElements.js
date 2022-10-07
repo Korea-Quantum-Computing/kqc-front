@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 1200px;
-  background: #0b2865;
+  background: #f7f8fa;
   bottom: 0;
   left: 0;
   right: 0;
@@ -31,10 +31,16 @@ export const Icon = styled(Link)`
   cursor: pointer;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  font-family: 'Audiowide';
+  color: #0b2865;
   font-weight: 700;
   font-size: 1.5rem;
   text-decoration: none;
+
+  &:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration: none;
+    color: #0b2865;
+  }
 
   @media screen and (max-width: 480px) {
     margin-left: 16px;
@@ -57,7 +63,7 @@ export const ContactusContent = styled.div`
 export const FormH1 = styled.h1`
   margin-top: 20px;
   margin-bottom: 40px;
-  color: #fff;
+  color: #010606;
   font-size: 48px;
   font-weight: bold;
   text-align: center;
@@ -67,7 +73,7 @@ export const FormP = styled.p`
   margin-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
-  color: #f7f8fa;
+  color: #010606;
   font-size: 18px;
   font-weight: 400;
   text-align: left;
