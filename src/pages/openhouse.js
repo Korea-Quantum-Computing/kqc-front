@@ -90,7 +90,7 @@ const OpenHousePage = () => {
         <ImgBg src = { bg } />
       </Bg>
     <Content>
-      <Icon to="/">KQC</Icon>
+      <Icon to="/"><img style = {{marginRight: '-10px'}} src = {require('../images/kqc-logo-blue.svg').default}></img>KQC</Icon>
       <h1 style = {{color: '#363636', marginBottom: '30px', fontWeight: '700'}}>KQC Open house</h1>
       <div style ={{width: '1000px', fontSize: '18px', fontWeight: 'bold'}}>
         <p>IBM Quantum KQC Hub Busan, aiming to commercialize quantum computing and building an ecosystem in Korea, would like to host an Open House event.</p>

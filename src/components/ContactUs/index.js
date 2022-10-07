@@ -60,7 +60,7 @@ const ContactUs = () => {
     <div style ={{display: 'flex', justifyContent: 'center'}}>
      <Container style = {{width: '1000px'}}>
         <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
-          <Icon to="/">KQC</Icon> 
+        <Icon to="/" ><img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo-blue.svg').default}></img>KQC</Icon> 
         </div>
         <FormH1>Contact Us</FormH1>
         <FormP>
@@ -77,11 +77,11 @@ const ContactUs = () => {
               <div style = {{width: `400px`, marginRight: '50px', lineHeight: '2.5'}}>
                 <Form style = {{fontSize: '14px'}}>
                   <Form.Group className="mb-3" controlId="contact-1">
-                    <Form.Label style = {{color: '#fff'}}>First Name *</Form.Label>
+                    <Form.Label style = {{color: '#010606'}}>First Name *</Form.Label>
                     <Form.Control type="text" placeholder="Enter First Name"  onChange = {e => handleFirstNameChange(e)} />
-                    <Form.Label style = {{color: '#fff'}}>Last Name *</Form.Label>
+                    <Form.Label style = {{color: '#010606'}}>Last Name *</Form.Label>
                     <Form.Control type="text" placeholder="Enter Last Name" onChange = {e => handleLastNameChange(e)} />
-                    <Form.Label style = {{color: '#fff'}}>Email address *</Form.Label>
+                    <Form.Label style = {{color: '#010606'}}>Email address *</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" onChange = {e => handleEmailChange(e)} />
                     <Form.Text className="text-muted">
                       We'll never share your email with anyone else.
@@ -92,11 +92,11 @@ const ContactUs = () => {
               <div style = {{width: `400px`, lineHeight: '2.5'}}>
                 <Form style = {{fontSize: '14px'}}>
                   <Form.Group>
-                  <Form.Label style = {{color: '#fff'}}>Job Title</Form.Label>
+                  <Form.Label style = {{color: '#010606'}}>Job Title</Form.Label>
                     <Form.Control type="text" placeholder="Enter Job Title" onChange = {e => handleJobTitleChange(e)} />
-                    <Form.Label style = {{color: '#fff'}}>Company/Institution *</Form.Label>
+                    <Form.Label style = {{color: '#f010606ff'}}>Company/Institution *</Form.Label>
                     <Form.Control type="text" placeholder="Enter Your Institution" onChange = {e => handleInstitutionChange(e)} />
-                    <Form.Label style = {{color: '#fff'}}>Industry*</Form.Label>
+                    <Form.Label style = {{color: '#010606'}}>Industry*</Form.Label>
                     <Form.Control type="text" placeholder="Enter Industry" onChange = {e => handleIndustryChange(e)} />
                   </Form.Group>
                 </Form>
@@ -107,20 +107,20 @@ const ContactUs = () => {
             <div style = {{display: 'flex', width: '100%', justifyContent: 'center', marginTop: '10px', marginBottom: '30px'}}>
               <Form style = {{width: '850px'}}>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
-                  <Form.Label style = {{color: '#fff'}}>Message</Form.Label>
+                  <Form.Label style = {{color: '#010606'}}>Message</Form.Label>
                   <Form.Control as="textarea" rows={3} style = {{resize: 'none'}}/>
                 </Form.Group>
               </Form>
             </div>
             
-            <p style = {{color:`#fff`, fontSize: `18px`}}>KQC may use my contact data to keep me informed of products, services and offerings :</p>
-            <p style = {{color:`#fff`, fontSize: `14px`, paddingLeft: `30px`, marginBottom:`-4px`}}>    ㅁ By e-mail</p>
-            <p style = {{color:`#fff`, fontSize: `14px`, paddingLeft: `30px`}}>    ㅁ By phone</p>
-            <p style = {{color:`#fff`, fontSize: `18px`, marginBottom:`0px`}}>By submitting this form, I acknowledge that I have read and understand the KQC Privacy Statement.</p>
-            <p style = {{color:`#fff`, fontSize: `18px`}}>I accept the product terms and conditions of this registration form</p>
+            <p style = {{color:`#010606`, fontSize: `18px`}}>KQC may use my contact data to keep me informed of products, services and offerings :</p>
+            <p style = {{color:`#010606`, fontSize: `14px`, paddingLeft: `30px`, marginBottom:`-4px`}}>    ▶ By e-mail</p>
+            <p style = {{color:`#010606`, fontSize: `14px`, paddingLeft: `30px`, marginTop: '10px'}}>    ▶ By phone</p>
+            <p style = {{color:`#010606`, fontSize: `18px`, marginBottom:`0px`}}>By submitting this form, I acknowledge that I have read and understand the KQC Privacy Statement.</p>
+            <p style = {{color:`#010606`, fontSize: `18px`}}>I accept the product terms and conditions of this registration form</p>
             
             <div style = {{display:`flex`, justifyContent: `center`, marginTop: '30px', marginBottom: '50px'}}>
-              <Button variant = 'light' onClick = {handleSubmit} >Submit</Button>
+              <Button variant = 'dark' onClick = {handleSubmit} >Submit</Button>
             </div>
           </div>
         </div>

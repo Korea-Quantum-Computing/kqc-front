@@ -18,6 +18,12 @@ const Icon = styled(Link)`
   font-size: 1.5rem;
   text-decoration: none;
 
+  &:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+
   @media screen and (max-width: 480px) {
     margin-left: 16px;
     margin-top: 8px;
@@ -59,7 +65,7 @@ const MemberShipPage = () => {
     <Container style = {{width: '1000px'}}>
       
     <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
-      <Icon to="/">KQC</Icon> 
+      <Icon to="/" ><img style = {{marginRight: '-10px'}} src = {require('../images/kqc-logo-blue.svg').default}></img>KQC</Icon> 
     </div>
     <div style ={{display: 'flex', justifyContent: 'center', flexDirection: 'column', height: '800px', width: '100%'}}>
       <h1 style = {{fontSize: '2.5rem', fontWeight: 'bold', marginTop: '30px'}}>Prepare Quantum Era with KQC</h1>
