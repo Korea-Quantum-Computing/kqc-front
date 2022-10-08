@@ -13,14 +13,15 @@ const Icon = styled(Link)`
   cursor: pointer;
   align-items: center;
   text-decoration: none;
-  color: #999;
+  font-family: "Audiowide";
+  color: #0b2865;
   font-weight: 700;
   font-size: 1.5rem;
   text-decoration: none;
 
   &:focus, &:hover, &:visited, &:link, &:active {
     text-decoration: none;
-    color: #fff;
+    color: #0b2865;
   }
   
 
@@ -47,7 +48,7 @@ export const ImgBg = styled.img`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 1200px;
+  height: 1500px;
   background: #¸;
   bottom: 0;
   left: 0;
@@ -67,12 +68,12 @@ const MemberShipPage = () => {
     <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
       <Icon to="/" ><img style = {{marginRight: '-10px'}} src = {require('../images/kqc-logo-blue.svg').default}></img>KQC</Icon> 
     </div>
-    <div style ={{display: 'flex', justifyContent: 'center', flexDirection: 'column', height: '800px', width: '100%'}}>
+    <div style ={{display: 'flex', justifyContent: 'center', flexDirection: 'column', height: '1000px', width: '100%'}}>
+
       <h1 style = {{fontSize: '2.5rem', fontWeight: 'bold', marginTop: '30px'}}>Prepare Quantum Era with KQC</h1>
-      <div style = {{display: 'flex', justifyContent: 'center', width: '100%'}}>
-        <Row style ={{display: 'flex', justifyContent: 'center', width: '800px'}}>
+      <div style = {{display: 'flex', justifyContent: 'center', marginTop: '50px', width: '100%'}}>
+        <Row style ={{display: 'flex', justifyContent: 'center', width: '950px'}}>
           <Col style ={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}} md = {8}>
-            <h1>AAA</h1>
             <p>
               The risk of doing nothing is far greater than the cost of being the first mover.
             </p>
@@ -84,16 +85,15 @@ const MemberShipPage = () => {
             </p>
           </Col>
           <Col md = {4}>
-            <h1>BBB</h1>
+            <img style = {{width: '100%', marginLeft: '-20px'}} src = {require('../images/membership-1.png')}/>
           </Col>
         </Row>
       </div>
       <div style = {{marginTop: '40px'}}>
         <h1 style = {{fontSize: '2.5rem', fontWeight: 'bold'}}>Membership Benefits</h1> 
       </div>
-      
-      <BG>
-        <ImgBg src = { bg } />
+      <BG style = {{width: '100%', marginTop: '20px'}}>
+        <ImgBg style = {{width: '800px'}} src = { bg } />
       </BG>
       <h1>BB</h1>
     </div>
