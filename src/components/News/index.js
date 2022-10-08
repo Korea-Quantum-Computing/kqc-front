@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
   IconKQC,
   H1,
-  P,
+  HorizonBar,
   Container,
 } from './NewsElements';
 
@@ -43,13 +43,7 @@ const News = ( {name }) => {
         <div style = {{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginTop: '30px'}}>
           <ToggleButton setter = {setFilterOption}/>
         </div>
-        <hr
-          style={{
-            marginTop: '20px',
-            color: '#000',
-            height: '5px',
-          }}
-        />
+        <HorizonBar/>
         <div style = {{display: 'flex', width: '1000', justifyContent: 'center', marginTop: '20px'}}>
           {
              <ResourcesSection nRows = {10} nCols = {2} data = {filteredArticles} image = { true }/>
