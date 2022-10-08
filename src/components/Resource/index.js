@@ -7,10 +7,12 @@ import {
   Container, 
   Wrapper, 
   CardWrapper,
-  H1,
+  Media,
+  MediaWrapper,
   H2,
   Title,
-  Date
+  Date,
+  DateWrapper
  } from './ResourcesElements';
 
  
@@ -23,7 +25,7 @@ moment.locale('ko');
       <CardWrapper image = {image} onClick = {() => {window.open(data.link)}}>
         <div style = {{display: 'flex', justifyContent: 'flex-start', width: '100%', marginBottom: '20px'}}>
           <Tag
-            bg={`info700`}
+            bg={`#0b2865`}
             textColor="white"
             p={{ x: "0.75rem", y: "0.25rem" }}
             m={{ r: "0.5rem", b: "0.5rem" }}
@@ -44,17 +46,17 @@ moment.locale('ko');
             />
           </div>
         )}
-        <div style = {{display: 'flex', justifyContent: 'flex-start', height:'50px', width: '100%', padding: '20px'}}>
-          <H1 size = {size} style={{display: 'flex', justifyContent: 'center'}}>{data.media}</H1>
-        </div>
+        <MediaWrapper>
+          <Media>{data.media}</Media>
+        </MediaWrapper>
         <Title>
           <H2 size = {size}>
           {data.title}
           </H2>
         </Title>
-        <div style = {{height:'30', display: 'flex', justifyContent: 'flex-end', width: '100%', paddingRight: '20px'}}>
-        <Date>{moment(data.date, 'DD-MM-YY').format('YY / MM / DD')}</Date>
-        </div>
+        <DateWrapper>
+         <Date>{moment(data.date, 'DD-MM-YY').format('YY / MM / DD')}</Date>
+        </DateWrapper>
     </CardWrapper>
     </>
   )

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   color: #fff;
+  width: 1100px;
   background: '#fff';
 
   @media screen and (max-width: 768px) {
@@ -110,7 +111,7 @@ export const CardWrapper = styled.div`
   align-items: center;
   border-radius: 10px;
   height: ${({image}) => (image === true ? '500px': '300px')};
-  max-width: 600px;
+  max-width: 500px;
   padding: 0px;
 
   &:hover {
@@ -124,7 +125,28 @@ export const Icon = styled.img`
   margin-bottom: 10px;
 `;
 
-export const H1 = styled.h1`
+export const Media = styled.h1`
+  display: flex;
+  justify-content: center;
+  font-size: ${({size}) => (size === 'small' ? '1.4rem': '1.8rem')};
+  font-weight: 700;
+  color: #010606;
+  bottom: 0;
+  top: 0;
+  // margin-bottom: 20px;
+
+  @media screen and (max-with: 480px) {
+    font-size: 2rem;
+  }
+`;
+
+export const MediaWrapper = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  padding-left: 20px;
   font-size: ${({size}) => (size === 'small' ? '1.4rem': '1.8rem')};
   font-weight: 700;
   color: #010606;
@@ -143,12 +165,22 @@ export const H2 = styled.h2`
   margin-bottom: 10px;
 `;
 
+
 export const P = styled.p`
   font-size: 2 rem;
   color: #010606;
   text-align: center;
 `;
 // style = {{height:'100%', display: 'flex', justifyContent: 'flex-end', alignItems: 'end', width: '100%', padding: '20px'}}
+
+
+export const DateWrapper = styled.div`
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 20px;
+`;
 
 export const Date = styled.p`
   font-size: 0.8 rem;
@@ -167,7 +199,7 @@ export const Date = styled.p`
 export const Title = styled.div`
   top: 0;
   bottom: 0;
-  height: 300px;
+  height: 150px;
   padding: 20px;
   padding-left: 40px;
   width: 100%;
