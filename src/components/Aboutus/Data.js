@@ -7,6 +7,7 @@ export const aboutusObj = {
     headline: 'The First Quantum Solution Provider in Korea',
     description_1: 'KQC established as the first commercial quantum computing hub for the IBM Quantum.',
     description_2: 'KQC will be the center of Quantum Computing ecosystem of Korea laying the foundation for the future of Quantum Industry.',
+    description_3: 'If you want to learn more about us, we can tell you more.',
 
     //We provides access to IBM’s latest quantum computing cloud API, and leads the creation and commercialization of a quantum computing ecosystem.
     //KQC has signed a contract to operate a quantum computing hub and introduce quantum technology with IBM.
