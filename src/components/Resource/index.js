@@ -1,20 +1,26 @@
 import React from 'react';
 import { Tag } from "atomize";
+import moment from 'moment';
+import 'moment/locale/ko';
 
 import { 
-  ResourcesContainer, 
-  ResourcesWrapper, 
-  ResourcesCard,
-  ResourcesH1,
-  ResourcesH2,
-  ResourcesDate
+  Container, 
+  Wrapper, 
+  CardWrapper,
+  H1,
+  H2,
+  Title,
+  Date
  } from './ResourcesElements';
+
+ 
+moment.locale('ko');
 
 
  const Card = ( {data, image, size} ) => {
   return (
     <>
-      <ResourcesCard image = {image} onClick = {() => {window.open(data.link)}}>
+      <CardWrapper image = {image} onClick = {() => {window.open(data.link)}}>
         <div style = {{display: 'flex', justifyContent: 'flex-start', width: '100%', marginBottom: '20px'}}>
           <Tag
             bg={`info700`}
@@ -39,17 +45,17 @@ import {
           </div>
         )}
         <div style = {{display: 'flex', justifyContent: 'flex-start', height:'50px', width: '100%', padding: '20px'}}>
-          <ResourcesH1 size = {size} style={{display: 'flex', justifyContent: 'center'}}>{data.media}</ResourcesH1>
+          <H1 size = {size} style={{display: 'flex', justifyContent: 'center'}}>{data.media}</H1>
         </div>
-        <div style = {{display: 'flex', padding: '20px'}}>
-          <ResourcesH2 size = {size}>
+        <Title>
+          <H2 size = {size}>
           {data.title}
-          </ResourcesH2>
+          </H2>
+        </Title>
+        <div style = {{height:'30', display: 'flex', justifyContent: 'flex-end', width: '100%', paddingRight: '20px'}}>
+        <Date>{moment(data.date, 'DD-MM-YY').format('YY / MM / DD')}</Date>
         </div>
-        <div style = {{height:'100%', display: 'flex', justifyContent: 'flex-end', alignItems: 'end', width: '100%', padding: '20px'}}>
-        <ResourcesDate>22/08/26</ResourcesDate>
-        </div>
-    </ResourcesCard>
+    </CardWrapper>
     </>
   )
  }
@@ -58,17 +64,17 @@ import {
  const NewsRow = ( { data, image, nCols, size } ) => {
   return (
     <>
-      <ResourcesWrapper nCols = {nCols}>
+      <Wrapper nCols = {nCols}>
         {
-          data.map((d, i) => (<Card data = {d} key = {`resourceswrapper-${image}-${i}`} image = {image} size = {size}/>))
+          data.map((d, i) => (<Card data = {d} key = {`wrapper-${image}-${i}`} image = {image} size = {size}/>))
         }
-      </ResourcesWrapper>
+      </Wrapper>
     </>
   )
  }
 
 
-const ResourcesSection = ({ 
+const Section = ({ 
     nRows,
     nCols,
     image,
@@ -96,7 +102,7 @@ const ResourcesSection = ({
   
   return (
     <>
-      <ResourcesContainer>
+      <Container>
         {
           data.map((d, i) => (
             <div key = {`div-newsrow-${i}`} style = {{marginBottom: '40px'}}>
@@ -104,9 +110,9 @@ const ResourcesSection = ({
             </div>)
           )
         }
-      </ResourcesContainer>
+      </Container>
     </>
   )
 }
 
-export default ResourcesSection;
+export default Section;
