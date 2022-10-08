@@ -37,30 +37,43 @@ const Footer = () => {
             </FooterLinksWrapper>
             <FooterLinksWrapper>
               <FooterLinkItems>
-                <FooterLinkTitle>Menu</FooterLinkTitle>
+                {/* <FooterLinkTitle>Menu</FooterLinkTitle>
                 <FooterLinkS to = "services">Services</FooterLinkS>
                 <FooterLinkR to = "research">Research</FooterLinkR>
                 <FooterLinkS to = "resources">Resources</FooterLinkS>
                 <FooterLinkS to = "aboutus">About Us</FooterLinkS>
-                <FooterLinkR to = "/contact">Contact</FooterLinkR>
+                <FooterLinkR to = "/contact">Contact</FooterLinkR> */}
                 {/* <FooterLink to = "/signin">Terms of Services</FooterLink> */}
               </FooterLinkItems>
             </FooterLinksWrapper>
 
             <FooterLinksWrapper>
               <FooterLinkItems>
-                <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLinkR to = "../membership">Become a member</FooterLinkR>
-                <FooterLinkR to = "../team">Team</FooterLinkR>
-                <FooterLinkR to = "../career">Careers</FooterLinkR>
-                <FooterLinkR to = "../terms">Terms of Services</FooterLinkR>
+                <FooterLinkTitle style = {{fontFamily: 'Audiowide', fontWeight: 'bold'}}>About Us</FooterLinkTitle>
+                {/* <FooterLinkR to = "../membership">Become a member</FooterLinkR> */}
+                {/* <FooterLinkR to = "../team">Team</FooterLinkR> */}
+                <FooterLinkR style = {{paddingLeft: '10px'}} to = "../careers">Careers</FooterLinkR>
+                {/* <FooterLinkR to = "../terms">Terms of Services</FooterLinkR> */}
               </FooterLinkItems>
 
               <FooterLinkItems>
-                <FooterLinkTitle>Social Media</FooterLinkTitle>
-                <FooterLinkR to = "/">Instagram</FooterLinkR>
-                <FooterLinkR to = "/">Facebook</FooterLinkR>
-                <FooterLinkR to = "/">Youtube</FooterLinkR>
+                <FooterLinkTitle style = {{fontFamily: 'Audiowide', fontWeight: 'bold'}}>Social Media</FooterLinkTitle>
+                {/* <FooterLinkR to = "/">Instagram</FooterLinkR> */}
+                {/* <FooterLinkR to = "/">Facebook</FooterLinkR> */}
+                <div style = {{display: 'flex', paddingLeft: '10px', margin: '0px', flexDirection: 'row', alignItems: 'center'}}>
+                  <div style = {{color: '#fff', textDecoration: 'none', marginRight: '10px', fontSize: '14px'}}>
+                    Youtube
+                  </div>
+                  <SocialIconLink 
+                    style = {{marginTop: '-5px'}}
+                    href = "https://www.youtube.com/channel/UCH6L4UwG60XUR0fwnvS6ovA" 
+                    target = "_blank" 
+                    aria-label = "Youtube"
+                  >
+                    <FaYoutube />
+                  </SocialIconLink>
+                </div>
+                
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
