@@ -12,6 +12,7 @@ import { aboutusObj } from "./components/Aboutus/Data";
 import {researchObj} from "./components/Research/Data";
 import News from './components/News';
 import MemberShipPage from './pages/membership';
+import CareersPage from './pages/careers';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path = "/news" element = {<News/>} exact />
           <Route path = "/research" element = {<ResearchSection {...researchObj}/>} exact />
           <Route path = "/aboutus" element = {<AboutusSection {...aboutusObj}/>} exact />
+          <Route path = "/careers" element = {<CareersPage/>} exact />
           <Route path = "/resources" element = {<ResourceSection {...resourceObj}/>} exact />
           <Route path = "/membership" element = {<MemberShipPage/>} exact />
           <Route path = "/openhouse" element = {<OPenHousePage/>} exact />

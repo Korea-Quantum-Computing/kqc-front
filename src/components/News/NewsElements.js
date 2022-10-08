@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 10000px;
+  // display: flex;
+  // flex-direction: column;
+  height: 800;
   background: #fff;
+  overflow-y: scroll;
   bottom: 0;
   left: 0;
   right: 0;
@@ -31,13 +32,13 @@ export const IconKQC = styled(Link)`
   cursor: pointer;
   align-items: center;
   text-decoration: none;
-  color: #777;
+  color: #0b2865;
   font-weight: 700;
   font-size: 1.5rem;
 
   &:focus, &:hover, &:visited, &:link, &:active {
     text-decoration: none;
-    color: #fff;
+    color: #0b2865;
   }
   
   @media screen and (max-width: 480px) {

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ResourcesContainer = styled.div`
+export const Container = styled.div`
   color: #fff;
   background: '#fff';
 
@@ -9,7 +9,7 @@ export const ResourcesContainer = styled.div`
   }
 `;
 
-export const ResourcesWrapper = styled.div`
+export const Wrapper = styled.div`
   width: 1100px;
   margin: 0 auto;
   display: grid;
@@ -28,7 +28,7 @@ export const ResourcesWrapper = styled.div`
   }
 `;
 
-export const ResourcesRow = styled.div`
+export const Row = styled.div`
   max-height: 220px;
   display: flex;
   flex-direction: row;
@@ -102,7 +102,7 @@ export const Img = styled.img`
 
 
 
-export const ResourcesCard = styled.div`
+export const CardWrapper = styled.div`
   background: #f8f9fa;
   display: flex;
   flex-direction: column;
@@ -118,13 +118,13 @@ export const ResourcesCard = styled.div`
   } 
 `;
 
-export const ResourcesIcon = styled.img`
+export const Icon = styled.img`
   height: 120px;
   width: 120px;
   margin-bottom: 10px;
 `;
 
-export const ResourcesH1 = styled.h1`
+export const H1 = styled.h1`
   font-size: ${({size}) => (size === 'small' ? '1.4rem': '1.8rem')};
   font-weight: 700;
   color: #010606;
@@ -135,24 +135,45 @@ export const ResourcesH1 = styled.h1`
   }
 `;
 
-export const ResourcesH2 = styled.h2`
+export const H2 = styled.h2`
   font-size: ${({size}) => (size === 'small' ? '1.0rem': '1.2rem')};
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: 400;
   color: #010606;
   margin-bottom: 10px;
 `;
 
-export const ResourcesP = styled.p`
+export const P = styled.p`
   font-size: 2 rem;
   color: #010606;
   text-align: center;
 `;
+// style = {{height:'100%', display: 'flex', justifyContent: 'flex-end', alignItems: 'end', width: '100%', padding: '20px'}}
 
-export const ResourcesDate = styled.p`
+export const Date = styled.p`
   font-size: 0.8 rem;
-  align-self: flex-end;
+  font-weight: bold;
+  padding-right: 20;
+  height: 30;
+  top: 0;
+  bottom: 0;
+  margin-bottom: 10px;
+  // align-self: flex-end;
   color: #010606;
-  text-align: center;
+  text-align: end;
   bottom: 0;
 `;
+
+export const Title = styled.div`
+  top: 0;
+  bottom: 0;
+  height: 300px;
+  padding: 20px;
+  padding-left: 40px;
+  width: 100%;
+  text-align: left;
+  // position: fixed;
+  overflow-y: hidden;
+  overflow-x: hidden;
+`;
+

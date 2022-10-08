@@ -26,6 +26,7 @@ const AboutusSection = ({
     darkText, 
     description_1,
     description_2,
+    description_3,
     buttonLabel, 
     img, 
     alt,
@@ -45,10 +46,11 @@ const AboutusSection = ({
               <Heading lightText = {lightText}>{headline}</Heading>
               <Subtitle darkText = {darkText}>{description_1}</Subtitle>
               <Subtitle darkText = {darkText}>{description_2}</Subtitle>
+              <Subtitle darkText = {darkText}>{description_3}</Subtitle>
               <div style ={{marginTop: '40px'}}>
                 <BtnWrap>
                   <Button 
-                    href = '/aboutus'
+                    href = '/contactus'
                     primary = { 1}
                     dark = { dark ? 1 : 0 }
                     dark_2 = { dark_2 ? 1 : 0 }  

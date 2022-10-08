@@ -8,13 +8,14 @@ import {
 
 import ResourcesSection from "../Resource";
 import ToggleButton from "../../components/ToggleButton"
-
+import moment from 'moment';
 import { articles } from '../../data/articles';
 
 
 const filterNews = (articleList, filterOption) => {
   if (filterOption === 'all') {
-    return articleList;
+    console.log('aa = ', moment(articleList[0].date, 'MM-DD-YY').format('YY-MM-DD'))
+    return articleList.sort((a, b) => (moment(a.date, 'DD-MM-YY') > moment(b.date, 'DD-MM-YY')) ? -1 : 1);
   } else {
     return articleList.filter((a) => (a.category === filterOption))
   }
@@ -35,7 +36,7 @@ const News = ( {name }) => {
     <div style ={{display: 'flex', justifyContent: 'center'}}>
     <Container style = {{width: '1000px'}}>
         <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
-        <IconKQC to="/">KQC</IconKQC> 
+        <IconKQC to="/"><img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo-blue.svg').default}/>KQC</IconKQC> 
         </div>
         <H1>Latest in Quantum World</H1>
 
