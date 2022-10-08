@@ -85,7 +85,7 @@ const Footer = () => {
               <WebsiteRights>
                 Korea Quantum Computing  © {new Date().getFullYear()} All rights reserved. 
               </WebsiteRights>
-
+{/* 
               <div style = {{marginTop: '-10px'}}>
               <SocialIcons>
 
@@ -122,7 +122,7 @@ const Footer = () => {
                 </SocialIconLink>
 
                 </SocialIcons>
-              </div>
+              </div> */}
               
             </SocialMediaWrap>
           </SocialMedia>
