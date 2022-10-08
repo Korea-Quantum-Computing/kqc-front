@@ -68,14 +68,10 @@ export const H1 = styled.h1`
   text-align: center;
 `;
 
-export const P = styled.p`
-  margin-bottom: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #f7f8fa;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: left;
+export const HorizonBar = styled.hr`
+  margin-top: 20px;
+  color: #000;
+  height: 5px;
 `;
 
 
