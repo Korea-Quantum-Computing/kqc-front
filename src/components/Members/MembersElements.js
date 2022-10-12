@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 
 export const MembersContainer = styled.div`
-  height: 800px;
+  height: 650px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   background: #f7f8fa;
-
   @media screen and (max-width: 768px) {
     height: 1100px;
   }
@@ -26,6 +25,7 @@ export const MembersWrapper = styled.div`
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 0;
   padding: 0 24ps;
   justify-content: center;
 `;

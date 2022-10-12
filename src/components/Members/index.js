@@ -8,7 +8,7 @@ import {
 } from './MembersElements';
 
 import baobab from '../../images/baobab.png';
-import hanwha from '../../images/hanwha.png';
+// import hanwha from '../../images/hanwha.png';
 import ibm from '../../images/logo_ibm.png';
 import hines from '../../images/hines.png';
 import busan from '../../images/busan.png';
@@ -20,10 +20,10 @@ const MembersSection = ({ lightBg, }) => {
     <>
       <MembersContainer lightBg = {lightBg} id = 'members'>
         <MembersWrapper>
-          <MembersTitle>
+          <MembersTitle style = {{marginTop: '100px'}}>
             Partners
           </MembersTitle>
-          <MembersLink style = {{marginTop: '-150px'}}>
+          <MembersLink style = {{marginTop: '-160px'}}>
             < a href="https://www.ibm.com/quantum" target="_blank" rel="noreferrer">
               <MemberIcon name = "IBM" src = {ibm} width = {200} height = {100} ></MemberIcon>
             </a>
@@ -38,10 +38,10 @@ const MembersSection = ({ lightBg, }) => {
             <MemberIcon style = {{marginTop: '1px'}} name = "Heins" src = {hines} width = {200} height = {200}></MemberIcon>
             </a>
           </MembersLink>
-          <MembersTitle style = {{marginTop: '-50px'}}>
+          <MembersTitle style = {{marginTop: '-70px'}}>
             Members
           </MembersTitle>
-          <MembersLink style ={{marginTop: '-50px'}}>
+          <MembersLink style ={{marginTop: '-70px'}}>
           
           <a href="http://www.baobabaibio.com/" target="_blank" rel="noreferrer">
             <MemberIcon name = "BaobabAiBio" src = {baobab}  width = {300} height = {120}></MemberIcon>
