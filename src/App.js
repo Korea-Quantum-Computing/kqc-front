@@ -5,9 +5,9 @@ import Home from './pages';
 import ContactusPage from './pages/contactus';
 import OPenHousePage from './pages/openhouse';
 import AboutusSection from "./components/Aboutus";
-import ResourceSection from "./components/Resource";
+import NewsSection from "./components/NewsSection";
 import ResearchSection from './components/Research';
-import { resourceObj } from "./components/Resource/Data";
+import { newsObj } from "./components/NewsSection/Data";
 import { aboutusObj } from "./components/Aboutus/Data";
 import {researchObj} from "./components/Research/Data";
 import News from './components/News';
@@ -27,7 +27,7 @@ function App() {
           <Route path = "/research" element = {<ResearchSection {...researchObj}/>} exact />
           <Route path = "/aboutus" element = {<AboutusSection {...aboutusObj}/>} exact />
           <Route path = "/careers" element = {<CareersPage/>} exact />
-          <Route path = "/resources" element = {<ResourceSection {...resourceObj}/>} exact />
+          <Route path = "/recent-news" element = {<NewsSection {...newsObj}/>} exact />
           <Route path = "/membership" element = {<MemberShipPage/>} exact />
           <Route path = "/openhouse" element = {<OPenHousePage/>} exact />
 
