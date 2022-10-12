@@ -294,5 +294,29 @@ export const articles = [
   "img_name": "2022-05-13-ainew1.png",
   "link": "http:\/\/www.aitimes.kr\/news\/articleView.html?idxno=25021",
   "date": "13-05-22"
+ },
+ {
+  "category": "Tech",
+  "title": "한국 양자컴 연구인력·논문, 美·中의 10%도 안돼",
+  "media": "한국 경제",
+  "img_name": "2022-10-11-hanku3.jpg",
+  "link": "https://www.hankyung.com/it/article/2022101101921",
+  "date": "11-10-22"
+ },
+ {
+  "category": "Tech",
+  "title": "백악관 특명 받은 IBM…'중국과 양자컴 암호전쟁서 승리할 것'",
+  "media": "한국 경제",
+  "img_name": "2022-10-11-hanku2.jpg",
+  "link": "https://www.hankyung.com/it/article/2022101101931",
+  "date": "11-10-22"
+ },
+ {
+  "category": "Tech",
+  "title": "스콧 크라우더 IBM CTO '양자 우위 시대, 내년부터 시작된다'",
+  "media": "한국 경제",
+  "img_name": "2022-10-11-hanku1.jpg",
+  "link": "https://www.hankyung.com/it/article/2022101101941",
+  "date": "11-10-22"
  }
 ]
