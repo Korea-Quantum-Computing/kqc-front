@@ -6,7 +6,7 @@ import {
   Container,
 } from './NewsElements';
 
-import ResourcesSection from "../Resource";
+import NewsSection from "../NewsSection";
 import ToggleButton from "../../components/ToggleButton"
 import moment from 'moment';
 import { articles } from '../../data/articles';
@@ -46,7 +46,7 @@ const News = ( {name }) => {
         <HorizonBar/>
         <div style = {{display: 'flex', width: '1000', justifyContent: 'center', marginTop: '20px'}}>
           {
-             <ResourcesSection nRows = {10} nCols = {2} data = {filteredArticles} image = { true }/>
+             <NewsSection nRows = {10} nCols = {2} data = {filteredArticles} image = { true }/>
           }
         </div>
       </Container>
