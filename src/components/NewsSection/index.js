@@ -42,7 +42,7 @@ moment.locale('ko');
             <img 
               src = {require(`../../images/media/${data.img_name}`)} 
               alt = {data.img} 
-              style = {{height: '200px', width: '100%', objectFit: 'fill'}}
+              style = {{height: '200px', width: '100%', objectFit: 'cover'}}
             />
           </div>
         )}
