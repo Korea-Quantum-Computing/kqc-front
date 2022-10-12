@@ -6,9 +6,9 @@ export const Container = styled.div`
   background: #0c0c0c;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 300px;
+  align-items: top;
+  padding: 0;
+  height: 250px;
   position: relative;
   z-index: 1;
 
@@ -32,13 +32,13 @@ export const Bg = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
 `;
 
 export const H1 = styled.h1`
   color: #ccc;
-  font-size: 100px;
+  font-size: 48px;
   text-align: center;
   font-weight: bold;
   @media screen and (max-width: 768px) {
@@ -57,7 +57,11 @@ export const VideoBg = styled.video`
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
-  transform: scale(3.0);
+  transform: scale(3.5);
+
+  @media screen and (max-width: 480px) {
+    transform: scale(3.0);
+  }
 `;
 
 export const Icon = styled(Link)`
