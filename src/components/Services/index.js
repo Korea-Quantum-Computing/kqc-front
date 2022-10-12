@@ -19,7 +19,7 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id = "services">
-      <div>
+      <div style = {{marginTop: '100px'}}>
         <ServicesH1 style = {{marginLeft: '150px'}}>
           Our Services
         </ServicesH1>

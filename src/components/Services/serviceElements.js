@@ -7,7 +7,7 @@ export const ServicesContainer = styled.div`
   height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: #fff;
 
