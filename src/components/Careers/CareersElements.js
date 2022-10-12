@@ -102,12 +102,12 @@ export const Content = styled.div`
 export const CardWrapper = styled.div`
   background: #f8f9fa;
   display: flex;
-  padding-top: 40px;
+  padding-top: 20px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  height: ${({image}) => (image === true ? '500px': '300px')};
+  min-height: 250px;
   max-width: 500px;
 //   padding: 0px;
   font-size: 1.4rem;
