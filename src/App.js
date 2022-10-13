@@ -13,6 +13,7 @@ import {researchObj} from "./components/Research/Data";
 import News from './components/News';
 import MemberShipPage from './pages/membership';
 import CareersPage from './pages/careers';
+import AboutUsPage from './pages/aboutus-detail';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           {/* <Route path = "/services" element = {<Services/>} exact /> */}
           <Route path = "/contactus" element = {<ContactusPage/>} exact />
           <Route path = "/news" element = {<News/>} exact />
+          <Route path = "/aboutus-detail" element = {<AboutUsPage/>} exact />
           <Route path = "/research" element = {<ResearchSection {...researchObj}/>} exact />
           <Route path = "/aboutus" element = {<AboutusSection {...aboutusObj}/>} exact />
           <Route path = "/careers" element = {<CareersPage/>} exact />
