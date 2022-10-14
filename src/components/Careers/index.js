@@ -334,9 +334,9 @@ const Career = ({ lightBg, }) => {
             }}
           >
             <div>
-              <h1 style = {{fontSize: '3rem', fontWeight: 'bold', color: 'red'}}>Join</h1>
-              <h1 style = {{fontSize: '3rem', fontWeight: 'bold',  color: 'blue'}}>Our</h1>
-              <h1 style = {{fontSize: '3rem', fontWeight: 'bold',  color: 'magenta'}}>Team</h1>
+              <h1 style = {{fontSize: '3rem', fontWeight: 'bold', color: '#A6ABAB'}}>Join</h1>
+              <h1 style = {{fontSize: '3rem', fontWeight: 'bold',  color: '#515656'}}>Our</h1>
+              <h1 style = {{fontSize: '3rem', fontWeight: 'bold',  color: '#10606'}}>Team</h1>
             </div>
             
             <div style = {{display: 'flex', justifyContent: 'center', width: '100%'}}>
@@ -380,8 +380,12 @@ const Career = ({ lightBg, }) => {
           </CardList>
           
           <div style = {{marginTop: '50px', marginBottom: '50px'}}>
-            <Text textSize = 'subheader' textWeight = '600'>채용 절차</Text>
-            <Text m = {{t: '1.2rem', b: '1.2rem'}}>서류 전형 → 1차 실무진 면접전형 → 2차 경영진 면접전형 → 연봉 및 처우 협의 → 최종합격</Text>
+
+            <Text textSize = 'title' textWeight = '600'>채용 절차</Text>
+            
+            <div style = {{display: 'flex',height: '100px', width: '100%', marginTop: '40px', marginBottom: '20px', justifyContent: 'center'}}>
+              <img tyle = {{ height: '20px'}} src = {require('../../images/recruiting_process.png')}/>
+            </div>
             <Text>※ 이력서 및 추가 서류( 포트폴리오,  GitHub url등 )를 토대로 지원 자격을 검토하게 되며, 개발직군의 경우 코딩 테스트가 추가로 예정되어 있습니다.</Text>
             <Text>※ 1차 실무진 면접과 2차 경영진 면접은 하루에 모두 진행되며, 자세한 일정은 개별적으로 안내될 예정입니다.</Text>
             <Text m = {{b: '1.2rem'}}>※ 면접 합격 시 본인 동의 하에 레퍼런스 체크가 진행될 수 있으며, 처우와 입사일 협의 완료 후 최종 합격이 확정됩니다.</Text>

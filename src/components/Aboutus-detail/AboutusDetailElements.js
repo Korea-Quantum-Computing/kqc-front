@@ -195,4 +195,64 @@ export const NavLi = styled.li`
 export const Content = styled.div`
   font-size: 2rem;
   text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
 `;
+
+export const AdvisorContaner = styled.div`
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+
+`;
+//${({nCols}) => (`repeat(${nCols}, 1fr)`)};
+
+export const PeopleCard = styled.div`
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  height: ${({image}) => (image === true ? '500px': '300px')};
+  max-width: 300px;
+  height: 350px;
+  padding: 0px;
+
+  &:hover {
+    cursor: pointer; 
+  } 
+`;
+
+export const CardTitle = styled.div`
+  margin-top: 20px;
+  color: #010606;
+  font-size: 1.0rem;
+  font-weight: 600;
+`;
+
+export const Img = styled.img`
+  width: 80px;
+  border-radius: 50%;
+
+`;
+
+
+export const CardBody = styled.div`
+  margin-top: 10px;
+  color: #888;
+  font-size: 0.4em;
+  font-weight: 400;
+  line-height: .9;
+`;
+
+export const CardDesc = styled.div`
+  margin-top: 20px;
+  color: #555;
+  font-size: 0.4em;
+  font-weight: 400;
+  line-height: .9;
+`;
+
+
