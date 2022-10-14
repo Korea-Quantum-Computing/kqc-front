@@ -26,7 +26,7 @@ const jobs = [
     job_id: '22-0001',
     title: 'Researcher',
     skill: ['Python', 'Qiskit', 'C++'],
-    major: ['Stat', 'CS', 'Math', 'Physics'],
+    major: ['Stat', 'CS', '+5 yr', 'Physics'],
     desc: 'Perform research on quantum computing',
     mission: [
       '양자컴퓨터를 활용한 시스템 구현 및 활용 과정에서 필요한 양자컴퓨팅 전반에 관한 연구개발 수행', 
@@ -131,9 +131,9 @@ const jobs = [
 const AlignCenterModal = ({ JD, isOpen, onClose }) => {
   return (
     <Modal 
-      style = {{minWidth: '700px'}}
       isOpen={isOpen} 
       onClose={onClose} 
+      style = {{minWidth: '700px', maxHeight: '900px'}}
       align="center" 
       rounded="md"
     >
@@ -146,43 +146,53 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
         onClick={onClose}
         cursor="pointer"
       />
-      <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
-        Mission
-      </Text>
-      <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
-        {JD.mission && JD.mission.map(m => (
-          <p style = {{lineHeight: '0.6'}}>{m}</p>
-        ))}
-      </Text>
-      <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
-        Requirements
-      </Text>
-      <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
-        {JD.requirements_desc && JD.requirements_desc.map(m => (
-          <p style = {{lineHeight: '0.6'}}>{m}</p>
-        ))}
-      </Text>
-      <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
-        Preferred
-      </Text>
-      <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
-        {JD.preferred_desc && JD.preferred_desc.map(m => (
-          <p style = {{lineHeight: '0.6'}}>{m}</p>
-        ))}
-      </Text>
-      <Text textWeight = '600' textSize="subheader">
-        Location
-      </Text>
-      <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
-        부산광역시 해운대구 우2동 센텀중앙로 55, 9층 KQC 오피스
-      </Text>
-      <Div d="flex" m={{ b: "4rem" }}>
-        <Icon
-          name="AlertSolid"
-          color="warning700"
-          m={{ t: "0.35rem", r: "0.5rem" }}
-        />
-      </Div>
+      <div >
+        <div style = {{display: 'flex', flexDirection: 'row'}}>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/target.png')}/></div>
+          <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
+            Mission
+          </Text>
+        </div>
+        <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
+          {JD.mission && JD.mission.map(m => (
+            <p style = {{lineHeight: '0.6'}}>{m}</p>
+          ))}
+        </Text>
+        <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/requirement.png')}/></div>
+          <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
+          Requirements
+          </Text>
+        </div>
+        <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
+          {JD.requirements_desc && JD.requirements_desc.map(m => (
+            <p style = {{lineHeight: '0.6'}}>{m}</p>
+          ))}
+        </Text>
+        <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/behavior.png')}/></div>
+          <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
+          Preferred
+          </Text>
+        </div>
+        <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
+          {JD.preferred_desc && JD.preferred_desc.map(m => (
+            <p style = {{lineHeight: '0.6'}}>{m}</p>
+          ))}
+        </Text>
+
+        <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/placeholder.png')}/></div>
+          <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
+          Location
+          </Text>
+        </div>
+
+        <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
+          부산광역시 해운대구 우2동 센텀중앙로 55, 9층 KQC 오피스
+        </Text>
+      </div>
+      
     </Modal>
   );
 };
@@ -210,7 +220,7 @@ const Card = ( { job, showJD }) => {
           rounded="lg"
           m={{ r: ".3rem" }}
         >
-          <IconA name="HeartSolid" size="20px" color="danger700" />
+          <IconA name="Rename" size="20px" color="danger700" />
         </Button>
         <div style = {{
           display: 'flex', 
@@ -244,7 +254,7 @@ const Card = ( { job, showJD }) => {
           rounded="lg"
           m={{ r: ".3rem" }}
         >
-          <IconA name="HeartSolid" size="20px" color="danger700" />
+          <IconA name="Draft" size="20px" color="danger700" />
         </Button>
 
         <div style = {{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -324,9 +334,9 @@ const Career = ({ lightBg, }) => {
             }}
           >
             <div>
-              <h1 style = {{fontSize: '3rem', fontWeight: 'bold', color: 'red'}}>Join</h1>
-              <h1 style = {{fontSize: '3rem', fontWeight: 'bold',  color: 'blue'}}>Our</h1>
-              <h1 style = {{fontSize: '3rem', fontWeight: 'bold',  color: 'magenta'}}>Team</h1>
+              <h1 style = {{fontSize: '3rem', fontWeight: 'bold', color: '#A6ABAB'}}>Join</h1>
+              <h1 style = {{fontSize: '3rem', fontWeight: 'bold',  color: '#515656'}}>Our</h1>
+              <h1 style = {{fontSize: '3rem', fontWeight: 'bold',  color: '#10606'}}>Team</h1>
             </div>
             
             <div style = {{display: 'flex', justifyContent: 'center', width: '100%'}}>
@@ -355,15 +365,6 @@ const Career = ({ lightBg, }) => {
               </Row>
             </div>
           </div>
-          <div style = {{marginBottom: '50px'}}>
-            <Text textWeight = '600'>채용 절차</Text>
-            <Text m = {{b: '1.2rem'}}>서류 전형 → 1차 실무진 면접전형 → 2차 경영진 면접전형 → 연봉 및 처우 협의 → 최종합격</Text>
-            <Text>※ 이력서 및 추가 서류( 포트폴리오,  GitHub url등 )를 토대로 지원 자격을 검토하게 되며, 개발직군의 경우 코딩 테스트가 추가로 예정되어 있습니다.</Text>
-            <Text>※ 1차 실무진 면접과 2차 경영진 면접은 하루에 모두 진행되며, 자세한 일정은 개별적으로 안내될 예정입니다.</Text>
-            <Text m = {{b: '1.2rem'}}>※ 면접 합격 시 본인 동의 하에 레퍼런스 체크가 진행될 수 있으며, 처우와 입사일 협의 완료 후 최종 합격이 확정됩니다.</Text>
-            <Text textWeight = '600'>유의 사항</Text>
-            <Text>※ 입사지원 시 제출하신 내용은 증빙자료 제출 등을 통해 확인하고 있으며, 기재된 내용이 사실과 다를 경우 입사가 취소될 수 있음을 유의하시기 바랍니다.</Text>
-          </div>
           <CardList>
             {
               jobs && jobs.map((j) => (
@@ -378,6 +379,20 @@ const Career = ({ lightBg, }) => {
           
           </CardList>
           
+          <div style = {{marginTop: '50px', marginBottom: '50px'}}>
+
+            <Text textSize = 'title' textWeight = '600'>채용 절차</Text>
+            
+            <div style = {{display: 'flex',height: '100px', width: '100%', marginTop: '40px', marginBottom: '20px', justifyContent: 'center'}}>
+              <img tyle = {{ height: '20px'}} src = {require('../../images/recruiting_process.png')}/>
+            </div>
+            <Text>※ 이력서 및 추가 서류( 포트폴리오,  GitHub url등 )를 토대로 지원 자격을 검토하게 되며, 개발직군의 경우 코딩 테스트가 추가로 예정되어 있습니다.</Text>
+            <Text>※ 1차 실무진 면접과 2차 경영진 면접은 하루에 모두 진행되며, 자세한 일정은 개별적으로 안내될 예정입니다.</Text>
+            <Text m = {{b: '1.2rem'}}>※ 면접 합격 시 본인 동의 하에 레퍼런스 체크가 진행될 수 있으며, 처우와 입사일 협의 완료 후 최종 합격이 확정됩니다.</Text>
+            <Text textSize = 'subheader' textWeight = '600'>유의 사항</Text>
+            <Text>※ 입사지원 시 제출하신 내용은 증빙자료 제출 등을 통해 확인하고 있으며, 기재된 내용이 사실과 다를 경우 입사가 취소될 수 있음을 유의하시기 바랍니다.</Text>
+          </div>
+
           <AlignCenterModal
             JD = {selectedJD}
             isOpen={showModal}

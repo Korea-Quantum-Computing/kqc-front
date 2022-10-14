@@ -50,7 +50,7 @@ const AboutusSection = ({
               <div style ={{marginTop: '40px'}}>
                 <BtnWrap>
                   <Button 
-                    href = '/contactus'
+                    href = '/aboutus-detail'
                     primary = { 1}
                     dark = { dark ? 1 : 0 }
                     dark_2 = { dark_2 ? 1 : 0 }  
