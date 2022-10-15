@@ -383,8 +383,8 @@ const Career = ({ lightBg, }) => {
 
             <Text textSize = 'title' textWeight = '600'>채용 절차</Text>
             
-            <div style = {{display: 'flex',height: '100px', width: '100%', marginTop: '40px', marginBottom: '20px', justifyContent: 'center'}}>
-              <img tyle = {{ height: '20px'}} src = {require('../../images/recruiting_process.png')}/>
+            <div style = {{display: 'flex',height: '150px', width: '100%', marginTop: '40px', marginBottom: '20px', justifyContent: 'center'}}>
+              <img tyle = {{ height: '60px'}} src = {require('../../images/recruiting_process.png')}/>
             </div>
             <Text>※ 이력서 및 추가 서류( 포트폴리오,  GitHub url등 )를 토대로 지원 자격을 검토하게 되며, 개발직군의 경우 코딩 테스트가 추가로 예정되어 있습니다.</Text>
             <Text>※ 1차 실무진 면접과 2차 경영진 면접은 하루에 모두 진행되며, 자세한 일정은 개별적으로 안내될 예정입니다.</Text>

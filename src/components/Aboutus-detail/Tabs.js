@@ -2,7 +2,7 @@ import react, { useState } from 'react';
 import TabNavItem from "./TabNavItem";
 import TabContent from "./TabContent";
 import Advisory from './Advisory';
-import History from './History';
+import AboutUs from './AboutUs';
 
 import { Tab, Nav } from './AboutusDetailElements';
 
@@ -17,9 +17,9 @@ const Tabs = () => {
             <TabNavItem title="Advisory" id="tab2" activeTab={activeTab} setActiveTab={setActiveTab}/>
           </Nav>
   
-          <div className="outlet">
+          <div className="outlet" style = {{minHeight: '500px'}}>
             <TabContent id="tab1" activeTab={activeTab}>
-              <History/>
+              <AboutUs/>
             </TabContent>
             <TabContent id="tab2" activeTab={activeTab}>
               <Advisory/>

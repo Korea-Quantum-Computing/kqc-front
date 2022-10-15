@@ -9,7 +9,7 @@ import {
   Icon,
  } from './AboutusDetailElements';
 
- import Video from '../../videos/video.mp4';
+ import Video from '../../videos/video_office.mp4';
 import Tabs from './Tabs';
 
 
@@ -24,14 +24,12 @@ const AboutusDetail = () => {
             KQC
           </Icon> 
         </div>
-        <div style = {{color: 'white'}}>
-          <h1>AAAA</h1>
-          <h1>AAAA</h1>
-          <h1>AAAA</h1>
-          <h1>AAAA</h1>
-
+        <div style = {{color: 'white', height: '400px', display: 'flex', alignItems: 'center'}}>
+          <div style = {{color: 'white', }}>
+            <img style = {{color: 'white', width: '100%'}} src = {require('../../images/kqc-history-small.png')}/>
+          </div>
         </div>
-        <div style = {{background: 'red'}}>
+        <div style = {{background: 'red', minHeight: '600px'}}>
           <Tabs/>
         </div>
         

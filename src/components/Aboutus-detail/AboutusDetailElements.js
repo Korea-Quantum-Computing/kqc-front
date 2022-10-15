@@ -7,7 +7,7 @@ export const AboutusContainer = styled.div`
   justify-content: center;
   // align-items: center;
   padding: 0 30px;
-  height: 1200px;
+  height: 1800px;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -178,8 +178,8 @@ export const NavLi = styled.li`
   transition: all 0.7s;
   font-size: 1.4rem;
   font-weight: bold;
-  background: #f7f8fa;
-  color: #010606;
+  background: #010606;
+  color: #f7f8fa;
   // border-bottom-left-radius: 2rem;
   // border-top-left-radius: 2rem;
 
@@ -187,8 +187,8 @@ export const NavLi = styled.li`
     background: rgba(50, 224, 196, 0.15);
   }
   &.active {
-    background: #010606;
-    color: #fff;
+    background: #f7f8fa;
+    color: #010606;
 `;
 
 
