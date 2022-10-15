@@ -128,6 +128,47 @@ export const articles = [
   "date": "27-11-21"
  },
  {
+  "category": "Business",
+  "title": "'반도체와 양자기술 동시에 잡으려면 재교육 투자해야'",
+  "media": "한국일보",
+  "img_name": "2022-07-25-hanku1.jpg",
+  "link": "https://m.hankookilbo.com/News/Read/A2022072113200004921?rPrev=A2022071818020003254",
+  "date": "25-07-22"
+ },
+ {
+  "category": "Business",
+  "title": "'한국은 하드웨어 강조하지만... 양자컴 시대에도 소프트웨어가 핵심'",
+  "media": "한국일보",
+  "img_name": "2022-07-25-hanku2.jpg",
+  "link": "https://m.hankookilbo.com/News/Read/A2022071818020003254?rPrev=A2022071817100004407",
+  "date": "25-07-22"
+ },
+ {
+  "category": "Business",
+  "title": "정부, 향후 9년간 양자학 박사급 인재 180명 배출키로",
+  "media": "뉴시스",
+  "img_name": "2022-10-13-newsi1.jpg",
+  "link": "https://newsis.com/view/?id=NISX20221013_0002046782",
+  "date": "13-10-22"
+ },
+ {
+  "category": "Business",
+  "title": "'양자기술 브레인' 키운다…대학 연합체 '양자대학원' 신설(종합)",
+  "media": "한국경제",
+  "img_name": "2022-10-13-hanky1.jpg",
+  "link": "https://www.hankyung.com/it/article/202210136214Y",
+  "date": "13-10-22"
+ },
+ {
+  "category": "Business",
+  "title": "2030년까지 양자기술 전문인력 1000명 확보한다",
+  "media": "매일경제",
+  "img_name": "2022-10-13-meaky1.jpg",
+  "link": "https://www.mk.co.kr/news/it/view/2022/10/905527/",
+  "date": "14-10-22"
+ },
+
+ {
   "category": "Tech",
   "title": "The practical prospects of quantum computing for enterprises",
   "media": "BITS&CHIPS",
