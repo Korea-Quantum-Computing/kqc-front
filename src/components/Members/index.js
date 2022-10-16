@@ -7,6 +7,7 @@ import {
   MemberIcon
 } from './MembersElements';
 
+import { Button, BtnWrap } from '../Aboutus/AboutusElements';
 import baobab from '../../images/baobab.png';
 // import hanwha from '../../images/hanwha.png';
 import ibm from '../../images/logo_ibm.png';
@@ -51,6 +52,16 @@ const MembersSection = ({ lightBg, }) => {
             <MemberIcon name = "Hanhwa" src = {hanwha} width = {300} height = {100}></MemberIcon>
           </a> */}
           </MembersLink>
+          <div style ={{marginTop: '40px'}}>
+                <BtnWrap>
+                  <Button 
+                    href = '/membership'
+                    primary = { 1}
+                    dark = { 0 }
+                    dark_2 = { 1 }  
+                  >More detail</Button>
+                </BtnWrap>
+              </div>
         </MembersWrapper>
       </MembersContainer>
     </>
