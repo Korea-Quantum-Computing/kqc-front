@@ -16,10 +16,10 @@ const RecentNews = ( {name }) => {
   return (
     <>
       <div id = 'resources' style = {{width: '100%', height: '600px', display: 'flex', justifyContent: 'center',}}>
-        < div style = {{width: '1100px'}}>
+        < div style = {{width: '1000px'}}>
             <h1 style = {{fontSize: '2.5rem', fontWeight: 700, marginTop: '100px', marginBottom: '50px'}}>Recent News</h1>
           <NewsSection nRows = {1} nCols = {3} data = {articles} image = {false} size = {'small'} />
-          <div style = {{width: '1100px', marginTop: '30px', display: 'flex', justifyContent: 'center'}}>
+          <div style = {{width: '1000px', marginTop: '30px', display: 'flex', justifyContent: 'center'}}>
             <BtnWrap>
               <Button 
                 href = '/news'

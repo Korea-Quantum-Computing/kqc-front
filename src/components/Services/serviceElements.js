@@ -7,9 +7,10 @@ export const ServicesContainer = styled.div`
   height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background: #fff;
+  width: 1000px;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -21,13 +22,13 @@ export const ServicesContainer = styled.div`
 `
 
 export const ServicesWrapper = styled.div`
-  width: 1100px;
+  width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 40px;
-  padding: 0 50px;
+  padding: 0 0px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;

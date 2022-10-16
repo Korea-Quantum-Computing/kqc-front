@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   color: #fff;
-  width: 1100px;
+  width: 1000px;
   background: '#fff';
 
   @media screen and (max-width: 768px) {
@@ -11,13 +11,13 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 1100px;
+  width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: ${({nCols}) => (`repeat(${nCols}, 1fr)`)};
   align-items: center;
   grid-gap: 40px;
-  padding: 0 50px;
+  padding: 0 0px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;

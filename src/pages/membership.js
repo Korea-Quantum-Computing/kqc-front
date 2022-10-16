@@ -51,7 +51,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 1500px;
-  background: #¸;
+  background: #f7f8fa;
   bottom: 0;
   left: 0;
   right: 0;
@@ -64,15 +64,14 @@ const MemberShipPage = () => {
   return (
     <>
     <ScrollToTop />
-    <div style ={{display: 'flex', justifyContent: 'center'}}>
+    <div style ={{display: 'flex', justifyContent: 'center', background: '#f7f8fa'}}>
       
     <Container style = {{width: '1000px'}}>
       
     <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
       <Icon to="/" ><img style = {{marginRight: '-10px'}} src = {require('../images/kqc-logo-blue.svg').default} alter = 'kqc-logo'></img>KQC</Icon> 
     </div>
-    <div style ={{display: 'flex', justifyContent: 'center', flexDirection: 'column', height: '1000px', width: '100%'}}>
-
+    <div style ={{display: 'flex', justifyContent: 'center', flexDirection: 'column', marginTop: '70px', height: '1000px', width: '100%'}}>
       <h1 style = {{fontSize: '2.5rem', fontWeight: 'bold', marginTop: '30px'}}>Prepare Quantum Era with KQC</h1>
       <div style = {{display: 'flex', justifyContent: 'center', marginTop: '50px', width: '100%'}}>
         <Row style ={{display: 'flex', justifyContent: 'center', width: '950px'}}>
@@ -95,10 +94,9 @@ const MemberShipPage = () => {
       <div style = {{marginTop: '40px'}}>
         <h1 style = {{fontSize: '2.5rem', fontWeight: 'bold'}}>Membership Benefits</h1> 
       </div>
-      <BG style = {{width: '100%', marginTop: '20px'}}>
+      <BG style = {{width: '100%', marginTop: '30px', display: 'flex', justifyContent: 'center'}}>
         <ImgBg style = {{width: '800px'}} src = { bg } alter = 'bg' />
       </BG>
-      <h1>BB</h1>
     </div>
   </Container>
       
