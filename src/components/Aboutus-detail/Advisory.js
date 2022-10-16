@@ -1,6 +1,3 @@
-import react from 'react';
-import styled from 'styled-components';
-
 import { 
   AdvisorContaner, 
   PeopleCard, 

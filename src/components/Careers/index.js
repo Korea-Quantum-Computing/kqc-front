@@ -14,7 +14,6 @@ import Video from '../../videos/workers.mp4';
 import { 
   Tag, 
   Button, 
-  Div, 
   Modal, 
   Icon as IconA, 
   Text
@@ -148,7 +147,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
       />
       <div >
         <div style = {{display: 'flex', flexDirection: 'row'}}>
-          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/target.png')}/></div>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/target.png')} alter = 'target'/></div>
           <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
             Mission
           </Text>
@@ -159,7 +158,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
           ))}
         </Text>
         <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
-          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/requirement.png')}/></div>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/requirement.png')} alt = 'requirements'/></div>
           <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
           Requirements
           </Text>
@@ -170,7 +169,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
           ))}
         </Text>
         <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
-          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/behavior.png')}/></div>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/behavior.png')} alt= 'behavior'/></div>
           <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
           Preferred
           </Text>
@@ -182,7 +181,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
         </Text>
 
         <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
-          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/placeholder.png')}/></div>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/placeholder.png')} alt = 'placeholder'/></div>
           <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
           Location
           </Text>

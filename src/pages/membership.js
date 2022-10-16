@@ -7,6 +7,8 @@ import bg from '../images/membership.svg';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
+import ScrollToTop from '../components/ContactUs/ScrollToTop';
+
 const Icon = styled(Link)`
   display: flex;
   justify-self: flex-start;
@@ -61,6 +63,7 @@ const MemberShipPage = () => {
 
   return (
     <>
+    <ScrollToTop />
     <div style ={{display: 'flex', justifyContent: 'center'}}>
       
     <Container style = {{width: '1000px'}}>

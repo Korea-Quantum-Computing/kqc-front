@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa'
+// import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa'
+import { FaYoutube, } from 'react-icons/fa'
 import {
   FooterContainer,
   FooterWrap,
@@ -7,13 +8,11 @@ import {
   FooterLinksWrapper,
   FooterLinkItems,
   FooterLinkTitle,
-  FooterLinkS,
   FooterLinkR,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
   WebsiteRights,
-  SocialIcons,
   SocialIconLink,
 } from './FooterElements';
 

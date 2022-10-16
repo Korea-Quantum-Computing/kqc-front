@@ -1,4 +1,4 @@
-import react, { useState } from 'react';
+import { useState } from 'react';
 import TabNavItem from "./TabNavItem";
 import TabContent from "./TabContent";
 import Advisory from './Advisory';

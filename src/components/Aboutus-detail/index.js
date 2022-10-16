@@ -20,13 +20,13 @@ const AboutusDetail = () => {
       <AboutusContent>
         <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
           <Icon to="/" >
-            <img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo.svg').default}/>
+            <img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo.svg').default} alt = 'kqc-logo'/>
             KQC
           </Icon> 
         </div>
         <div style = {{color: 'white', height: '400px', display: 'flex', alignItems: 'center'}}>
           <div style = {{color: 'white', }}>
-            <img style = {{color: 'white', width: '100%'}} src = {require('../../images/kqc-history-small.png')}/>
+            <img style = {{color: 'white', width: '100%'}} src = {require('../../images/kqc-history-small.png')} alt = 'kqc-history'/>
           </div>
         </div>
         <div style = {{background: 'red', minHeight: '600px'}}>

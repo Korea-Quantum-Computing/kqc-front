@@ -36,7 +36,7 @@ const News = ( {name }) => {
     <div style ={{display: 'flex', justifyContent: 'center'}}>
     <Container style = {{width: '1000px'}}>
         <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
-        <IconKQC to="/"><img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo-blue.svg').default}/>KQC</IconKQC> 
+        <IconKQC to="/"><img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo-blue.svg').default} alter = 'kqc-logo'/>KQC</IconKQC> 
         </div>
         <H1>Latest in Quantum World</H1>
 
