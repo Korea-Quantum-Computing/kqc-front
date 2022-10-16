@@ -14,7 +14,7 @@ const Advisory = () => {
 
   return (
     <>
-    <AdvisorContaner>
+    <AdvisorContaner style = {{paddingBottom: '100px'}}>
       {
         advisors.map((a) => (
           <PeopleCard>
@@ -34,12 +34,6 @@ const Advisory = () => {
           </PeopleCard>
         ))
       }
-      <div>B</div>
-      <div>C</div>
-      <div>D</div>
-      <div>E</div>
-      <div>A</div>
-      <div>A</div>
     </AdvisorContaner>
     </>
   )

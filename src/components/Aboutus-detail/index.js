@@ -25,8 +25,8 @@ const AboutusDetail = () => {
           </Icon> 
         </div>
         <div style = {{color: 'white', height: '400px', display: 'flex', alignItems: 'center'}}>
-          <div style = {{color: 'white', }}>
-            <img style = {{color: 'white', width: '100%'}} src = {require('../../images/kqc-history-small.png')} alt = 'kqc-history'/>
+          <div style = {{color: 'white', width: '100%'}}>
+            <img style = {{width: '100%'}} src = {require('../../images/kqc-history-small.png')} alt = 'kqc-history'/>
           </div>
         </div>
         <div style = {{background: 'red', minHeight: '600px'}}>

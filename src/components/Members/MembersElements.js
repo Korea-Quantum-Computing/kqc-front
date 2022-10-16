@@ -8,6 +8,7 @@ export const MembersContainer = styled.div`
   justify-content: start;
   align-items: start;
   background: #f7f8fa;
+  width: 1000px;
   @media screen and (max-width: 768px) {
     height: 1100px;
   }
@@ -22,7 +23,7 @@ export const MembersWrapper = styled.div`
   z-index: 1;
   // height: 8px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
@@ -31,7 +32,7 @@ export const MembersWrapper = styled.div`
 `;
 
 export const MembersLink = styled.div`
-  width: 1100px;
+  width: 1000px;
   display: flex;
   flex-direction: row;
   align-items: center;

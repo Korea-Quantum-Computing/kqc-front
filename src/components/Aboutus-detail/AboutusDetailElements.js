@@ -178,8 +178,8 @@ export const NavLi = styled.li`
   transition: all 0.7s;
   font-size: 1.4rem;
   font-weight: bold;
-  background: #010606;
-  color: #f7f8fa;
+  background: #0b2865;
+  color: #02408f;
   // border-bottom-left-radius: 2rem;
   // border-top-left-radius: 2rem;
 
@@ -187,8 +187,8 @@ export const NavLi = styled.li`
     background: rgba(50, 224, 196, 0.15);
   }
   &.active {
-    background: #f7f8fa;
-    color: #010606;
+    background: #fff;
+    color: #0b2865;
 `;
 
 
@@ -202,7 +202,8 @@ export const Content = styled.div`
 export const AdvisorContaner = styled.div`
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  height: 850px;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
 
 `;
@@ -249,10 +250,12 @@ export const CardBody = styled.div`
 
 export const CardDesc = styled.div`
   margin-top: 20px;
-  color: #555;
-  font-size: 0.4em;
+  color: #222;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 0.3em;
   font-weight: 400;
-  line-height: .9;
+  line-height: 1.2;
 `;
 
 

@@ -6,18 +6,19 @@ import {
   Container,
 } from './ContactusElements';
 
+import emailjs from 'emailjs-com';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ContactUs = () => {
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
-  const [email, setEmail] = useState('')
-  const [jobTitle, setJobTitle] = useState('')
-  const [institution, setInstitution] = useState('')
-  const [industry, setIndustry] = useState('')
-
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [jobTitle, setJobTitle] = useState('');
+  const [institution, setInstitution] = useState('');
+  const [industry, setIndustry] = useState('');
+  const [message, setMessage] = useState('');
   const handleFirstNameChange = (e) => {  // <- input값으로 text 변경 함수
     setFirstName(e.target.value);
   };
@@ -42,7 +43,12 @@ const ContactUs = () => {
     setIndustry(e.target.value);
   };
 
-  const handleSubmit = () => {
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
     console.log('=========')
     console.log(firstName)
     console.log(lastName)
@@ -50,8 +56,28 @@ const ContactUs = () => {
     console.log(jobTitle)
     console.log(institution)
     console.log(industry)
+    console.log(message)
     console.log('=========')
 
+    const content = {
+      from_name: 'KQC-Member-contact',
+      to_name: 'KQC-support',
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      jobTitle: jobTitle,
+      institution: institution,
+      industry: industry,
+      message: message,
+    }
+    emailjs.send("kqc-contactus","template_ce7afrb", content, "WPY4BXL3zlPjYW7gG")
+    .then((result) => {
+        console.log(result.text);
+        alert("Sent information Successfully!!");
+    }, (error) => {
+        console.log(error.text);
+        alert("Can not send message!");
+    });
   }
 
   
@@ -108,7 +134,7 @@ const ContactUs = () => {
               <Form style = {{width: '850px'}}>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                   <Form.Label style = {{color: '#010606'}}>Message</Form.Label>
-                  <Form.Control as="textarea" rows={3} style = {{resize: 'none'}}/>
+                  <Form.Control as="textarea" rows={3} style = {{resize: 'none'}} onInput = {e => handleMessageChange(e)}/>
                 </Form.Group>
               </Form>
             </div>
