@@ -34,7 +34,6 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://korea-quantum-computing.github.io/kqc-front/",
   "eslintConfig": {
     "extends": [
       "react-app",
