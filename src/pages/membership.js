@@ -69,7 +69,7 @@ const MemberShipPage = () => {
     <Container style = {{width: '1000px'}}>
       
     <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
-      <Icon to="/" ><img style = {{marginRight: '-10px'}} src = {require('../images/kqc-logo-blue.svg').default}></img>KQC</Icon> 
+      <Icon to="/" ><img style = {{marginRight: '-10px'}} src = {require('../images/kqc-logo-blue.svg').default} alter = 'kqc-logo'></img>KQC</Icon> 
     </div>
     <div style ={{display: 'flex', justifyContent: 'center', flexDirection: 'column', height: '1000px', width: '100%'}}>
 
@@ -88,7 +88,7 @@ const MemberShipPage = () => {
             </p>
           </Col>
           <Col md = {4}>
-            <img style = {{width: '100%', marginLeft: '-20px'}} src = {require('../images/membership-1.png')}/>
+            <img style = {{width: '100%', marginLeft: '-20px'}} src = {require('../images/membership-1.png')} alter = 'membership-1'/>
           </Col>
         </Row>
       </div>
@@ -96,7 +96,7 @@ const MemberShipPage = () => {
         <h1 style = {{fontSize: '2.5rem', fontWeight: 'bold'}}>Membership Benefits</h1> 
       </div>
       <BG style = {{width: '100%', marginTop: '20px'}}>
-        <ImgBg style = {{width: '800px'}} src = { bg } />
+        <ImgBg style = {{width: '800px'}} src = { bg } alter = 'bg' />
       </BG>
       <h1>BB</h1>
     </div>

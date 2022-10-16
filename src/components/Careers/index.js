@@ -147,7 +147,9 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
       />
       <div >
         <div style = {{display: 'flex', flexDirection: 'row'}}>
-          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/target.png')} alter = 'target'/></div>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}>
+            <img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/target.png')} alter = 'target'/>
+          </div>
           <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
             Mission
           </Text>
@@ -158,7 +160,9 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
           ))}
         </Text>
         <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
-          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/requirement.png')} alt = 'requirements'/></div>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}>
+            <img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/requirement.png')} alt = 'requirements'/>
+          </div>
           <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
           Requirements
           </Text>
@@ -169,7 +173,9 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
           ))}
         </Text>
         <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
-          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/behavior.png')} alt= 'behavior'/></div>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}>
+            <img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/behavior.png')} alt= 'behavior'/>
+          </div>
           <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
           Preferred
           </Text>
@@ -181,7 +187,9 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
         </Text>
 
         <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
-          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}><img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/placeholder.png')} alt = 'placeholder'/></div>
+          <div style = {{display: 'flex', width: '28px', height: '28px', marginRight: '10px'}}>
+            <img tyle = {{width: '20px', height: '20px'}} src = {require('../../images/icons/placeholder.png')} alt = 'placeholder'/>
+          </div>
           <Text textWeight = '600' textSize="subheader" m = {{b: ".5rem"}}>
           Location
           </Text>
@@ -308,8 +316,8 @@ const Career = ({ lightBg, }) => {
               <img 
                 style = {{marginRight: '-10px'}} 
                 src = {require('../../images/kqc-logo-blue.svg').default}
-              >
-              </img>
+                alt = 'kqc-logo-blue'
+              />
               KQC
             </Icon> 
           </div>
@@ -383,7 +391,7 @@ const Career = ({ lightBg, }) => {
             <Text textSize = 'title' textWeight = '600'>채용 절차</Text>
             
             <div style = {{display: 'flex',height: '150px', width: '100%', marginTop: '40px', marginBottom: '20px', justifyContent: 'center'}}>
-              <img tyle = {{ height: '60px'}} src = {require('../../images/recruiting_process.png')}/>
+              <img tyle = {{ height: '60px'}} src = {require('../../images/recruiting_process.png')} alt = 'recruiting'/>
             </div>
             <Text>※ 이력서 및 추가 서류( 포트폴리오,  GitHub url등 )를 토대로 지원 자격을 검토하게 되며, 개발직군의 경우 코딩 테스트가 추가로 예정되어 있습니다.</Text>
             <Text>※ 1차 실무진 면접과 2차 경영진 면접은 하루에 모두 진행되며, 자세한 일정은 개별적으로 안내될 예정입니다.</Text>
