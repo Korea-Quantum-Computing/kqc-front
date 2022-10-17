@@ -5,7 +5,8 @@ import {
   HeroBg, 
   VideoBg, 
   HeroContent, 
-  HeroH1, 
+  HeroH1,
+  HeroH2, 
   HeroSP,
 } from './HeroElements';
 
@@ -30,7 +31,7 @@ const HeroSection = () => {
             You need to be embraced to new paradigm and potential of quantum computing.
           </HeroSP>
           <div style = {{display:'flex', justifyContent: 'center', marginTop: '50px'}}>
-            <h2 style = {{color:'#fff', fontWeight: '700'}}>"Out of the lab into the real world"</h2>
+            <HeroH2 style = {{color:'#fff', fontWeight: '700'}}>"Out of the lab into the real world"</HeroH2>
           </div>
         
         

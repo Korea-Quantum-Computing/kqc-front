@@ -9,6 +9,7 @@ import {
   ServicesH1,
   ServicesH2,
   ServicesWrapper,
+  ServiceHeading,
   ServicesCard,
   ServicesIcon,
   ServicesP,
@@ -20,27 +21,14 @@ const Services = () => {
   return (
     <div style = {{display: 'flex', justifyContent: 'center'}}>
       <ServicesContainer id = "services">
+        <ServicesH1>
+          Our Services
+        </ServicesH1>
         <div>
-          <ServicesH1>
-            Our Services
-          </ServicesH1>
-          <div style ={{
-            display: 'flex', 
-            // borderRadius: '20px',
-            justifyContent: 'center', 
-            alignItems: 'center',
-            height: '80px', 
-            width: '1000px', 
-            color: '#fff', 
-            background: '#0b2865', 
-            fontSize: '30px', 
-            fontWeight: '700',
-            // marginLeft: '200px',
-            // marginRight: '200px',
-            marginBottom: '20px'
-          }}>
+          
+          <ServiceHeading>
             KQC as Research-based Company
-          </div>
+          </ServiceHeading>
 
           <ServicesWrapper>
             <ServicesCard >
@@ -51,7 +39,6 @@ const Services = () => {
                 As a research-based Company, we colloaborate on go-to market research projects with our members
                 </ServicesP>
               </div>
-
               <BtnWrap>
               <NavBtn>
                 <NavBtnLink to = "/membership">More Info</NavBtnLink>

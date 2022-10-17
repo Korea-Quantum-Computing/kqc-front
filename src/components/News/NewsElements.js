@@ -12,6 +12,7 @@ export const Container = styled.div`
   right: 0;
   z-index: 0;
   overflow: hidden;
+  max-width: 1000px;
 `;
 
 export const Wrap = styled.div`
@@ -65,7 +66,10 @@ export const H1 = styled.h1`
   color: #010606;
   font-size: 48px;
   font-weight: bold;
-  text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
+  }
 `;
 
 export const HorizonBar = styled.hr`
@@ -125,4 +129,11 @@ export const ImgBg = styled.img`
   object-fit: cover;
   background: #232a34;
   z-index: 999
+`;
+
+export const ToggleButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 30px;
 `;

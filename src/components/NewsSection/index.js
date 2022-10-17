@@ -9,6 +9,7 @@ import {
   CardWrapper,
   Media,
   MediaWrapper,
+  NewsImage,
   H2,
   Title,
   Date,
@@ -38,13 +39,10 @@ moment.locale('ko');
         </div>
         {
           image && data.img_name !== undefined && (
-          <div style = {{height: '200px', width: '100%', marginBottom: '20px',}}>
-            <img 
-              src = {require(`../../images/media/${data.img_name}`)} 
-              alt = {data.img} 
-              style = {{height: '200px', width: '100%', objectFit: 'cover'}}
-            />
-          </div>
+          <NewsImage 
+            src = {require(`../../images/media/${data.img_name}`)} 
+            alt = {data.img} 
+          />
         )}
         <MediaWrapper>
           <Media>{data.media}</Media>
@@ -107,7 +105,7 @@ const Section = ({
       <Container>
         {
           data.map((d, i) => (
-            <div key = {`div-newsrow-${i}`} style = {{marginBottom: '40px'}}>
+            <div key = {`div-newsrow-${i}`}>
               <NewsRow key = {`newsrow-${i}`} data = {d} image = {image} nCols ={nCols} size = {size}/>
             </div>)
           )

@@ -17,7 +17,7 @@ const Advisory = () => {
     <AdvisorContaner style = {{paddingBottom: '100px'}}>
       {
         advisors.map((a) => (
-          <PeopleCard>
+          <PeopleCard key = {`${a.name}-people`}>
             <div style = {{display: 'flex', alignItems:'center', height: '120px', paddingTop: '20px'}}>
             <Img src = {require(`../../images/people/${a.image}`)}/>
             </div>

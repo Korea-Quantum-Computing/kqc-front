@@ -48,7 +48,7 @@ export const VideoBg = styled.video`
 export const HeroContent = styled.div`
   margin-top: 80px;
   z-index: 3;
-  width: 1000px;
+  max-width: 1000px;
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -77,11 +77,12 @@ export const HeroH2 = styled.h2`
   text-align: left;
   font-weight: bold;
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    text-align: center;
+    font-size: 24px;
   }
 `;
 

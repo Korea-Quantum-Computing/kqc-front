@@ -4,12 +4,15 @@ import {
   Container, 
   Bg,
   VideoBg,
+  ProcessImg,
   Content,
   H1,
+  H2,
+  Desc,
   CardWrapper,
   CardList
 } from './CareersElements';
-import Row from 'react-bootstrap/Row';
+
 import Video from '../../videos/workers.mp4';
 import { 
   Tag, 
@@ -332,44 +335,36 @@ const Career = ({ lightBg, }) => {
       
           <div 
             style ={{
-              display: 'flex', 
-              justifyContent: 'center', 
-              alignItems: 'center', 
-              flexDirection: 'row', 
-              height: '250px', 
-              width: '100%'
+              // display: 'flex', 
+              // justifyContent: 'center', 
+              // alignItems: 'center', 
+              // flexDirection: 'row', 
+              // height: '250px', 
+              // width: '100%'
             }}
           >
-            <div>
-              <h1 style = {{fontSize: '3rem', fontWeight: 'bold', color: '#A6ABAB'}}>Join</h1>
-              <h1 style = {{fontSize: '3rem', fontWeight: 'bold',  color: '#515656'}}>Our</h1>
-              <h1 style = {{fontSize: '3rem', fontWeight: 'bold',  color: '#10606'}}>Team</h1>
+            <div style = {{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '30px'}}>
+              <H2 style = {{color: '#A6ABAB', marginRight: '10px'}}>Join</H2>
+              <H2 style = {{color: '#515656', marginRight: '10px'}}>Our</H2>
+              <H2 style = {{color: '#10606'}}>Team</H2>
             </div>
             
-            <div style = {{display: 'flex', justifyContent: 'center', width: '100%'}}>
-              <Row style ={{display: 'flex', justifyContent: 'center', width: '850px', paddingTop: '20px', paddingBottom: '20px', fontWeight: 'bold', fontSize: '0.9rem', lineHeight: '.7'}}>
-                <p>
-                  전 세계적으로 많은 정부 기관과 회사들이 양자컴퓨터를 연구하고 있습니다. 
-                </p>
-                <p> 
-                  양자 컴퓨터는 현재의 컴퓨터와는 전혀 다른 원리로 동작하는 컴퓨터로, 양자 컴퓨터를 위한 소프트웨어 개발이 필수적입니다. 
-                </p>
+            <div style = {{width: '100%'}}>
+              <Desc >
+
                 <p>   
                   양자컴퓨터는 현재의 수퍼컴퓨터를 단숨에 뛰어넘을 Computing 분야의 game changer로 알려져 있습니다.
                 </p>
-                <p>   
-                  모든 산업 영역에서 고전 컴퓨터가 풀지 못하는 문제들을 해결할 양자컴퓨터는 미래 경쟁력의 핵심 중 하나가 될 것으로 전망됩니다. 
+                <p> 
+                  양자 컴퓨터는 현재의 컴퓨터와는 전혀 다른 원리로 동작하는 컴퓨터로, 양자 컴퓨터를 위한 소프트웨어 개발이 필수적입니다. 
                 </p>
                 <p>                     
                   KQC는 양자컴퓨팅을 연구/개발/상용화를 목적으로 설립 되어, 국내 최초 IBM과 양자컴퓨팅 허브 운영 및 기술도입 계약을 체결한 기업입니다. 
                 </p>
                 <p>    
-                  양자 컴퓨팅을 활용한 국제 경쟁력을 확보할 수 있도록 교육 서비스, 기업 컨설팅 서비스를 제공할 예정입니다. 
-                </p>
-                <p>    
                   곧 마주하게 될 양자컴퓨팅 시대, Quantum-readiness를 위해 열정적으로 업무에 임하실 인재를 모십니다.
                 </p>
-              </Row>
+              </Desc>
             </div>
           </div>
           <CardList>
@@ -390,8 +385,8 @@ const Career = ({ lightBg, }) => {
 
             <Text textSize = 'title' textWeight = '600'>채용 절차</Text>
             
-            <div style = {{display: 'flex',height: '150px', width: '100%', marginTop: '40px', marginBottom: '20px', justifyContent: 'center'}}>
-              <img tyle = {{ height: '60px'}} src = {require('../../images/recruiting_process.png')} alt = 'recruiting'/>
+            <div style = {{width: '100%',}}>
+              <ProcessImg src = {require('../../images/recruiting_process.png')} alt = 'recruiting'/>
             </div>
             <Text>※ 이력서 및 추가 서류( 포트폴리오,  GitHub url등 )를 토대로 지원 자격을 검토하게 되며, 개발직군의 경우 코딩 테스트가 추가로 예정되어 있습니다.</Text>
             <Text>※ 1차 실무진 면접과 2차 경영진 면접은 하루에 모두 진행되며, 자세한 일정은 개별적으로 안내될 예정입니다.</Text>

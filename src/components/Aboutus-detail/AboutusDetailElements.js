@@ -242,15 +242,17 @@ export const Img = styled.img`
 
 export const CardBody = styled.div`
   margin-top: 10px;
-  color: #888;
+  color: #222;
   font-size: 0.4em;
+  padding-left: 5px;
+  padding-right: 5px;
   font-weight: 400;
   line-height: .9;
 `;
 
 export const CardDesc = styled.div`
   margin-top: 20px;
-  color: #222;
+  color: #555;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 0.3em;
