@@ -11,13 +11,14 @@ const Tabs = () => {
     const [activeTab, setActiveTab] = useState("tab1");
     return (
       <>
+      <div style = {{width: '100%'}}>
        <Tab>
           <Nav>
             <TabNavItem title="About us" id="tab1" activeTab={activeTab} setActiveTab={setActiveTab}/>
             <TabNavItem title="Advisory" id="tab2" activeTab={activeTab} setActiveTab={setActiveTab}/>
           </Nav>
   
-          <div className="outlet" style = {{minHeight: '500px'}}>
+          <div className="outlet" style = {{minHeight: '200px'}}>
             <TabContent id="tab1" activeTab={activeTab}>
               <AboutUs/>
             </TabContent>
@@ -26,6 +27,7 @@ const Tabs = () => {
             </TabContent>
           </div>
       </Tab>
+      </div>
       </>
     );
   };

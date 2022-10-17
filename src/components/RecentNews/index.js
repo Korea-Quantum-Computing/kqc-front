@@ -16,7 +16,7 @@ const RecentNews = ( {name }) => {
   return (
     <>
     <div style = {{display: 'flex', justifyContent: 'center', width: '100%', background: '#f7f8fa'}}>
-      <NewsContainer id = 'resources'>
+      <NewsContainer id = 'news'>
         <NewsHead>
           Recent News
         </NewsHead>

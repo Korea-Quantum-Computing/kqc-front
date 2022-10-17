@@ -46,7 +46,7 @@ const BG = styled.div`
 export const ImgBg = styled.img`
   object-fit: fill;
   z-index: 999;
-  max-width: 900px;
+  max-width: 1000px;
 
   @media screen and (max-width: 480px) {
     max-width: 400px;
@@ -122,6 +122,12 @@ const MemberShipPage = () => {
       <BG style = {{width: '100%', display: 'flex', justifyContent: 'center'}}>
         <ImgBg src = { bg } alter = 'bg' />
       </BG>
+      <div style = {{marginTop: '40px'}}>
+        <H1>Expected mile stones</H1> 
+      </div>
+      <div style = {{display: 'flex', justifyContent: 'center', height: '500px'}}>
+        <img src = {require('../images/kqc-milestones.png')} alt = 'milestones'/>
+    </div>
     </div>
   </Container>
       

@@ -1,14 +1,22 @@
+import { MissionPanel, MissionImg, TargetImg, MissionHeader } from './AboutusDetailElements';
+
 const AboutUs = () => {
 
   return (
     <>
-    <h2 style = {{fontWeight: 'bold', color: '#010606', marginTop: '30px'}}>Mission</h2>
-    <div style = {{display: 'flex', justifyContent: 'center', height: '500px'}}>
-        <img src = {require('../../images/kqc-mission-vision.png')} alt = 'mission-vision'/>
+    <MissionHeader>Mission</MissionHeader> 
+    <div style = {{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+
+    
+    <MissionPanel>
+        <MissionImg src = {require('../../images/education.png')} alt = 'education'/>
+        <MissionImg src = {require('../../images/research.png')} alt = 'research'/>
+        <MissionImg src = {require('../../images/access.png')} alt = 'acccess'/>
+    </MissionPanel>
+    <TargetImg src = {require('../../images/target.png')} alt = 'target'/>
     </div>
-    <h2 style = {{fontWeight: 'bold', color: '#010606',  marginTop: '30px'}}>Member Benefits</h2>
-    <div style = {{display: 'flex', justifyContent: 'center', height: '500px'}}>
-        <img src = {require('../../images/kqc-milestones.png')} alt = 'milestones'/>
+    <div>
+      
     </div>
     </>
   )
