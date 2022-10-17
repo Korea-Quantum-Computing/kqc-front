@@ -1,18 +1,47 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const Container = styled.div`
-  // display: flex;
-  // flex-direction: column;
-  height: 800;
+export const NewsContainer = styled.div`
+  min-height: 600px;
+  width: 100%;
   background: #fff;
   overflow-y: scroll;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
   overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    min-height: 1100px;
+  }
 `;
+
+export const BtnWrap = styled.div`
+  max-width: 1000px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: start;
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
+
+`;
+
+export const NewsHead = styled.div`
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: start;
+
+  @media screen and (max-width: 480px) {
+    margin-top: 40px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+`;
+
 
 export const Wrap = styled.div`
     height: 100%;
@@ -20,7 +49,7 @@ export const Wrap = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 480px) {
       height: 80%;
     }
 `;

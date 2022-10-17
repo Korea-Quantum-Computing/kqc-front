@@ -7,7 +7,7 @@ export const AboutusContainer = styled.div`
   justify-content: center;
   // align-items: center;
   padding: 0 30px;
-  height: 1800px;
+  min-height: 900px;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -49,8 +49,8 @@ export const VideoBg = styled.video`
 
 export const AboutusContent = styled.div`
   z-index: 3;
-  width: 1000px;
-  height: 800px;
+  max-width: 1000px;
+  min-height: 800px;
   position: relative;
   align-items: start;
 `;
@@ -135,17 +135,13 @@ export const AboutusSP = styled.p`
 `;
 
 export const Tab = styled.div`
-    width: 100%;
+    max-width: 1000px;
     height: auto;
-    min-height: 400px;
+    min-height: 100px;
     background: #fff;
-    // margin: 3.5rem auto 1.5rem;
-    // padding: 2rem 1rem;
     color: #E8F0F2;
-    // border-radius: 2rem;
-
-    @media screen and (max-width: 769px) {
-     padding: 2rem 0;
+    @media screen and (max-width: 480px) {
+      max-width: 480px;
     }
 `;
 
@@ -153,17 +149,17 @@ export const Tab = styled.div`
 /* Tab Navigation */
 export const Nav = styled.div`
   width: 100%;
-  // margin: 0 auto 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // justify-content: space-between;
+  justify-content: space-between;
   background: #010606;
-  // border: 2px solid #39A2DB;
-  // border-radius: 2rem;
   padding-left: 0px;
 
   @media screen and (max-width: 768px) {
-    width: 90%;
+    // width: 90%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
   }
 `;
 
@@ -202,9 +198,13 @@ export const Content = styled.div`
 export const AdvisorContaner = styled.div`
   margin-top: 50px;
   display: grid;
-  height: 850px;
+  min-height: 850px;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 
 `;
 //${({nCols}) => (`repeat(${nCols}, 1fr)`)};
@@ -242,15 +242,17 @@ export const Img = styled.img`
 
 export const CardBody = styled.div`
   margin-top: 10px;
-  color: #888;
+  color: #222;
   font-size: 0.4em;
+  padding-left: 5px;
+  padding-right: 5px;
   font-weight: 400;
   line-height: .9;
 `;
 
 export const CardDesc = styled.div`
   margin-top: 20px;
-  color: #222;
+  color: #555;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 0.3em;
@@ -259,3 +261,77 @@ export const CardDesc = styled.div`
 `;
 
 
+export const TimeLine = styled.div`
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+`;
+
+export const TimeLineImg = styled.img`
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+`;
+
+export const MissionPanel = styled.div`
+  display: grid;
+  // max-width: 1000px;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-gap: 30px;
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+`;
+
+export const MissionHeader = styled.h2`
+  font-weight: bold;
+  color: #010606;
+  margin-top: 100px;
+  font-size: 32px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+`;
+
+export const MissionImg = styled.img`
+  max-width: 300px;
+  max-height: 200px;
+  @media screen and (max-width: 480px) {
+    max-width: 200px;
+    max-height: 120px;
+  }
+
+`;
+
+export const TargetImg = styled.img`
+  max-height: 150px;
+  margin-bottom: 50px;
+  @media screen and (max-width: 480px) {
+    max-height: 100px;
+    margin-bottom: 30px;
+  }
+`;

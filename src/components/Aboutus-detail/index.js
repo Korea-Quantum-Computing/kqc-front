@@ -7,6 +7,8 @@ import {
   Bg,
   VideoBg,
   Icon,
+  TimeLine,
+  TimeLineImg,
  } from './AboutusDetailElements';
 
  import Video from '../../videos/video_office.mp4';
@@ -18,18 +20,16 @@ const AboutusDetail = () => {
     <>
      <AboutusContainer id = "aboutus-detail">
       <AboutusContent>
-        <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
+        <div style ={{display: 'flex', justifyContent: 'start', width: '100%', height: '80px'}}>
           <Icon to="/" >
             <img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo.svg').default} alt = 'kqc-logo'/>
             KQC
           </Icon> 
         </div>
-        <div style = {{color: 'white', height: '400px', display: 'flex', alignItems: 'center'}}>
-          <div style = {{color: 'white', width: '100%'}}>
-            <img style = {{width: '100%'}} src = {require('../../images/kqc-history-small.png')} alt = 'kqc-history'/>
-          </div>
-        </div>
-        <div style = {{background: 'red', minHeight: '600px'}}>
+        <TimeLine>
+            <TimeLineImg  src = {require('../../images/kqc-history-small.png')} alt = 'kqc-history'/>
+        </TimeLine>
+        <div style = {{display: 'flex', justifyContent: 'center', minHeight: '100px'}}>
           <Tabs/>
         </div>
         
@@ -37,9 +37,6 @@ const AboutusDetail = () => {
       <Bg>
         <VideoBg autoPlay loop muted src = {Video} type = 'video/mp4'/>
       </Bg>
-      <div>
-      
-      </div>
     </AboutusContainer>
       
     </>

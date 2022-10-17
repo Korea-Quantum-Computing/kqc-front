@@ -4,16 +4,17 @@ import {
   MembersWrapper, 
   MembersTitle,
   MembersLink,
-  MemberIcon
+  MemberIcon,
+  BtnWrap
 } from './MembersElements';
 
-import { Button, BtnWrap } from '../Aboutus/AboutusElements';
+import { Button } from '../Aboutus/AboutusElements';
 import baobab from '../../images/baobab.png';
 // import hanwha from '../../images/hanwha.png';
-import ibm from '../../images/logo_ibm.png';
-import hines from '../../images/hines.png';
-import busan from '../../images/busan.png';
-import dongseoUniv from '../../images/dongseoUniv.png';
+import ibm from '../../images/members/ibm-logo.png';
+import hines from '../../images/members/hines-logo.png';
+import busan from '../../images/members/busan-logo.png';
+import dongseoUniv from '../../images/members/dongseo-logo.png';
 
 const MembersSection = ({ lightBg, }) => {
 
@@ -21,50 +22,53 @@ const MembersSection = ({ lightBg, }) => {
     <>
     <div style = {{display: 'flex', justifyContent: 'center', width: '100%', background: '#f7f8fa'}}>
       <MembersContainer lightBg = {lightBg} id = 'members'>
-          <MembersWrapper>
-            <MembersTitle style = {{marginTop: '100px'}}>
-              Partners
-            </MembersTitle>
-            <MembersLink style = {{marginTop: '-160px'}}>
-              < a href="https://www.ibm.com/quantum" target="_blank" rel="noreferrer">
-                <MemberIcon name = "IBM" src = {ibm} width = {200} height = {100} ></MemberIcon>
-              </a>
-              < a href="https://www.busan.go.kr/index" target="_blank" rel="noreferrer">
-                <MemberIcon style = {{marginLeft: '-20px', marginTop: '-12px', marginRight: '-20px'}} name = "Busan" src = {busan} width = {350} height = {350}></MemberIcon>
-              </a>
-              
-              < a href="https://www.dongseo.ac.kr/kr/" target="_blank" rel="noreferrer">
-                <MemberIcon name = "DongseoUniv" src = {dongseoUniv} width = {330} height = {90}></MemberIcon>
-              </a>
-              < a href="https://www.hines.com" target="_blank" rel="noreferrer">
-              <MemberIcon style = {{marginTop: '1px'}} name = "Heins" src = {hines} width = {200} height = {200}></MemberIcon>
-              </a>
-            </MembersLink>
-            <MembersTitle style = {{marginTop: '-70px'}}>
-              Members
-            </MembersTitle>
-            <MembersLink style ={{marginTop: '-70px'}}>
-            
-            <a href="http://www.baobabaibio.com/" target="_blank" rel="noreferrer">
-              <MemberIcon name = "BaobabAiBio" src = {baobab}  width = {300} height = {120}></MemberIcon>
-            </a>
+        <MembersTitle style = {{marginTop: '100px'}}>
+          Partners
+        </MembersTitle>
+        <div style = {{display: 'flex', justifyContent: 'start'}}>
 
-            {/* <a href="" target="_blank" rel="noreferrer"> 
-              <MemberIcon name = "Hanhwa" src = {hanwha} width = {300} height = {100}></MemberIcon>
-            </a> */}
-            </MembersLink>
-            <div style ={{marginTop: '40px'}}>
-                  <BtnWrap>
-                    <Button 
-                      href = '/membership'
-                      primary = { 1}
-                      dark = { 0 }
-                      dark_2 = { 1 }  
-                    >More detail</Button>
-                  </BtnWrap>
-                </div>
-          </MembersWrapper>
-        </MembersContainer>
+        <MembersWrapper>
+          
+          <MembersLink>
+            < a href="https://www.ibm.com/quantum" target="_blank" rel="noreferrer">
+              <MemberIcon name = "IBM" src = {ibm} ></MemberIcon>
+            </a>
+            < a href="https://www.busan.go.kr/index" target="_blank" rel="noreferrer">
+              <MemberIcon style = {{}} name = "Busan" src = {busan} ></MemberIcon>
+            </a>
+            
+            < a href="https://www.dongseo.ac.kr/kr/" target="_blank" rel="noreferrer">
+              <MemberIcon name = "DongseoUniv" src = {dongseoUniv}></MemberIcon>
+            </a>
+            < a href="https://www.hines.com" target="_blank" rel="noreferrer">
+            <MemberIcon name = "Heins" src = {hines}></MemberIcon>
+            </a>
+          </MembersLink>
+        </MembersWrapper>
+</div>
+        <MembersTitle>
+          Members
+        </MembersTitle>
+        <MembersWrapper>
+          <MembersLink>
+            <a href="http://www.baobabaibio.com/" target="_blank" rel="noreferrer">
+              <MemberIcon name = "BaobabAiBio" src = {baobab} height = {100}></MemberIcon>
+            </a>
+          </MembersLink>
+        </MembersWrapper>
+        <div style = {{width: '100%'}}>
+          <div style ={{width: '100%', marginTop: '40px'}}>
+            <BtnWrap>
+              <Button 
+                href = '/membership'
+                primary = { 1}
+                dark = { 0 }
+                dark_2 = { 1 }  
+              >More detail</Button>
+            </BtnWrap>
+          </div>
+        </div>
+      </MembersContainer>
     </div>
       
     </>

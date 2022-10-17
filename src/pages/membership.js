@@ -37,20 +37,25 @@ const BG = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  width: 1000px;
-  min-height: 500px;
+  max-width: 1000px;
+  // min-height: 500px;
   overflow: hidden;
   z-index: -1
 `;
 
 export const ImgBg = styled.img`
   object-fit: fill;
-  z-index: 999
+  z-index: 999;
+  max-width: 1000px;
+
+  @media screen and (max-width: 480px) {
+    max-width: 400px;
+  }
 `;
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 1500px;
+  min-height: 800px;
   background: #f7f8fa;
   bottom: 0;
   left: 0;
@@ -59,6 +64,26 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
+const H1 = styled.h1`
+  font-size: 2.5rem; 
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 480px) {
+    margin-top: 40px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+`;
+
+// display: flex;
+// justify-content: center;
+// margin-bottom: 20px;
+
+
 const MemberShipPage = () => {
 
   return (
@@ -66,16 +91,16 @@ const MemberShipPage = () => {
     <ScrollToTop />
     <div style ={{display: 'flex', justifyContent: 'center', background: '#f7f8fa'}}>
       
-    <Container style = {{width: '1000px'}}>
+    <Container style = {{maxWidth: '1000px'}}>
       
     <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
       <Icon to="/" ><img style = {{marginRight: '-10px'}} src = {require('../images/kqc-logo-blue.svg').default} alter = 'kqc-logo'></img>KQC</Icon> 
     </div>
-    <div style ={{display: 'flex', justifyContent: 'center', flexDirection: 'column', marginTop: '70px', height: '1000px', width: '100%'}}>
-      <h1 style = {{fontSize: '2.5rem', fontWeight: 'bold', marginTop: '30px'}}>Prepare Quantum Era with KQC</h1>
-      <div style = {{display: 'flex', justifyContent: 'center', marginTop: '50px', width: '100%'}}>
-        <Row style ={{display: 'flex', justifyContent: 'center', width: '950px'}}>
-          <Col style ={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}} md = {8}>
+    <div style ={{minHeight: '1000px', width: '100%'}}>
+      <H1>Prepare Quantum Era with KQC</H1>
+      <div style = {{display: 'flex', justifyContent: 'center', width: '100%'}}>
+        <Row style ={{display: 'flex', justifyContent: 'center', maxWidth: '1000px'}}>
+          <Col style ={{display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '20px'}} md = {8}>
             <p>
               The risk of doing nothing is far greater than the cost of being the first mover.
             </p>
@@ -92,11 +117,17 @@ const MemberShipPage = () => {
         </Row>
       </div>
       <div style = {{marginTop: '40px'}}>
-        <h1 style = {{fontSize: '2.5rem', fontWeight: 'bold'}}>Membership Benefits</h1> 
+        <H1>Membership Benefits</H1> 
       </div>
-      <BG style = {{width: '100%', marginTop: '30px', display: 'flex', justifyContent: 'center'}}>
-        <ImgBg style = {{width: '800px'}} src = { bg } alter = 'bg' />
+      <BG style = {{width: '100%', display: 'flex', justifyContent: 'center'}}>
+        <ImgBg src = { bg } alter = 'bg' />
       </BG>
+      <div style = {{marginTop: '40px'}}>
+        <H1>Expected mile stones</H1> 
+      </div>
+      <div style = {{display: 'flex', justifyContent: 'center', height: '500px'}}>
+        <img src = {require('../images/kqc-milestones.png')} alt = 'milestones'/>
+    </div>
     </div>
   </Container>
       

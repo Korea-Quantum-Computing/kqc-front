@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HeroSection from '../components/HeroSection';
 import { aboutusObj } from "../components/Aboutus/Data";
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <Navbar toggle = {toggle}/>
-      {/* <Sidebar isOpen = {isOpen} toggle = {toggle}/> */}
+      <Sidebar isOpen = {isOpen} toggle = {toggle}/>
       <HeroSection />
       <AboutusSection {...aboutusObj}/>
       <Services /> 

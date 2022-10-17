@@ -4,6 +4,7 @@ import {
   H1,
   HorizonBar,
   Container,
+  ToggleButtonWrapper
 } from './NewsElements';
 
 import NewsSection from "../NewsSection";
@@ -34,21 +35,25 @@ const News = ( {name }) => {
   return (
     <>
     <div style ={{display: 'flex', justifyContent: 'center'}}>
-    <Container style = {{width: '1000px'}}>
-        <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
-        <IconKQC to="/"><img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo-blue.svg').default} alter = 'kqc-logo'/>KQC</IconKQC> 
-        </div>
-        <H1>Latest in Quantum World</H1>
+    <Container>
+      <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
+        <IconKQC to="/">
+          <img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo-blue.svg').default} alter = 'kqc-logo'/>
+          KQC
+        </IconKQC> 
+      </div>
 
-        <div style = {{display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', marginTop: '30px'}}>
-          <ToggleButton setter = {setFilterOption}/>
-        </div>
-        <HorizonBar/>
-        <div style = {{display: 'flex', width: '1000', justifyContent: 'center', marginTop: '20px'}}>
-          {
-             <NewsSection nRows = {10} nCols = {2} data = {filteredArticles} image = { true }/>
-          }
-        </div>
+      <H1>Latest in Quantum World</H1>
+
+      <ToggleButtonWrapper>
+        <ToggleButton setter = {setFilterOption}/>
+      </ToggleButtonWrapper>
+      <HorizonBar/>
+      <div style = {{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
+        {
+            <NewsSection nRows = {10} nCols = {2} data = {filteredArticles} image = { true }/>
+        }
+      </div>
       </Container>
     </div>
       

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Button , BtnWrap } from '../../components/Aboutus/AboutusElements';
+import { Button ,  } from '../../components/Aboutus/AboutusElements';
 import NewsSection from "../../components/NewsSection";
 import moment from 'moment';
 import { articles as articleList} from '../../data/articles';
-
+import { NewsContainer, BtnWrap, NewsHead } from './NewsElements';
 
 
 const RecentNews = ( {name }) => {
@@ -15,12 +15,15 @@ const RecentNews = ( {name }) => {
 
   return (
     <>
-      <div id = 'resources' style = {{width: '100%', height: '600px', display: 'flex', justifyContent: 'center',}}>
-        < div style = {{width: '1000px'}}>
-            <h1 style = {{fontSize: '2.5rem', fontWeight: 700, marginTop: '100px', marginBottom: '50px'}}>Recent News</h1>
+    <div style = {{display: 'flex', justifyContent: 'center', width: '100%', background: '#f7f8fa'}}>
+      <NewsContainer id = 'news'>
+        <NewsHead>
+          Recent News
+        </NewsHead>
+          <div style = {{display: 'flex', justifyContent: 'center'}}>
           <NewsSection nRows = {1} nCols = {3} data = {articles} image = {false} size = {'small'} />
-          <div style = {{width: '1000px', marginTop: '30px', display: 'flex', justifyContent: 'center'}}>
-            <BtnWrap>
+          </div>
+          <BtnWrap>
               <Button 
                 href = '/news'
                 primary = {1}
@@ -29,9 +32,8 @@ const RecentNews = ( {name }) => {
               >
                 Read More
               </Button>
-            </BtnWrap>
-          </div>         
-        </div>
+            </BtnWrap>        
+      </NewsContainer>
       </div>
     </>
   )

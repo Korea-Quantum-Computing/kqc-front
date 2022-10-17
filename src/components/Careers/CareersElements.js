@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import Row from 'react-bootstrap/Row';
 
 export const Container = styled.div`
   background: #0c0c0c;
@@ -30,7 +31,7 @@ export const Bg = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
+  max-width: 100%;
   height: 250px;
   overflow: hidden;
 `;
@@ -45,9 +46,35 @@ export const H1 = styled.h1`
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 28px;
   }
 `;
+
+export const H2 = styled.h2`
+  font-size: 3rem;
+  font-weight: bold;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
+  }
+`;
+
+export const Desc = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  max-width: 850px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 1.2;
+`;
+
 
 export const VideoBg = styled.video`
   with: 100%;
@@ -59,7 +86,7 @@ export const VideoBg = styled.video`
   transform: scale(3.5);
 
   @media screen and (max-width: 480px) {
-    transform: scale(3.0);
+    transform: scale(2.0);
   }
 `;
 
@@ -90,7 +117,7 @@ export const Icon = styled(Link)`
 export const Content = styled.div`
   margin-top: 80px;
   z-index: 3;
-  width: 1000px;
+  max-width: 1000px;
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -123,4 +150,19 @@ export const CardList = styled.div`
     grid-gap: 30px;
     list-style: none;
     text-align: center;
+
+  @media screen and (max-width: 480px){
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const ProcessImg = styled.img`
+  height: 150px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 480px) {
+    height: 60px;
+  }
 `;

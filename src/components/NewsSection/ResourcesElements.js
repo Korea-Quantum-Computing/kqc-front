@@ -2,16 +2,18 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   color: #fff;
-  width: 1000px;
+  max-width: 1000px;
   background: '#fff';
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+  }
+
+  @media screen and (max-width: 480px) {
   }
 `;
 
 export const Wrapper = styled.div`
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: ${({nCols}) => (`repeat(${nCols}, 1fr)`)};
@@ -26,6 +28,10 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
+  }
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -110,9 +116,15 @@ export const CardWrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  height: ${({image}) => (image === true ? '500px': '300px')};
-  max-width: 500px;
+  height: ${({image}) => (image === true ? '500px': '250px')};
+  max-width: 400px;
+  
   padding: 0px;
+
+  @media screen and (max-width: 480px) {
+    max-width: 300px;
+    height: ${({image}) => (image === true ? '380px': '250px')};
+  }
 
   &:hover {
     cursor: pointer; 
@@ -128,15 +140,16 @@ export const Icon = styled.img`
 export const Media = styled.h1`
   display: flex;
   justify-content: center;
-  font-size: ${({size}) => (size === 'small' ? '1.4rem': '1.8rem')};
+  font-size: ${({size}) => (size === 'small' ? '1.2rem': '1.6rem')};
   font-weight: 700;
   color: #010606;
   bottom: 0;
   top: 0;
   // margin-bottom: 20px;
 
-  @media screen and (max-with: 480px) {
-    font-size: 2rem;
+  @media screen and (max-width: 480px) {
+    font-size: ${({size}) => (size === 'small' ? '1rem': '1.2rem')};
+    color: #010606;
   }
 `;
 
@@ -147,13 +160,12 @@ export const MediaWrapper = styled.div`
   height: 50px;
   width: 100%;
   padding-left: 20px;
-  font-size: ${({size}) => (size === 'small' ? '1.4rem': '1.8rem')};
   font-weight: 700;
   color: #010606;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 
   @media screen and (max-with: 480px) {
-    font-size: 2rem;
+    margin-bottom: 10px;
   }
 `;
 
@@ -171,8 +183,6 @@ export const P = styled.p`
   color: #010606;
   text-align: center;
 `;
-// style = {{height:'100%', display: 'flex', justifyContent: 'flex-end', alignItems: 'end', width: '100%', padding: '20px'}}
-
 
 export const DateWrapper = styled.div`
   height: 30px;
@@ -199,13 +209,32 @@ export const Date = styled.p`
 export const Title = styled.div`
   top: 0;
   bottom: 0;
-  height: 150px;
+  height: 100px;
   padding: 20px;
-  padding-left: 40px;
+  padding-left: 20px;
   width: 100%;
   text-align: left;
   // position: fixed;
   overflow-y: hidden;
   overflow-x: hidden;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 10px;
+    height: 80px;
+  }
+`;
+
+export const NewsImage =styled.img`
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 480px) {
+    pobject-fit: cover;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
 `;
 
