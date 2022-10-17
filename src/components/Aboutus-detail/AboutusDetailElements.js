@@ -193,6 +193,11 @@ export const Content = styled.div`
   text-align: center;
   padding-left: 40px;
   padding-right: 40px;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `;
 
 export const AdvisorContaner = styled.div`
@@ -311,7 +316,7 @@ export const MissionHeader = styled.h2`
   margin-bottom: 40px;
 
   @media screen and (max-width: 480px) {
-    font-size: 28px;
+    font-size: 20px;
     margin-top: 50px;
     margin-bottom: 30px;
   }
@@ -321,8 +326,8 @@ export const MissionImg = styled.img`
   max-width: 300px;
   max-height: 200px;
   @media screen and (max-width: 480px) {
-    max-width: 200px;
-    max-height: 120px;
+    max-width: 350px;
+    max-height: 200px;
   }
 
 `;

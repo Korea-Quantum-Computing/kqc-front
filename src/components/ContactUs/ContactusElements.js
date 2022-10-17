@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 1200px;
+  min-height: 1200px;
   background: #f7f8fa;
   bottom: 0;
   left: 0;
@@ -64,19 +64,29 @@ export const FormH1 = styled.h1`
   margin-top: 20px;
   margin-bottom: 40px;
   color: #010606;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
+    text-align: center;
+  }
 `;
 
 export const FormP = styled.p`
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
   color: #010606;
   font-size: 18px;
   font-weight: 400;
   text-align: left;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    text-align: center;
+  }
 `;
 
 
@@ -130,4 +140,63 @@ export const ImgBg = styled.img`
   object-fit: cover;
   background: #232a34;
   z-index: 999
+`;
+
+export const Desc = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+`;
+
+
+export const FormContainer = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // max-width: 1000px;
+  justify-content: center;
+  margin-top: 10px;
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+
+`;
+
+export const MessageBoxContainer = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  margin-top: 10px;
+
+  @media screen and (max-width: 480px) {
+  }
+
+`;
+
+export const MessageBoxWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  
+  }
+
 `;
