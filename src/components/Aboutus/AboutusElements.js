@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom';
 
 export const AboutusContainer = styled.div`
   color: #fff;
@@ -160,7 +161,7 @@ export const BtnWrap = styled.div`
   justify-content: flex-start;
 `;
 
-export const Button = styled.a`
+export const Button = styled(Link)`
   border-radius: 50px;
   background: ${({primary}) => (primary ? '#0b2865': '#555')};
   white-space: nowrap;
