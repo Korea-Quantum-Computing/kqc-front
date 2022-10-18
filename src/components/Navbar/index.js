@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 
-import { Nav, NavbarContainer, NavLogo, Logo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, Logo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, LanguageButton } from './NavbarElements';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = ({ toggle }) => {
 
   const [scrollNav, setScrollNav] = useState(false)
-
+  const [english, setEnglish] = useState(true)
   const changeNav = () => {
     if(window.scrollY >= 80) {
       setScrollNav(true);
@@ -16,14 +17,25 @@ const Navbar = ({ toggle }) => {
     }
   }
 
+  const {  i18n } = useTranslation();
+  
   useEffect(() => {
-    window.addEventListener('scroll', changeNav)
-  })
+    window.addEventListener('scroll', changeNav);
+    i18n.changeLanguage(english=== true ? 'en' : 'ko');
+  }, [english])
 
   const toggleHome = () => {
     scroll.scrollToTop();
   };
 
+  
+
+  const changeLanguage = () => {
+    setEnglish(!english);
+    
+  };
+
+  console.log('english = ', english)
   return (
     <>
       <Nav scrollNav = {scrollNav}>
@@ -90,9 +102,21 @@ const Navbar = ({ toggle }) => {
             </NavLinks>
             </NavItem>
             
+            <div>
+          <div>
+            
+          </div>
 
+      </div>
           </NavMenu>
           <div style ={{width: '100%', display: 'flex', justifyContent: 'flex-end'}}>
+            <NavBtn>
+              <LanguageButton onClick={() => changeLanguage("ko")}>
+                {english === true ? `EN`: `KO`}
+                <img src = {english === true ? `../../images/united-states.png`: `../../images/south-korea.png`}/>
+              </LanguageButton>
+            </NavBtn>
+
             <NavBtn>
               <NavBtnLink to = "/contactus">Contact</NavBtnLink>
             </NavBtn>

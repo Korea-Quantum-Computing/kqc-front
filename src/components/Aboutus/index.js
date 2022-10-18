@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { 
   AboutusContainer, 
@@ -34,6 +35,8 @@ const AboutusSection = ({
     dark_2,
   }) => {
 
+    const {  t } = useTranslation();
+
   return (
     <>
       <AboutusContainer lightBg = {lightBg} id = {id}>
@@ -43,7 +46,7 @@ const AboutusSection = ({
             <Column1>
             <TextWrapper>
               {/* <TopLine>{topLine}</TopLine> */}
-              <Heading lightText = {lightText}>{headline}</Heading>
+              <Heading lightText = {lightText}>{t(headline)}</Heading>
               <Subtitle darkText = {darkText}>{description_1}</Subtitle>
               <Subtitle darkText = {darkText}>{description_2}</Subtitle>
               <Subtitle darkText = {darkText}>{description_3}</Subtitle>
@@ -65,6 +68,7 @@ const AboutusSection = ({
               </ImgWrap>
             </Column2>
           </AboutusRow>
+         
         </AboutusWrapper>
 
        
