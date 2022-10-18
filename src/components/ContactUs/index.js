@@ -3,7 +3,11 @@ import {
   Icon,
   FormH1,
   FormP,
+  FormContainer,
+  MessageBoxContainer,
+  MessageBoxWrapper,
   Container,
+  Desc,
 } from './ContactusElements';
 
 import emailjs from 'emailjs-com';
@@ -49,16 +53,6 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('=========')
-    console.log(firstName)
-    console.log(lastName)
-    console.log(email)
-    console.log(jobTitle)
-    console.log(institution)
-    console.log(industry)
-    console.log(message)
-    console.log('=========')
-
     const content = {
       from_name: 'KQC-Member-contact',
       to_name: 'KQC-support',
@@ -86,7 +80,10 @@ const ContactUs = () => {
     <div style ={{display: 'flex', justifyContent: 'center'}}>
      <Container style = {{width: '1000px'}}>
         <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
-        <Icon to="/" ><img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo-blue.svg').default}></img>KQC</Icon> 
+        <Icon to="/" >
+          <img style = {{marginRight: '-10px'}} src = {require('../../images/kqc-logo-blue.svg').default} alt='kqc-icon'/>
+          KQC
+        </Icon> 
         </div>
         <FormH1>Contact Us</FormH1>
         <FormP>
@@ -97,11 +94,11 @@ const ContactUs = () => {
         Please fill out the form below so an KQC representative may contact you.
         </FormP>
 
-        <div style = {{display: 'flex', width: '1000', justifyContent: 'center', marginTop: '10px'}}>
-          <div>
-            <div style ={{display: `flex`, flexDirection: `row`, justifyContent: 'center', }}>
-              <div style = {{width: `400px`, marginRight: '50px', lineHeight: '2.5'}}>
-                <Form style = {{fontSize: '14px'}}>
+        <FormContainer>
+          {/* <div> */}
+            <div>
+              <div style = {{lineHeight: '2.5', display: 'flex', justifyContent: 'center'}}>
+                <Form style = {{fontSize: '14px', width: '300px', }}>
                   <Form.Group className="mb-3" controlId="contact-1">
                     <Form.Label style = {{color: '#010606'}}>First Name *</Form.Label>
                     <Form.Control type="text" placeholder="Enter First Name"  onChange = {e => handleFirstNameChange(e)} />
@@ -115,8 +112,10 @@ const ContactUs = () => {
                   </Form.Group>
                 </Form>
               </div>
-              <div style = {{width: `400px`, lineHeight: '2.5'}}>
-                <Form style = {{fontSize: '14px'}}>
+            </div>
+            <div>  
+              <div style = {{lineHeight: '2.5', display: 'flex', justifyContent: 'center'}}>
+                <Form style = {{fontSize: '14px', width: '300px', }}>
                   <Form.Group>
                   <Form.Label style = {{color: '#010606'}}>Job Title</Form.Label>
                     <Form.Control type="text" placeholder="Enter Job Title" onChange = {e => handleJobTitleChange(e)} />
@@ -128,29 +127,36 @@ const ContactUs = () => {
                 </Form>
               </div>
             </div>
-            <p style = {{color:`#fff`, fontSize: `5px`}}>The field indicated with an asterisk(*) are required to complete this transaction: other fields are optional.</p>
+            </FormContainer>
+
             
-            <div style = {{display: 'flex', width: '100%', justifyContent: 'center', marginTop: '10px', marginBottom: '30px'}}>
-              <Form style = {{width: '850px'}}>
-                <Form.Group controlId="exampleForm.ControlTextarea1">
-                  <Form.Label style = {{color: '#010606'}}>Message</Form.Label>
-                  <Form.Control as="textarea" rows={3} style = {{resize: 'none'}} onInput = {e => handleMessageChange(e)}/>
-                </Form.Group>
-              </Form>
-            </div>
+            <MessageBoxContainer>
+            <p style = {{color:`#010606`, fontSize: `5px`, paddingLeft: '20px'}}>The field indicated with an asterisk(*) are required to complete this transaction: other fields are optional.</p>
+              <MessageBoxWrapper>
+                <Form style = {{width: '100%'}}>
+                  <Form.Group controlId="exampleForm.ControlTextarea1">
+                    <Form.Label style = {{color: '#010606'}}>Message</Form.Label>
+                    <Form.Control as="textarea" rows={3} style = {{resize: 'none'}} onInput = {e => handleMessageChange(e)}/>
+                  </Form.Group>
+                </Form>
+              </MessageBoxWrapper>
+            </MessageBoxContainer>
             
+            
+          {/* </div> */}
+        
+          <Desc>
             <p style = {{color:`#010606`, fontSize: `18px`}}>KQC may use my contact data to keep me informed of products, services and offerings :</p>
             <p style = {{color:`#010606`, fontSize: `14px`, paddingLeft: `30px`, marginBottom:`-4px`}}>    ▶ By e-mail</p>
-            <p style = {{color:`#010606`, fontSize: `14px`, paddingLeft: `30px`, marginTop: '10px'}}>    ▶ By phone</p>
-            <p style = {{color:`#010606`, fontSize: `18px`, marginBottom:`0px`}}>By submitting this form, I acknowledge that I have read and understand the KQC Privacy Statement.</p>
+            <p style = {{color:`#010606`, fontSize: `14px`, paddingLeft: `30px`, marginTop: '10px', marginBottom: '20px'}}>    ▶ By phone</p>
+            <p style = {{color:`#010606`, fontSize: `18px`, marginBottom:`20px`}}>By submitting this form, I acknowledge that I have read and understand the KQC Privacy Statement.</p>
             <p style = {{color:`#010606`, fontSize: `18px`}}>I accept the product terms and conditions of this registration form</p>
-            
-            <div style = {{display:`flex`, justifyContent: `center`, marginTop: '30px', marginBottom: '50px'}}>
-              <Button variant = 'dark' onClick = {handleSubmit} >Submit</Button>
-            </div>
+          </Desc>
+          
+          
+          <div style = {{display:`flex`, justifyContent: `center`, marginTop: '30px', marginBottom: '50px'}}>
+            <Button variant = 'dark' onClick = {handleSubmit} >Submit</Button>
           </div>
-        </div>
-
         
       </Container>
     </div>

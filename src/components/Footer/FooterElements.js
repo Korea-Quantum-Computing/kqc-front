@@ -21,7 +21,7 @@ export const FooterWrap = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 800px;
+    min-height: 300px;
   }
 `;
 

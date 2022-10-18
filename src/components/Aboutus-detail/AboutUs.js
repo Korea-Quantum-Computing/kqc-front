@@ -4,7 +4,7 @@ const AboutUs = () => {
 
   return (
     <>
-    <MissionHeader>Mission</MissionHeader> 
+    <MissionHeader>We have three tentpole services</MissionHeader> 
     <div style = {{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 
     
