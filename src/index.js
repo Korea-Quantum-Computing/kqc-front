@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import { Provider as StyletronProvider, DebugEngine } from "styletron-react";
 import { Client as Styletron } from "styletron-engine-atomic";
 
+import "../src/locales/i18n";
+
 const engine = new Styletron();
 const debug =
   process.env.NODE_ENV === "production" ? void 0 : new DebugEngine();

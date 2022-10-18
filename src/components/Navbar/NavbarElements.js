@@ -114,6 +114,21 @@ export const NavBtn = styled.nav`
   }
 `;
 
+
+export const LanguageButton = styled.div`
+  // border-radius: 50px;
+  
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 12px;
+  outline: none;
+  border:none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+`;
+
 export const NavBtnLink = styled(LinkR) `
   border-radius: 50px;
   background: #222222;
