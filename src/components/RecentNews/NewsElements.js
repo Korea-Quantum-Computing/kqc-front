@@ -2,8 +2,12 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NewsContainer = styled.div`
-  min-height: 600px;
+  min-height: 650px;
+  max-width: 1000px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: #fff;
   overflow-y: scroll;
   overflow: hidden;
