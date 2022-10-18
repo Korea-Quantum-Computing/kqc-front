@@ -95,9 +95,8 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
           Location
           </Text>
         </div>
-
         <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
-          부산광역시 해운대구 우2동 센텀중앙로 55, 9층 KQC 오피스
+          Centum Campus, Dongseo University, 9F, Centum jungang-ro 55, Haeundae-gu, Busan, 48058
         </Text>
       </div>
       
@@ -251,16 +250,22 @@ const Career = ({ lightBg, }) => {
               <Desc >
 
                 <p>   
-                  양자컴퓨터는 현재의 수퍼컴퓨터를 단숨에 뛰어넘을 Computing 분야의 game changer로 알려져 있습니다.
+                  Quantum era is not far off.
                 </p>
                 <p> 
-                  양자 컴퓨터는 현재의 컴퓨터와는 전혀 다른 원리로 동작하는 컴퓨터로, 양자 컴퓨터를 위한 소프트웨어 개발이 필수적입니다. 
+                  Quantum computer, the game-changer in computing, are advancing much faster than people expect. 
                 </p>
                 <p>                     
-                  KQC는 양자컴퓨팅을 연구/개발/상용화를 목적으로 설립 되어, 국내 최초 IBM과 양자컴퓨팅 허브 운영 및 기술도입 계약을 체결한 기업입니다. 
+                  KQC is preparing for coming quantum era 
+                </p>
+                <p> 
+                  with the goal of commercializing quantum computing and building an ecosystem in Korea. 
                 </p>
                 <p>    
-                  곧 마주하게 될 양자컴퓨팅 시대, Quantum-readiness를 위해 열정적으로 업무에 임하실 인재를 모십니다.
+                  Now is the time to dive into Quantum journey.
+                </p>
+                <p>    
+                  We are waiting for a pioneer to build the quantum world with KQC in Korea.
                 </p>
               </Desc>
             </div>
@@ -289,7 +294,7 @@ const Career = ({ lightBg, }) => {
             <Text>※ 이력서 및 추가 서류( 포트폴리오,  GitHub url등 )를 토대로 지원 자격을 검토하게 되며, 개발직군의 경우 코딩 테스트가 추가로 예정되어 있습니다.</Text>
             <Text>※ 1차 실무진 면접과 2차 경영진 면접은 하루에 모두 진행되며, 자세한 일정은 개별적으로 안내될 예정입니다.</Text>
             <Text m = {{b: '1.2rem'}}>※ 면접 합격 시 본인 동의 하에 레퍼런스 체크가 진행될 수 있으며, 처우와 입사일 협의 완료 후 최종 합격이 확정됩니다.</Text>
-            <Text textSize = 'subheader' textWeight = '600'>유의 사항</Text>
+            <Text textSize = 'subheader' textWeight = '600'>Caution</Text>
             <Text>※ 입사지원 시 제출하신 내용은 증빙자료 제출 등을 통해 확인하고 있으며, 기재된 내용이 사실과 다를 경우 입사가 취소될 수 있음을 유의하시기 바랍니다.</Text>
           </div>
 
