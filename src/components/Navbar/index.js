@@ -112,8 +112,9 @@ const Navbar = ({ toggle }) => {
           <div style ={{width: '100%', display: 'flex', justifyContent: 'flex-end'}}>
             <NavBtn>
               <LanguageButton onClick={() => changeLanguage("ko")}>
-                {english === true ? `EN`: `KO`}
-                <img src = {english === true ? `../../images/united-states.png`: `../../images/south-korea.png`}/>
+                <img 
+                  style = {{height: '25px', width: '25px'}} 
+                  src = {require(english === true ? `../../images/united-states.png`: `../../images/south-korea.png`)}/>
               </LanguageButton>
             </NavBtn>
 

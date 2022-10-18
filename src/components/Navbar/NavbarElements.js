@@ -116,8 +116,8 @@ export const NavBtn = styled.nav`
 
 
 export const LanguageButton = styled.div`
-  border-radius: 50px;
-  background: #222222;
+  // border-radius: 50px;
+  
   white-space: nowrap;
   padding: 10px 22px;
   color: #fff;
