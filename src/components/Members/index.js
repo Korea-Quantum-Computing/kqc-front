@@ -60,7 +60,7 @@ const MembersSection = ({ lightBg, }) => {
           <div style ={{width: '100%', marginTop: '40px'}}>
             <BtnWrap>
               <Button 
-                href = '/membership'
+                to = '/membership'
                 primary = { 1}
                 dark = { 0 }
                 dark_2 = { 1 }  

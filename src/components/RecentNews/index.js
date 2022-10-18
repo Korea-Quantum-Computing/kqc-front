@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button ,  } from '../../components/Aboutus/AboutusElements';
+import { Button  } from '../../components/Aboutus/AboutusElements';
 import NewsSection from "../../components/NewsSection";
 import moment from 'moment';
 import { articles as articleList} from '../../data/articles';
@@ -25,7 +25,7 @@ const RecentNews = ( {name }) => {
           </div>
           <BtnWrap>
               <Button 
-                href = '/news'
+                to = '/news'
                 primary = {1}
                 dark = {0 }
                 dark_2 = { 1 }  
