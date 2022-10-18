@@ -13,7 +13,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <StyletronProvider value={engine} debug={debug} debugAfterHydration>
-    <App />
+      {/* <App /> */}
+      <div style = {{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <img style = {{height: '300px'}} src = {require('./images/underConstruction.gif')} alt = 'construction'/>
+      </div>
+      
     </StyletronProvider>
     
   </React.StrictMode>
