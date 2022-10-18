@@ -90,7 +90,7 @@ const Navbar = ({ toggle }) => {
     
             <NavItem>
               <NavLinks 
-                to = "resources"
+                to = "news"
                 smooth = { true} 
                 duration = {200} 
                 spy = {true} 
