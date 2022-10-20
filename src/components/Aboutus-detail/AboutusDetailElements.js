@@ -175,13 +175,10 @@ export const NavLi = styled.li`
   font-size: 1.4rem;
   font-weight: bold;
   background: #0b2865;
-  color: #02408f;
+  color: #f7f8fa;
   // border-bottom-left-radius: 2rem;
   // border-top-left-radius: 2rem;
 
-  &:hover {
-    background: rgba(50, 224, 196, 0.15);
-  }
   &.active {
     background: #fff;
     color: #0b2865;

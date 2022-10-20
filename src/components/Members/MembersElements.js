@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const MembersContainer = styled.div`
-  min-height: 700px;
+  min-height: 750px;
   display: flex;
   flex-direction: column;
   // justify-content: start;
@@ -17,6 +17,7 @@ export const MembersContainer = styled.div`
   @media screen and (max-width: 480px) {
     // height: 1300px;
     min-width: 400px;
+    min-height: 500px;
   } 
 `;
 
@@ -26,8 +27,8 @@ export const MembersWrapper = styled.div`
   // height: 8px;
   grid-template-columns: 'repeat(4, 1fr)';
   max-width: 1000px;
-  margin-right: auto;
-  margin-left: auto;
+  // margin-right: auto;
+  // margin-left: auto;
   margin-top: 0;
   padding: 0 24ps;
   justify-content: start;

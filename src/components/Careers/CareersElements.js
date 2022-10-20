@@ -66,12 +66,14 @@ export const Desc = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
   margin-left: 20px;
-  max-width: 850px;
+  max-width: 1000px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-weight: bold;
-  font-size: 0.9rem;
+  font-weight: 400;
+  font-size: 1.1rem;
   line-height: 1.2;
 `;
 

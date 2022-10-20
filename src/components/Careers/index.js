@@ -57,7 +57,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
         </div>
         <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
           {JD.mission && JD.mission.map(m => (
-            <p style = {{lineHeight: '1'}}>{m}</p>
+            <p style = {{lineHeight: '1.2'}}>{m}</p>
           ))}
         </Text>
         <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
@@ -70,7 +70,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
         </div>
         <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
           {JD.requirements_desc && JD.requirements_desc.map(m => (
-            <p style = {{lineHeight: '1'}}>{m}</p>
+            <p style = {{lineHeight: '1.2'}}>{m}</p>
           ))}
         </Text>
         <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
@@ -83,7 +83,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
         </div>
         <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
           {JD.preferred_desc && JD.preferred_desc.map(m => (
-            <p style = {{lineHeight: '1'}}>{m}</p>
+            <p style = {{lineHeight: '1.2'}}>{m}</p>
           ))}
         </Text>
 
@@ -97,7 +97,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
         </div>
 
         <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
-          부산광역시 해운대구 우2동 센텀중앙로 55, 9층 KQC 오피스
+          {JD.location}
         </Text>
       </div>
       
@@ -251,16 +251,19 @@ const Career = ({ lightBg, }) => {
               <Desc >
 
                 <p>   
-                  양자컴퓨터는 현재의 수퍼컴퓨터를 단숨에 뛰어넘을 Computing 분야의 game changer로 알려져 있습니다.
+                  Quantum era is not far off.
                 </p>
                 <p> 
-                  양자 컴퓨터는 현재의 컴퓨터와는 전혀 다른 원리로 동작하는 컴퓨터로, 양자 컴퓨터를 위한 소프트웨어 개발이 필수적입니다. 
+                  Quantum computer, the game-changer in computing, are advancing much faster than people expect.
                 </p>
                 <p>                     
-                  KQC는 양자컴퓨팅을 연구/개발/상용화를 목적으로 설립 되어, 국내 최초 IBM과 양자컴퓨팅 허브 운영 및 기술도입 계약을 체결한 기업입니다. 
+                  KQC is preparing for coming quantum era with the goal of commercializing quantum computing and building an ecosystem in Korea.
                 </p>
                 <p>    
-                  곧 마주하게 될 양자컴퓨팅 시대, Quantum-readiness를 위해 열정적으로 업무에 임하실 인재를 모십니다.
+                  Now is the time to dive into Quantum journey.
+                </p>
+                <p>    
+                  We are waiting for a pioneer to build the quantum world with us in Korea.
                 </p>
               </Desc>
             </div>
