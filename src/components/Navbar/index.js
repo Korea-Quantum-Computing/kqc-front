@@ -110,13 +110,13 @@ const Navbar = ({ toggle }) => {
       </div>
           </NavMenu>
           <div style ={{width: '100%', display: 'flex', justifyContent: 'flex-end'}}>
-            <NavBtn>
+            {/* <NavBtn>
               <LanguageButton onClick={() => changeLanguage("ko")}>
                 <img 
                   style = {{height: '25px', width: '25px'}} 
                   src = {require(english === true ? `../../images/united-states.png`: `../../images/south-korea.png`)}/>
               </LanguageButton>
-            </NavBtn>
+            </NavBtn> */}
 
             <NavBtn>
               <NavBtnLink to = "/contactus">Contact</NavBtnLink>
