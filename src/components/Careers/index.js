@@ -57,7 +57,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
         </div>
         <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
           {JD.mission && JD.mission.map(m => (
-            <p style = {{lineHeight: '1'}}>{m}</p>
+            <p style = {{lineHeight: '1.2'}}>{m}</p>
           ))}
         </Text>
         <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
@@ -70,7 +70,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
         </div>
         <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
           {JD.requirements_desc && JD.requirements_desc.map(m => (
-            <p style = {{lineHeight: '1'}}>{m}</p>
+            <p style = {{lineHeight: '1.2'}}>{m}</p>
           ))}
         </Text>
         <div style = {{display: 'flex', flexDirection: 'row', marginTop: '40px'}}>
@@ -83,7 +83,7 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
         </div>
         <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
           {JD.preferred_desc && JD.preferred_desc.map(m => (
-            <p style = {{lineHeight: '1'}}>{m}</p>
+            <p style = {{lineHeight: '1.2'}}>{m}</p>
           ))}
         </Text>
 
@@ -96,7 +96,11 @@ const AlignCenterModal = ({ JD, isOpen, onClose }) => {
           </Text>
         </div>
         <Text p={{ l: "0.5rem", t: "0.25rem" }} textSize="paragraph">
+<<<<<<< HEAD
           Centum Campus, Dongseo University, 9F, Centum jungang-ro 55, Haeundae-gu, Busan, 48058
+=======
+          {JD.location}
+>>>>>>> 0f4a275cd4872e7795649c4cd550a067b8d8e14b
         </Text>
       </div>
       
@@ -253,6 +257,7 @@ const Career = ({ lightBg, }) => {
                   Quantum era is not far off.
                 </p>
                 <p> 
+<<<<<<< HEAD
                   Quantum computer, the game-changer in computing, are advancing much faster than people expect. 
                 </p>
                 <p>                     
@@ -260,12 +265,22 @@ const Career = ({ lightBg, }) => {
                 </p>
                 <p> 
                   with the goal of commercializing quantum computing and building an ecosystem in Korea. 
+=======
+                  Quantum computer, the game-changer in computing, are advancing much faster than people expect.
+                </p>
+                <p>                     
+                  KQC is preparing for coming quantum era with the goal of commercializing quantum computing and building an ecosystem in Korea.
+>>>>>>> 0f4a275cd4872e7795649c4cd550a067b8d8e14b
                 </p>
                 <p>    
                   Now is the time to dive into Quantum journey.
                 </p>
                 <p>    
+<<<<<<< HEAD
                   We are waiting for a pioneer to build the quantum world with KQC in Korea.
+=======
+                  We are waiting for a pioneer to build the quantum world with us in Korea.
+>>>>>>> 0f4a275cd4872e7795649c4cd550a067b8d8e14b
                 </p>
               </Desc>
             </div>

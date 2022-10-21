@@ -20,16 +20,16 @@ const Button = styled.div`
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: ${({position}) => (position === 'left'? '30px 0px 0px 30px' : position === 'right'? '0px 30px 30px 0px': '0 0 0 0')};
-  background: ${({pressed}) => (pressed? '#000': '#146a4b')};
-  color: ${({pressed}) => (pressed? '#f7f8fa': '#d6dbdc')};
+  background: ${({pressed}) => (pressed? '#0b2865': '#999')};
+  color: ${({pressed}) => (pressed? '#f7f8fa': '#555')};
   padding:10px;
   display: flex;
   justify-content: center;
   align-items: center;
   
-  &:hover {
-      background: #ccc;
-  }
+  // &:hover {
+  //     background: #ccc;
+  // }
 `;
 
 function usePrevious(value) {

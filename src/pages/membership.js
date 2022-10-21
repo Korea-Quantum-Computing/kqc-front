@@ -94,7 +94,12 @@ const MemberShipPage = () => {
     <Container style = {{maxWidth: '1000px'}}>
       
     <div style ={{display: 'flex', justifyContent: 'flex-start', width: '100%', minHeight: '80px',}}>
-      <Icon to="/" ><img style = {{marginRight: '-10px'}} src = {require('../images/kqc-logo-blue.svg').default} alter = 'kqc-logo'></img>KQC</Icon> 
+      <Icon to="/" >
+        <img 
+        style = {{marginRight: '-10px'}} src = {require('../images/kqc-logo-blue.svg').default} 
+        alter = 'kqc-logo'/>
+        KQC
+      </Icon> 
     </div>
     <div style ={{minHeight: '1000px', width: '100%'}}>
       <H1>Prepare Quantum Era with KQC</H1>
@@ -105,14 +110,18 @@ const MemberShipPage = () => {
               The risk of doing nothing is far greater than the cost of being the first mover.
             </p>
             <p>
-              Quantum Technology is advancing faster than you expected And commercially applicable solutions will be available in a few years from now
+              Quantum Technology is advancing faster than you expected and commercially applicable solutions will be available in a few years from now
             </p>
             <p>
              If you are interested in enhancing your quantum readiness or applying quantum technologies to your business, we are always ready to help you.
             </p>
           </Col>
           <Col md = {4}>
-            <img style = {{width: '100%', marginLeft: '-20px'}} src = {require('../images/membership-1.png')} alter = 'membership-1'/>
+            <img 
+              style = {{width: '100%', marginLeft: '-20px'}} 
+              src = {require('../images/goal.png')} 
+              alter = 'membership-1'
+            />
           </Col>
         </Row>
       </div>
@@ -125,8 +134,8 @@ const MemberShipPage = () => {
       <div style = {{marginTop: '40px'}}>
         <H1>Expected mile stones</H1> 
       </div>
-      <div style = {{display: 'flex', justifyContent: 'center', height: '500px'}}>
-        <img src = {require('../images/kqc-milestones.png')} alt = 'milestones'/>
+      <div style = {{display: 'flex', justifyContent: 'center', }}>
+        <ImgBg src = {require('../images/kqc-milestones.png')} alt = 'milestones'/>
     </div>
     </div>
   </Container>
