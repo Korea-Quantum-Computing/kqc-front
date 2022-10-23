@@ -16,7 +16,7 @@ export const aboutusObj = {
     // which will become the center of the IBM Quantum Data center in the near future.',
     buttonLabel: 'Get Started',
     imgStart: false,
-    img: require('../../images/ibm-system-1.webp'),
+    img: require('../../images/sys1illust.png'),
     alt: 'clouding',
     dark: false,
     primary: false,
