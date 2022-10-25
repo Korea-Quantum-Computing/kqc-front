@@ -14,7 +14,7 @@ import baobab from '../../images/members/baobab-logo-150.png';
 import ibm from '../../images/members/ibm-logo-150.png';
 import hines from '../../images/members/hines-logo-150.png';
 import busan from '../../images/members/busan-logo-150.png';
-import etri from '../../images/members/etri-logo-150.webp';
+import etri from '../../images/members/etri-logo-150-fix.webp';
 import ey from '../../images/members/ey-logo-150.png';
 import dongseoUniv from '../../images/members/dongseo-logo-150.png';
 
