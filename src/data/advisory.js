@@ -40,11 +40,19 @@ export const advisors = [
     desc: 'He served as Senior Secretary for Future Strategy of the Blue House and worked as Chief Executeve Officer at SK broadband. He have studied economics of technological innovation.'
    },
    {
+    name: 'Daehyun Baek',
+    title: 'Associated Professor',
+    image: 'Daehyun-Baek.png',
+    company: 'Seoul National University - Department of Biological Sciences',
+    degree: 'PhD (Bioengineering, University of Washington )',
+    desc: 'He is researhcing computational biology and bioinfometric. His main research subject is applying artificial intelligence into transcriptome and proteome data.'
+   },
+   {
     name: 'Young Kwon',
     title: 'Assistant Professor',
     image: 'Young-Kwon.png',
     company: 'University of Washington - Department of Biochemistry',
-    degree: 'PhD (Medicine, Johns Hopkins University)',
+    degree: 'PhD (The Johns Hopkins University School of Medicine)',
     desc: 'He is researching proteomics and functional genomics to study growth and wasting in animal development. He studied at The Johns Hopkins University School of Medicine'
    },
    {
