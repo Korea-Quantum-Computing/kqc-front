@@ -359,5 +359,85 @@ export const articles = [
   "img_name": "2022-10-11-hanku1.jpg",
   "link": "https://www.hankyung.com/it/article/2022101101941",
   "date": "11-10-22"
- }
+ },
+ {
+    "category": "Business",
+    "title": "UK’s Universal Quantum wins €67m quantum computing contract with German government",
+    "media": "Tech Monitor",
+    "img_name": "2022-11-02-tecmo1.jpg",
+    "link": "https://techmonitor.ai/technology/emerging-technology/quantum-computing-germany-universal-quantum",
+    "date": "02-11-22"
+   },
+   {
+    "category": "Tech",
+    "title": "What is Quantum Computing and What Does It Have to Do with Encryption?",
+    "media": "DataCenter Knowledge",
+    "img_name": "General_Software.jpg",
+    "link": "https://www.datacenterknowledge.com/security/what-quantum-computing-and-what-does-it-have-do-encryption",
+    "date": "21-10-22"
+   },
+   {
+    "category": "Tech",
+    "title": "Post-Quantum And Pre-Quantum Security Issues Grow",
+    "media": "Semiconductor Enginnering",
+    "img_name": "General_Hardware.jpg",
+    "link": "https:/semiengineering.com/post-quantum-and-pre-quantum-security-issues-grow/",
+    "date": "03-11-22"
+   },
+   {
+    "category": "Tech",
+    "title": "IBM Study Charts Future of Superconducting-based Quantum Computing",
+    "media": "HPC",
+    "img_name": "2022-10-19-hpc111.jpg",
+    "link": "https:/www.hpcwire.com/2022/10/19/ibm-study-charts-future-of-superconducting-based-quantum-computing/",
+    "date": "19-10-22"
+   },
+   {
+    "category": "Tech",
+    "title": "D-Wave Introduces New Features in Its Constrained Quadratic Model (CQM) Hybrid Solver",
+    "media": "Quantum Computing Report",
+    "img_name": "2022-11-03-qucor1.jpg",
+    "link": "https://quantumcomputingreport.com/d-wave-introduces-new-features-in-its-constrained-quadratic-model-cqm-hybrid-solver/",
+    "date": "03-11-22"
+   },
+   {
+    "category": "Business",
+    "title": "SMR·양자컴 전폭 지원…5년내 美·中 턱밑까지 추격",
+    "media": "한국경제",
+    "img_name": "2022-10-28-hanku1.jpg",
+    "link": "https://www.hankyung.com/it/article/2022102819231",
+    "date": "28-10-22"
+   },
+   {
+    "category": "Business",
+    "title": "KISTI, 국가과학기술연구망 양자암호통신 구축전략 제시",
+    "media": "해럴드경제",
+    "img_name": "2022-11-03-harra1.jpg",
+    "link": "http://news.heraldcorp.com/view.php?ud=20221103000460",
+    "date": "03-11-22"
+   },
+   {
+    "category": "Business",
+    "title": "인류의 삶·산업 바꿀 '양자기술'에 주목하는 '美·中'…두 고래 사이 '한국'이 선택할 길은?",
+    "media": "뉴스웍스",
+    "img_name": "2022-10-31-newwo1.jpg",
+    "link": "https:www.newsworks.co.kr/news/articleView.html?idxno=613460",
+    "date": "31-10-22"
+   },
+   {
+    "category": "Business",
+    "title": "양자대학원 세 곳 설립해 2030년 스페셜리스트 1000명 시대 연다",
+    "media": "조선비즈",
+    "img_name": "2022-10-13-chobi1.jpg",
+    "link": "https://biz.chosun.com/science-chosun/science/2022/10/13/4JHHRGHRZNAM7KLY5XELNTI5FY/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+    "date": "13-10-22"
+   },
+   {
+    "category": "Business",
+    "title": "2600억 달러 양자 컴퓨터 시장 뜬다… 차세대 유망주는 누구",
+    "media": "파이낸셜 뉴스",
+    "img_name": "General_Software.jpg",
+    "link": "https://www.fnnews.com/news/202210201811562612",
+    "date": "20-10-22"
+   }
 ]
