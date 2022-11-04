@@ -40,6 +40,14 @@ export const advisors = [
     desc: 'He served as Senior Secretary for Future Strategy of the Blue House and worked as Chief Executeve Officer at SK broadband. He have studied economics of technological innovation.'
    },
    {
+    name: 'Young Kwon',
+    title: 'Assistant Professor',
+    image: 'Young-Kwon.png',
+    company: 'University of Washington - Department of Biochemistry',
+    degree: 'PhD (Medicine, Johns Hopkins University)',
+    desc: 'He is researching proteomics and functional genomics to study growth and wasting in animal development. He studied at The Johns Hopkins University School of Medicine'
+   },
+   {
     name: 'Daniel Kyungdeock Park',
     title: 'Assistant Professor',
     image: 'Daniel-K-Park.jpg',
