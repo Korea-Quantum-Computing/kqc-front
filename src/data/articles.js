@@ -439,5 +439,69 @@ export const articles = [
     "img_name": "General_Software.jpg",
     "link": "https://www.fnnews.com/news/202210201811562612",
     "date": "20-10-22"
+   }, 
+   {
+    "category": "Tech",
+    "title": "IBM, 433 큐비트 양자 프로세서 ‘오스프리’ 공개",
+    "media": "매일경제",
+    "img_name": "2022-11-10-maeil1.jpg",
+    "link": "https://www.mk.co.kr/news/it/10525392",
+    "date": "10-11-22"
+   },
+   {
+    "category": "Tech",
+    "title": "‘양자컴퓨터로도 못 뚫는 최강 암호, 5년내 상용화할 것’",
+    "media": "매일경제",
+    "img_name": "2022-11-08-maeil1.jpg",
+    "link": "https://www.mk.co.kr/news/it/10521787",
+    "date": "08-11-22"
+   },
+   {
+    "category": "Biz",
+    "title": "KISTI, 국가과학기술연구망 양자암호통신 구축 전략 제언",
+    "media": "보안뉴스",
+    "img_name": "2022-11-04-boan11.jpg",
+    "link": "https://www.boannews.com/media/view.asp?idx=111286&kind=",
+    "date": "04-11-22"
+   },
+   {
+    "category": "Biz",
+    "title": "IBM Unveils New Chip in Push to Realize Quantum Computing’s Promise",
+    "media": "Wall Street Journal",
+    "img_name": "2022-11-09-walsj1.jpg",
+    "link": "https://www.wsj.com/articles/ibm-unveils-new-chip-in-push-to-realize-quantum-computings-promise-11667854695",
+    "date": "09-11-22"
+   },
+   {
+    "category": "Biz",
+    "title": "IBM's latest quantum computing processor triples the qubits of its predecessor",
+    "media": "engadget",
+    "img_name": "2022-11-09-engad1.jpg",
+    "link": "https://www.engadget.com/ibm-quantum-computing-processor-osprey-140042059.html",
+    "date": "09-11-22"
+   },
+   {
+    "category": "Biz",
+    "title": "IBM Unveils 400 Qubit-Plus Quantum Processor and Next-Generation IBM Quantum System Two",
+    "media": "IBM Newsroom",
+    "img_name": "2022-11-09-ibmne1.jpg",
+    "link": "https://newsroom.ibm.com/2022-11-09-IBM-Unveils-400-Qubit-Plus-Quantum-Processor-and-Next-Generation-IBM-Quantum-System-Two",
+    "date": "09-11-22"
+   },
+   {
+    "category": "Biz",
+    "title": "Global Financial Services Quantum Computing Applications Industry Report 2022: Attitudes and Market Evolution, Use Cases, Vendors and Other Considerations",
+    "media": "Benzinga Crypto",
+    "img_name": "General_Software.jpg",
+    "link": "https://www.benzinga.com/markets/cryptocurrency/22/11/29614474/a-potential-game-changer-in-dao-tooling-ink-finance-raises-4m-and-releases-beta-version",
+    "date": "09-11-22"
+   },
+   {
+    "category": "Tech",
+    "title": "How Algorithmiq Hopes To Cure Disease With Quantum Computing",
+    "media": "Forbes",
+    "img_name": "General_Software.jpg",
+    "link": "https://www.forbes.com/sites/davidprosser/2022/11/11/how-algorithmiq-hopes-to-cure-disease-with-quantum-computing/?sh=202fcc8647b0",
+    "date": "11-11-22"
    }
 ]
