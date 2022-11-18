@@ -394,7 +394,7 @@ export const articles = [
    },
    {
     "category": "Tech",
-    "title": "D-Wave Introduces New Features in Its Constrained Quadratic Model (CQM) Hybrid Solver",
+    "title": "D-Wave Introduces New Features in Its Constrained Quadratic Model (CQM) Hybrid Solver",
     "media": "Quantum Computing Report",
     "img_name": "2022-11-03-qucor1.jpg",
     "link": "https://quantumcomputingreport.com/d-wave-introduces-new-features-in-its-constrained-quadratic-model-cqm-hybrid-solver/",
@@ -421,7 +421,7 @@ export const articles = [
     "title": "인류의 삶·산업 바꿀 '양자기술'에 주목하는 '美·中'…두 고래 사이 '한국'이 선택할 길은?",
     "media": "뉴스웍스",
     "img_name": "2022-10-31-newwo1.jpg",
-    "link": "https:www.newsworks.co.kr/news/articleView.html?idxno=613460",
+    "link": "https://www.newsworks.co.kr/news/articleView.html?idxno=613460",
     "date": "31-10-22"
    },
    {
@@ -511,37 +511,37 @@ export const articles = [
     "img_name": "General_Hardware.jpg",
     "link": "https://finance.yahoo.com/news/ionq-announces-third-quarter-2022-210500798.html",
     "date": "15-11-22"
-    },
-    {
+   },
+   {
     "category": "Biz",
     "title": "100 Times Longer Than Previous Benchmarks A Quantum Breakthrough",
     "media": "SciTechDaily",
     "img_name": "2022-11-06-scite1.png",
     "link": "https://scitechdaily.com/100-times-longer-than-previous-benchmarks-a-quantum-breakthrough/",
     "date": "06-11-22"
-    },
-    {
+   },
+   {
     "category": "Tech",
     "title": "Simulations Using a Quantum Computer Show the Technologys Current Limits",
     "media": "physics",
     "img_name": "2022-11-14-physi1.png",
     "link": "https://physics.aps.org/articles/v15/175",
     "date": "14-11-22"
-    },
-    {
+   },
+   {
     "category": "Tech",
     "title": "'양자내성암호는 완전한가' 관련 대표문제 공략 전 과정 증명 이뤄져",
     "media": "전자신문",
     "img_name": "2022-11-16-jeunj1.jpeg",
-    "link": "etnews.com/20221116000120",
+    "link": "https://etnews.com/20221116000120",
     "date": "16-11-22"
-    },
-    {
+   },
+   {
     "category": "Biz",
     "title": "부산시 '양자정보기술 생태계 기반 조성' 전문가 세미나",
     "media": "NEWSIS",
     "img_name": "2022-11-17-newsi1.jpeg",
     "link": "https://newsis.com/view/?id=NISX20221117_0002089387&cID=10811&pID=10800",
     "date": "17-11-22"
-    }
+   }
 ]
