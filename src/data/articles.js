@@ -503,5 +503,45 @@ export const articles = [
     "img_name": "General_Software.jpg",
     "link": "https://www.forbes.com/sites/davidprosser/2022/11/11/how-algorithmiq-hopes-to-cure-disease-with-quantum-computing/?sh=202fcc8647b0",
     "date": "11-11-22"
-   }
+   },
+   {
+    "category": "Biz",
+    "title": "IonQ Announces Third Quarter 2022 Financial Results",
+    "media": "Yahoo! Finance",
+    "img_name": "General_Hardware.jpg",
+    "link": "https://finance.yahoo.com/news/ionq-announces-third-quarter-2022-210500798.html",
+    "date": "15-11-22"
+    },
+    {
+    "category": "Biz",
+    "title": "100 Times Longer Than Previous Benchmarks A Quantum Breakthrough",
+    "media": "SciTechDaily",
+    "img_name": "2022-11-06-scite1.png",
+    "link": "https://scitechdaily.com/100-times-longer-than-previous-benchmarks-a-quantum-breakthrough/",
+    "date": "06-11-22"
+    },
+    {
+    "category": "Tech",
+    "title": "Simulations Using a Quantum Computer Show the Technologys Current Limits",
+    "media": "physics",
+    "img_name": "2022-11-14-physi1.png",
+    "link": "https://physics.aps.org/articles/v15/175",
+    "date": "14-11-22"
+    },
+    {
+    "category": "Tech",
+    "title": "'양자내성암호는 완전한가' 관련 대표문제 공략 전 과정 증명 이뤄져",
+    "media": "전자신문",
+    "img_name": "2022-11-16-jeunj1.jpeg",
+    "link": "etnews.com/20221116000120",
+    "date": "16-11-22"
+    },
+    {
+    "category": "Biz",
+    "title": "부산시 '양자정보기술 생태계 기반 조성' 전문가 세미나",
+    "media": "NEWSIS",
+    "img_name": "2022-11-17-newsi1.jpeg",
+    "link": "https://newsis.com/view/?id=NISX20221117_0002089387&cID=10811&pID=10800",
+    "date": "17-11-22"
+    }
 ]
