@@ -550,7 +550,7 @@ export const articles = [
    "media": "매일경제",
    "img_name": "2022-11-24-maeil.jpeg",
    "link": "https://www.mk.co.kr/news/it/10544201",
-   "data": "24-11-22"
+   "date": "24-11-22"
    },
    {
    "category": "Biz",
@@ -558,7 +558,7 @@ export const articles = [
    "media": "조선비즈",
    "img_name": "General_Business.jpg",
    "link": "http://news.tvchosun.com/site/data/html_dir/2022/11/25/2022112590141.html",
-   "data": "25-11-22"
+   "date": "25-11-22"
    },
    {
    "category": "Tech",
@@ -566,7 +566,7 @@ export const articles = [
    "media": "MTN뉴스",
    "img_name": "General_Hardware.jpg",
    "link": "https://news.mtn.co.kr/news-detail/2022112416491193792",
-   "data": "24-11-22"
+   "date": "24-11-22"
    },
    {
    "category": "Tech",
@@ -574,7 +574,7 @@ export const articles = [
    "media": "연합뉴스",
    "img_name": "2022-11-22-yna11.jpeg",
    "link": "https://www.yna.co.kr/view/AKR20221122029500017?input=1195m",
-   "data": "22-11-22"
+   "date": "22-11-22"
    },
    {
    "category": "Biz",
@@ -582,7 +582,7 @@ export const articles = [
    "media": "MBN뉴스",
    "img_name": "General_Business.jpg",
    "link": "https://www.mbn.co.kr/news/economy/4881601",
-   "data": "25-11-22"
+   "date": "25-11-22"
    },
    {
    "category": "Tech",
@@ -590,7 +590,7 @@ export const articles = [
    "media": "PHYSORG",
    "img_name": "2022-11-23-physo.jpeg",
    "link": "https://phys.org/news/2022-11-quantum-algorithms-electron-dynamics.html",
-   "data": "23-11-22"
+   "date": "23-11-22"
    },
    {
    "category": "Tech",
@@ -598,7 +598,7 @@ export const articles = [
    "media": "NewScientist",
    "img_name": "2022-11-17-newsc.jpeg",
    "link": "https://www.newscientist.com/article/2347546-ibm-quantum-computer-runs-largest-quantum-program-yet/",
-   "data": "17-11-22"
+   "date": "17-11-22"
    },
    {
    "category": "Tech",
@@ -606,7 +606,7 @@ export const articles = [
    "media": "Verdict",
    "img_name": "2022-11-23-verdi.jpeg",
    "link": "https://www.verdict.co.uk/quantum-computing-winter-cash-freeze/",
-   "data": "23-11-22"
+   "date": "23-11-22"
    },
    {
    "category": "Biz",
@@ -614,6 +614,6 @@ export const articles = [
    "media": "VentureBeat",
    "img_name": "2022-11-25-ventu1.jpg",
    "link": "https://venturebeat.com/ai/quantum-computing-faces-the-ghosts-of-its-past-present-and-future/",
-   "data": "25-11-22"
+   "date": "25-11-22"
    }
 ]
