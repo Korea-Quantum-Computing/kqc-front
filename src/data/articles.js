@@ -543,5 +543,77 @@ export const articles = [
     "img_name": "2022-11-17-newsi1.jpeg",
     "link": "https://newsis.com/view/?id=NISX20221117_0002089387&cID=10811&pID=10800",
     "date": "17-11-22"
+   },
+   {
+   "category": "Biz",
+   "title": "‘한국경제 대도약, 이젠 양자컴 기술에 달렸다’",
+   "media": "매일경제",
+   "img_name": "2022-11-24-maeil.jpeg",
+   "link": "https://www.mk.co.kr/news/it/10544201",
+   "date": "24-11-22"
+   },
+   {
+   "category": "Biz",
+   "title": "차세대 게임체인저 양자 기술…세계는 인재 육성 경쟁",
+   "media": "조선비즈",
+   "img_name": "General_Business.jpg",
+   "link": "http://news.tvchosun.com/site/data/html_dir/2022/11/25/2022112590141.html",
+   "date": "25-11-22"
+   },
+   {
+   "category": "Tech",
+   "title": "[기업INSIDE] '신약개발 수천억 절감'...양자 SW 벤처 큐노바",
+   "media": "MTN뉴스",
+   "img_name": "General_Hardware.jpg",
+   "link": "https://news.mtn.co.kr/news-detail/2022112416491193792",
+   "date": "24-11-22"
+   },
+   {
+   "category": "Tech",
+   "title": "LGU+, 한전 연구용 전력 통신망에 양자내성암호 보안 실증",
+   "media": "연합뉴스",
+   "img_name": "2022-11-22-yna11.jpeg",
+   "link": "https://www.yna.co.kr/view/AKR20221122029500017?input=1195m",
+   "date": "22-11-22"
+   },
+   {
+   "category": "Biz",
+   "title": "'퀀텀컴퓨터' 국가 안보를 건 패권 전쟁…승리 전략은?",
+   "media": "MBN뉴스",
+   "img_name": "General_Business.jpg",
+   "link": "https://www.mbn.co.kr/news/economy/4881601",
+   "date": "25-11-22"
+   },
+   {
+   "category": "Tech",
+   "title": "Quantum algorithms save time in the calculation of electron dynamics",
+   "media": "PHYSORG",
+   "img_name": "2022-11-23-physo.jpeg",
+   "link": "https://phys.org/news/2022-11-quantum-algorithms-electron-dynamics.html",
+   "date": "23-11-22"
+   },
+   {
+   "category": "Tech",
+   "title": "IBM quantum computer runs largest quantum program yet",
+   "media": "NewScientist",
+   "img_name": "2022-11-17-newsc.jpeg",
+   "link": "https://www.newscientist.com/article/2347546-ibm-quantum-computer-runs-largest-quantum-program-yet/",
+   "date": "17-11-22"
+   },
+   {
+   "category": "Tech",
+   "title": "Are we heading for a quantum winter?",
+   "media": "Verdict",
+   "img_name": "2022-11-23-verdi.jpeg",
+   "link": "https://www.verdict.co.uk/quantum-computing-winter-cash-freeze/",
+   "date": "23-11-22"
+   },
+   {
+   "category": "Biz",
+   "title": "Quantum computing pioneer D-Wave looks at the technology’s past, present and future",
+   "media": "VentureBeat",
+   "img_name": "2022-11-25-ventu1.jpg",
+   "link": "https://venturebeat.com/ai/quantum-computing-faces-the-ghosts-of-its-past-present-and-future/",
+   "date": "25-11-22"
    }
 ]
