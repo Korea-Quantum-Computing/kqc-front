@@ -615,5 +615,69 @@ export const articles = [
    "img_name": "2022-11-25-ventu1.jpg",
    "link": "https://venturebeat.com/ai/quantum-computing-faces-the-ghosts-of-its-past-present-and-future/",
    "date": "25-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "양자컴퓨터로 메시지 순간이동 구현",
+      "media": "NEWSIS",
+      "img_name": "2022-12-01-newsi.jpeg",
+      "link": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eac7007b-d519-4f1f-9a97-a8ba0f9a691f/2022-12-01-newsi.jpeg",
+      "date": "01-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "美 양자컴퓨팅 등 첨단기술 안보, 동맹과 긴밀 협력 필요",
+      "media": "연합뉴스",
+      "img_name": "2022-12-01-yonhp.jpeg",
+      "link": "https://www.yna.co.kr/view/AKR20221201007600071?input=1195m",
+      "date": "01-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "[리인벤트 2022] 열리는 시뮬레이션 시대...양자 컴퓨팅도 큰 역할",
+      "media": "이코노믹 리뷰",
+      "img_name": "2022-12-02-icono1.png",
+      "link": "https://www.econovill.com/news/articleView.html?idxno=596737",
+      "date": "02-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "Quantum Lessons Learned at the Port of Los Angeles",
+      "media": "Quantum Computing Report",
+      "img_name": "2022-11-26-quant1.png",
+      "link": "https://quantumcomputingreport.com/quantum-lessons-learned-at-the-port-of-los-angeles/",
+      "date": "26-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "Physicists Create a Holographic Wormhole Using a Quantum Computer",
+      "media": "Quantum Magazine",
+      "img_name": "2022-11-30-quanm1.png",
+      "link": "https://www.quantamagazine.org/physicists-create-a-wormhole-using-a-quantum-computer-20221130/",
+      "date": "30-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "Berkeley leads a ‘new era of innovation’ in quantum science, technology research",
+      "media": "Berkeley News",
+      "img_name": "2022-11-29-berkel.png",
+      "link": "https://news.berkeley.edu/2022/11/29/berkeley-leads-a-new-era-of-innovation-in-quantum-science-technology-research/",
+      "date": "29-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "Patent deployments crucial for commercializing quantum technologies",
+      "media": "DigitTimesasia",
+      "img_name": "2022-12-02-digit.jpeg",
+      "link": "https://www.digitimes.com/news/a20221201PD200/military-quantum-computing-quantum.html",
+      "date": "02-12-22"
+   },
+   {
+      "category": "Tech",
+      "title": "D-Wave Announces New Quantum Hybrid Solver Features",
+      "media": "InsideHPC",
+      "img_name": "/General_Hardware.jpg",
+      "link": "https://insidehpc.com/2022/11/d-wave-announces-new-quantum-hybrid-solver-features/",
+      "date": "03-11-22"
    }
 ]
