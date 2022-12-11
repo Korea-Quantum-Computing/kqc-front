@@ -679,5 +679,61 @@ export const articles = [
       "img_name": "/General_Hardware.jpg",
       "link": "https://insidehpc.com/2022/11/d-wave-announces-new-quantum-hybrid-solver-features/",
       "date": "03-11-22"
+   },
+   {
+      "category": "Biz",
+      "title": "국내 첫 양자컴퓨터 설치 앞둔 인천서 전문가 포럼 개최",
+      "media": "연합뉴스",
+      "img_name": "2022-12-09-yeunh1.jpeg",
+      "link": "https://www.yna.co.kr/view/AKR20221209050900065?input=1195m",
+      "date": "09-12-22"
+   },
+   {
+      "category": "Tech",
+      "title": "다가올 ‘양자컴퓨터 시대’…인터넷 ‘보안’은 국가안보다",
+      "media": "경향신문",
+      "img_name": "2022-12-08-kyung.jpeg",
+      "link": "https://www.khan.co.kr/it/it-general/article/202212082204005",
+      "date": "08-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "‘사이버 핵무기를 선점하라!’...G2, 총성 없는 '양자 기술' 전쟁",
+      "media": "YTN",
+      "img_name": "2022-12-04-YTN111.png",
+      "link": "https://www.ytn.co.kr/_ln/0104_202212040650120073",
+      "date": "04-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "트루윈, 美 제네시스퀀텀과 양자분자 진단기술 개발 계약",
+      "media": "이데일리",
+      "img_name": "2022-12-05-edaily.jpeg",
+      "link": "https://www.edaily.co.kr/news/read?newsId=01298886632555568&mediaCodeNo=257&OutLnkChk=Y",
+      "date": "05-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "The United States and France Sign Joint Statement to Enhance Cooperation on Quantum",
+      "media": "\bQuantumGov",
+      "img_name": "2022-11-30-quant.jpeg",
+      "link": "https://www.quantum.gov/the-united-states-and-france-sign-joint-statement-to-enhance-cooperation-on-quantum/",
+      "date": "30-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "QNLP at The Beeb — Quantinuum, BBC Join Consortium to Explore Real-World Uses for Quantum Natural Language Processing",
+      "media": "the Quantum Insider",
+      "img_name": "2022-11-28-quani.jpeg",
+      "link": "https://thequantuminsider.com/2022/11/28/qnlp-at-the-beeb-quantinuum-bbc-join-consortium-to-explore-real-world-uses-for-quantum-natural-language-processing/",
+      "date": "28-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "PASQAL and University of Chicago Announce Neutral Atoms Quantum Computing Research Collaboration Agreement",
+      "media": "PASQAL",
+      "img_name": "General_Software.jpg",
+      "link": "https://pasqal.io/2022/11/29/pasqal-and-university-of-chicago-announce-neutral-atoms-quantum-computing-research-collaboration-agreement/",
+      "date": "28-11-22"
    }
 ]
