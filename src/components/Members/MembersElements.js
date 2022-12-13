@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const MembersContainer = styled.div`
-  min-height: 850px;
+  min-height: 1000px;
   display: flex;
   flex-direction: column;
   // justify-content: start;
@@ -64,7 +64,7 @@ export const MembersTitle = styled.h1`
 `
 
 export const MemberIcon = styled.img`
-  height: 100px;
+  //height: 100px;
   padding: 20px 20px 20px 20px;
   margin-bottom: 10px;
 
