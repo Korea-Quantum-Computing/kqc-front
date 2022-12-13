@@ -49,6 +49,9 @@ const MembersSection = ({ lightBg, }) => {
                 < a href="https://www.ey.com/ko_kr" target="_blank" rel="noreferrer">
                 <MemberIcon name = "EY" src = {ey} height = {150}></MemberIcon>
                 </a>
+                <a href="https://dneuro.ai/" target="_blank" rel="noreferrer">
+                <MemberIcon name = "Dneuro" src = {dneuro} height = {150}></MemberIcon>
+                </a>
               </MembersLink>
             </MembersWrapper>
           </div>
@@ -59,9 +62,6 @@ const MembersSection = ({ lightBg, }) => {
             <MembersLink>
               <a href="http://www.baobabaibio.com/" target="_blank" rel="noreferrer">
                 <MemberIcon name = "BaobabAiBio" src = {baobab} height = {100}></MemberIcon>
-              </a>
-              <a href="https://dneuro.ai/" target="_blank" rel="noreferrer">
-                <MemberIcon name = "Dneuro" src = {dneuro} height = {200}></MemberIcon>
               </a>
             </MembersLink>
           </MembersWrapper>
