@@ -615,5 +615,125 @@ export const articles = [
    "img_name": "2022-11-25-ventu1.jpg",
    "link": "https://venturebeat.com/ai/quantum-computing-faces-the-ghosts-of-its-past-present-and-future/",
    "date": "25-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "양자컴퓨터로 메시지 순간이동 구현",
+      "media": "NEWSIS",
+      "img_name": "2022-12-01-newsi.jpeg",
+      "link": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eac7007b-d519-4f1f-9a97-a8ba0f9a691f/2022-12-01-newsi.jpeg",
+      "date": "01-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "美 양자컴퓨팅 등 첨단기술 안보, 동맹과 긴밀 협력 필요",
+      "media": "연합뉴스",
+      "img_name": "2022-12-01-yonhp.jpeg",
+      "link": "https://www.yna.co.kr/view/AKR20221201007600071?input=1195m",
+      "date": "01-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "[리인벤트 2022] 열리는 시뮬레이션 시대...양자 컴퓨팅도 큰 역할",
+      "media": "이코노믹 리뷰",
+      "img_name": "2022-12-02-icono1.png",
+      "link": "https://www.econovill.com/news/articleView.html?idxno=596737",
+      "date": "02-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "Quantum Lessons Learned at the Port of Los Angeles",
+      "media": "Quantum Computing Report",
+      "img_name": "2022-11-26-quant1.png",
+      "link": "https://quantumcomputingreport.com/quantum-lessons-learned-at-the-port-of-los-angeles/",
+      "date": "26-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "Physicists Create a Holographic Wormhole Using a Quantum Computer",
+      "media": "Quantum Magazine",
+      "img_name": "2022-11-30-quanm1.png",
+      "link": "https://www.quantamagazine.org/physicists-create-a-wormhole-using-a-quantum-computer-20221130/",
+      "date": "30-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "Berkeley leads a ‘new era of innovation’ in quantum science, technology research",
+      "media": "Berkeley News",
+      "img_name": "2022-11-29-berkel.png",
+      "link": "https://news.berkeley.edu/2022/11/29/berkeley-leads-a-new-era-of-innovation-in-quantum-science-technology-research/",
+      "date": "29-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "Patent deployments crucial for commercializing quantum technologies",
+      "media": "DigitTimesasia",
+      "img_name": "2022-12-02-digit.jpeg",
+      "link": "https://www.digitimes.com/news/a20221201PD200/military-quantum-computing-quantum.html",
+      "date": "02-12-22"
+   },
+   {
+      "category": "Tech",
+      "title": "D-Wave Announces New Quantum Hybrid Solver Features",
+      "media": "InsideHPC",
+      "img_name": "/General_Hardware.jpg",
+      "link": "https://insidehpc.com/2022/11/d-wave-announces-new-quantum-hybrid-solver-features/",
+      "date": "03-11-22"
+   },
+   {
+      "category": "Biz",
+      "title": "국내 첫 양자컴퓨터 설치 앞둔 인천서 전문가 포럼 개최",
+      "media": "연합뉴스",
+      "img_name": "2022-12-09-yeunh1.jpeg",
+      "link": "https://www.yna.co.kr/view/AKR20221209050900065?input=1195m",
+      "date": "09-12-22"
+   },
+   {
+      "category": "Tech",
+      "title": "다가올 ‘양자컴퓨터 시대’…인터넷 ‘보안’은 국가안보다",
+      "media": "경향신문",
+      "img_name": "2022-12-08-kyung.jpeg",
+      "link": "https://www.khan.co.kr/it/it-general/article/202212082204005",
+      "date": "08-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "‘사이버 핵무기를 선점하라!’...G2, 총성 없는 '양자 기술' 전쟁",
+      "media": "YTN",
+      "img_name": "2022-12-04-YTN111.png",
+      "link": "https://www.ytn.co.kr/_ln/0104_202212040650120073",
+      "date": "04-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "트루윈, 美 제네시스퀀텀과 양자분자 진단기술 개발 계약",
+      "media": "이데일리",
+      "img_name": "2022-12-05-edaily.jpeg",
+      "link": "https://www.edaily.co.kr/news/read?newsId=01298886632555568&mediaCodeNo=257&OutLnkChk=Y",
+      "date": "05-12-22"
+   },
+   {
+      "category": "Biz",
+      "title": "The United States and France Sign Joint Statement to Enhance Cooperation on Quantum",
+      "media": "\bQuantumGov",
+      "img_name": "2022-11-30-quant.jpeg",
+      "link": "https://www.quantum.gov/the-united-states-and-france-sign-joint-statement-to-enhance-cooperation-on-quantum/",
+      "date": "30-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "QNLP at The Beeb — Quantinuum, BBC Join Consortium to Explore Real-World Uses for Quantum Natural Language Processing",
+      "media": "the Quantum Insider",
+      "img_name": "2022-11-28-quani.jpeg",
+      "link": "https://thequantuminsider.com/2022/11/28/qnlp-at-the-beeb-quantinuum-bbc-join-consortium-to-explore-real-world-uses-for-quantum-natural-language-processing/",
+      "date": "28-11-22"
+   },
+   {
+      "category": "Tech",
+      "title": "PASQAL and University of Chicago Announce Neutral Atoms Quantum Computing Research Collaboration Agreement",
+      "media": "PASQAL",
+      "img_name": "General_Software.jpg",
+      "link": "https://pasqal.io/2022/11/29/pasqal-and-university-of-chicago-announce-neutral-atoms-quantum-computing-research-collaboration-agreement/",
+      "date": "28-11-22"
    }
 ]
