@@ -17,6 +17,7 @@ import busan from '../../images/members/busan-logo-150.png';
 import etri from '../../images/members/etri-logo-150-fix.webp';
 import ey from '../../images/members/ey-logo-150.png';
 import dongseoUniv from '../../images/members/dongseo-logo-150.png';
+import dneuro from '../../images/members/dneuro-logo.png';
 
 const MembersSection = ({ lightBg, }) => {
 
@@ -31,22 +32,22 @@ const MembersSection = ({ lightBg, }) => {
             <MembersWrapper>
               <MembersLink>
                 < a href="https://www.ibm.com/quantum" target="_blank" rel="noreferrer">
-                  <MemberIcon name = "IBM" src = {ibm} ></MemberIcon>
+                  <MemberIcon name = "IBM" src = {ibm}  height = {100}></MemberIcon>
                 </a>
                 < a href="https://www.busan.go.kr/index" target="_blank" rel="noreferrer">
-                  <MemberIcon style = {{}} name = "Busan" src = {busan} ></MemberIcon>
+                  <MemberIcon style = {{}} name = "Busan" src = {busan}  height = {100}></MemberIcon>
                 </a>
                 < a href="https://www.dongseo.ac.kr/kr/" target="_blank" rel="noreferrer">
-                  <MemberIcon name = "DongseoUniv" src = {dongseoUniv}></MemberIcon>
+                  <MemberIcon name = "DongseoUniv" src = {dongseoUniv} height = {100}></MemberIcon>
                 </a>
                 < a href="https://www.hines.com" target="_blank" rel="noreferrer">
-                <MemberIcon name = "Heins" src = {hines}></MemberIcon>
+                <MemberIcon name = "Heins" src = {hines}  height = {100}></MemberIcon>
                 </a>
                 < a href="https://www.etri.re.kr/intro.html" target="_blank" rel="noreferrer">
-                <MemberIcon name = "ETRI" src = {etri}></MemberIcon>
+                <MemberIcon name = "ETRI" src = {etri} height = {100}></MemberIcon>
                 </a>
                 < a href="https://www.ey.com/ko_kr" target="_blank" rel="noreferrer">
-                <MemberIcon name = "EY" src = {ey}></MemberIcon>
+                <MemberIcon name = "EY" src = {ey} height = {150}></MemberIcon>
                 </a>
               </MembersLink>
             </MembersWrapper>
@@ -58,6 +59,9 @@ const MembersSection = ({ lightBg, }) => {
             <MembersLink>
               <a href="http://www.baobabaibio.com/" target="_blank" rel="noreferrer">
                 <MemberIcon name = "BaobabAiBio" src = {baobab} height = {100}></MemberIcon>
+              </a>
+              <a href="https://dneuro.ai/" target="_blank" rel="noreferrer">
+                <MemberIcon name = "Dneuro" src = {dneuro} height = {200}></MemberIcon>
               </a>
             </MembersLink>
           </MembersWrapper>
