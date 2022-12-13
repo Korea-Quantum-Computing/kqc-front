@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const MembersContainer = styled.div`
-  min-height: 1000px;
+  min-height: 900px;
   display: flex;
   flex-direction: column;
   // justify-content: start;
