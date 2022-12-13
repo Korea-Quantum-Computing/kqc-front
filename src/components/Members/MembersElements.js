@@ -64,7 +64,7 @@ export const MembersTitle = styled.h1`
 `
 
 export const MemberIcon = styled.img`
-  height: 100px;
+  //height: 100px;
   padding: 20px 20px 20px 20px;
   margin-bottom: 10px;
 
