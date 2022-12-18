@@ -5,10 +5,11 @@ import translationKo from "./ko/translationKo";
 import translationEn from "./en/translationEn";
 
 export default i18n
-  .use(LanguageDetector)
+  //.use(LanguageDetector)
   .use(initReactI18next)
   .init({
     debug: true,
+    lang: 'en',
     fallbackLng: "en",
     detection: { order: ["path", "navigator"] },
     resources: {
