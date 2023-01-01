@@ -815,5 +815,61 @@ export const articles = [
       "img_name": "2022-12-20-junja.jpeg",
       "link": "https://www.etnews.com/20221220000203",
       "date": "20-12-22"
+    },
+    {
+      "category": "Tech",
+      "title": "Ford used a quantum computer to find better EV battery materials",
+      "media": "Popular Science",
+      "img_name": "2022-12-24-popula.png",
+      "link": "https://www.popsci.com/technology/ford-quantum-ev-battery/",
+      "date": "24-12-22"
+    },
+    {
+      "category": "Tech",
+      "title": "AN IBM QUANTUM COMPUTER WILL SOON PASS THE 1,000-QUBIT MARK",
+      "media": "IEEE",
+      "img_name": "2022-12-24-ieee11.png",
+      "link": "https://spectrum.ieee.org/ibm-condor",
+      "date": "24-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "최적의 투자 조합 찾아준다…후지쯔의 '디지털 어닐러'는 무엇?(feat.양자컴퓨터)",
+      "media": "\bBLOTER",
+      "img_name": "2022-12-27-bloter.png",
+      "link": "https://www.bloter.net/newsView/blt202212270017",
+      "date": "27-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "US passes the Quantum Computing Cybersecurity Preparedness Act – and why not?",
+      "media": "sophos",
+      "img_name": "General_Hardware.jpg",
+      "link": "https://nakedsecurity.sophos.com/2022/12/29/us-passes-the-quantum-computing-cybersecurity-preparedness-act-and-why-not/",
+      "date": "29-12-22"
+    },
+    {
+      "category": "Tech",
+      "title": "한국후지쯔, 포스텍 이강복 교수팀과 '양자컴퓨팅 기반 조합최적화' 산학협력",
+      "media": "인공지능신문",
+      "img_name": "2022-12-29-ingon.png",
+      "link": "https://www.aitimes.kr/news/articleView.html?idxno=26944",
+      "date": "29-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "'양자 격차' 줄여라…과기정통부, 내달 로드맵 내놓는다",
+      "media": "파이낸셜 뉴스",
+      "img_name": "2022-12-29-financ.jpeg",
+      "link": "https://www.fnnews.com/news/202212291454533557",
+      "date": "29-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "양자기술 4대 강국 도약 위해 민·관 머리 맞댄다",
+      "media": "보안뉴스",
+      "img_name": "General_Business.jpg",
+      "link": "https://www.boannews.com/media/view.asp?idx=113125&kind=",
+      "date": "30-12-22"
     }
   ]
