@@ -835,7 +835,7 @@ export const articles = [
     {
       "category": "Biz",
       "title": "최적의 투자 조합 찾아준다…후지쯔의 '디지털 어닐러'는 무엇?(feat.양자컴퓨터)",
-      "media": "\bBLOTER",
+      "media": "BLOTER",
       "img_name": "2022-12-27-bloter.png",
       "link": "https://www.bloter.net/newsView/blt202212270017",
       "date": "27-12-22"
@@ -871,5 +871,61 @@ export const articles = [
       "img_name": "General_Business.jpg",
       "link": "https://www.boannews.com/media/view.asp?idx=113125&kind=",
       "date": "30-12-22"
+    },
+    {
+    "category": "Tech",
+    "title": "A Better Photon Detector to Advance Quantum Technology",
+    "media": "Yale",
+    "img_name": "2023-01-03-yalere.png",
+    "link": "https://seas.yale.edu/news-events/news/better-photon-detector-advance-quantum-technology",
+    "date": "03-01-23"
+    },
+    {
+      "category": "Tech",
+      "title": "일본, 양자컴퓨터 2025년 실용화 목표…슈퍼컴퓨터와 연결",
+      "media": "연합뉴스",
+      "img_name": "2023-01-03-yeunha.png",
+      "link": "https://www.yna.co.kr/view/AKR20230103056200073?input=1195m",
+      "date": "03-01-23"
+    },
+    {
+      "category": "Biz",
+      "title": "Biden Signs Quantum Computing Cybersecurity Act",
+      "media": "sdxcentral",
+      "img_name": "2023-01-04-sdxcen.png",
+      "link": "https://www.sdxcentral.com/articles/news/biden-signs-quantum-computing-cybersecurity-act/2023/01/",
+      "date": "04-01-23"
+    },
+    {
+      "category": "Biz",
+      "title": "미 국무부, AI·양자컴퓨터 등 핵심·신흥기술 담당 사무소 신설",
+      "media": "YTN",
+      "img_name": "2023-01-04-YTNsci.png",
+      "link": "https://science.ytn.co.kr/program/view.php?mcd=0082&hcd=&key=202301041152379683",
+      "date": "04-01-23"
+    },
+    {
+      "category": "Biz",
+      "title": "'걸음마 단계' 양자컴퓨팅…'퀀텀 점프' 위해 클라우드로 쓴다",
+      "media": "아이뉴스",
+      "img_name": "2023-01-06-eyenew.png",
+      "link": "https://www.inews24.com/view/1556261",
+      "date": "06-01-23"
+    },
+    {
+      "category": "Tech",
+      "title": "New Product Releases: Pasqal’s Pulser Studio, IBM’s Sherbrooke Processor, and Google Cirq v1.1.0",
+      "media": "Quantum Computing Report",
+      "img_name": "2023-01-07-qrepor.png",
+      "link": "https://quantumcomputingreport.com/new-product-releases-pasqals-pulser-studio-ibms-sherbrooke-processor-and-google-cirq-v1-1-0/",
+      "date": "07-01-23"
+    },
+    {
+      "category": "Tech",
+      "title": "‘양자컴퓨터 대비 암호’ 특허출원 10년 새 4배 급증",
+      "media": "KBS",
+      "img_name": "2023-01-09-kbsnew.png",
+      "link": "https://news.kbs.co.kr/news/view.do?ncd=6930046&ref=A",
+      "date": "09-01-23"
     }
   ]
