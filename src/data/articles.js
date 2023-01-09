@@ -715,7 +715,7 @@ export const articles = [
    {
       "category": "Biz",
       "title": "The United States and France Sign Joint Statement to Enhance Cooperation on Quantum",
-      "media": "\bQuantumGov",
+      "media": "QuantumGov",
       "img_name": "2022-11-30-quant.jpeg",
       "link": "https://www.quantum.gov/the-united-states-and-france-sign-joint-statement-to-enhance-cooperation-on-quantum/",
       "date": "30-11-22"
@@ -735,5 +735,197 @@ export const articles = [
       "img_name": "General_Software.jpg",
       "link": "https://pasqal.io/2022/11/29/pasqal-and-university-of-chicago-announce-neutral-atoms-quantum-computing-research-collaboration-agreement/",
       "date": "28-11-22"
-   }
-]
+   },
+   {
+      "category": "Tech",
+      "title": "[기고]양자컴퓨터와 암호학",
+      "media": "전자신문",
+      "img_name": "2022-12-05-junja.jpeg",
+      "link": "https://www.etnews.com/20221205000168",
+      "date": "05-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "Startups develop diamond-based quantum computers",
+      "media": "eeNews",
+      "img_name": "General_Software.jpg",
+      "link": "https://www.eenewseurope.com/en/startups-develop-diamond-based-quantum-computers/",
+      "date": "12-12-22"
+    },
+    {
+      "category": "Tech",
+      "title": "인천대, 텍사스대 연구팀과 '양자기술 구현 앞당길 2차원 고체 큐비트' 발견",
+      "media": "컨슈머타임즈",
+      "img_name": "2022-12-13-consu.png",
+      "link": "https://www.cstimes.com/news/articleView.html?idxno=522955",
+      "date": "13-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "양자 인터넷·수소경제…미래 바꿀 기술 한눈에",
+      "media": "한국경제",
+      "img_name": "2022-12-14-hanky.jpeg",
+      "link": "https://www.hankyung.com/it/article/2022121465231",
+      "date": "14-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "Quantum Computing Cybersecurity Preparedness Act heads to President Biden to become law",
+      "media": "HPN",
+      "img_name": "2022-12-15-HPN111.jpeg",
+      "link": "https://homelandprepnews.com/stories/79319-quantum-computing-cybersecurity-preparedness-act-heads-to-president-biden-to-become-law/",
+      "date": "15-12-22"
+    },
+    {
+      "category": "Tech",
+      "title": "Imposter physical particles revealed: A key advance for quantum technology",
+      "media": "PHYSORG",
+      "img_name": "2022-12-16-physo.jpeg",
+      "link": "https://phys.org/news/2022-12-imposter-physical-particles-revealed-key.html",
+      "date": "16-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "Four Recent Market Surveys Point the Way for Continued Quantum Growth in 2023 and Beyond",
+      "media": "Quantum Computing Report",
+      "img_name": "General_Business.jpg",
+      "link": "https://quantumcomputingreport.com/four-recent-market-surveys-point-the-way-for-continued-quantum-growth-in-2023-and-beyond/",
+      "date": "17-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "HPC가 과학·경제 혁신…세계는 양자컴 개발에 '사활'",
+      "media": "한국경제",
+      "img_name": "2022-12-18-hanky1.jpg",
+      "link": "https://www.hankyung.com/economy/article/2022121840021",
+      "date": "18-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "‘양자컴퓨팅 대비 위한 암호화 민첩성 필요’",
+      "media": "DATANET",
+      "img_name": "General_Software.jpg",
+      "link": "http://www.datanet.co.kr/news/articleView.html?idxno=179411",
+      "date": "20-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "[ET단상]양자컴퓨팅 시대, 우리가 사이버 주권을 지키려면",
+      "media": "전자신문",
+      "img_name": "2022-12-20-junja.jpeg",
+      "link": "https://www.etnews.com/20221220000203",
+      "date": "20-12-22"
+    },
+    {
+      "category": "Tech",
+      "title": "Ford used a quantum computer to find better EV battery materials",
+      "media": "Popular Science",
+      "img_name": "2022-12-24-popula.png",
+      "link": "https://www.popsci.com/technology/ford-quantum-ev-battery/",
+      "date": "24-12-22"
+    },
+    {
+      "category": "Tech",
+      "title": "AN IBM QUANTUM COMPUTER WILL SOON PASS THE 1,000-QUBIT MARK",
+      "media": "IEEE",
+      "img_name": "2022-12-24-ieee11.png",
+      "link": "https://spectrum.ieee.org/ibm-condor",
+      "date": "24-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "최적의 투자 조합 찾아준다…후지쯔의 '디지털 어닐러'는 무엇?(feat.양자컴퓨터)",
+      "media": "BLOTER",
+      "img_name": "2022-12-27-bloter.png",
+      "link": "https://www.bloter.net/newsView/blt202212270017",
+      "date": "27-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "US passes the Quantum Computing Cybersecurity Preparedness Act – and why not?",
+      "media": "sophos",
+      "img_name": "General_Hardware.jpg",
+      "link": "https://nakedsecurity.sophos.com/2022/12/29/us-passes-the-quantum-computing-cybersecurity-preparedness-act-and-why-not/",
+      "date": "29-12-22"
+    },
+    {
+      "category": "Tech",
+      "title": "한국후지쯔, 포스텍 이강복 교수팀과 '양자컴퓨팅 기반 조합최적화' 산학협력",
+      "media": "인공지능신문",
+      "img_name": "2022-12-29-ingon.png",
+      "link": "https://www.aitimes.kr/news/articleView.html?idxno=26944",
+      "date": "29-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "'양자 격차' 줄여라…과기정통부, 내달 로드맵 내놓는다",
+      "media": "파이낸셜 뉴스",
+      "img_name": "2022-12-29-financ.jpeg",
+      "link": "https://www.fnnews.com/news/202212291454533557",
+      "date": "29-12-22"
+    },
+    {
+      "category": "Biz",
+      "title": "양자기술 4대 강국 도약 위해 민·관 머리 맞댄다",
+      "media": "보안뉴스",
+      "img_name": "General_Business.jpg",
+      "link": "https://www.boannews.com/media/view.asp?idx=113125&kind=",
+      "date": "30-12-22"
+    },
+    {
+    "category": "Tech",
+    "title": "A Better Photon Detector to Advance Quantum Technology",
+    "media": "Yale",
+    "img_name": "2023-01-03-yalere.png",
+    "link": "https://seas.yale.edu/news-events/news/better-photon-detector-advance-quantum-technology",
+    "date": "03-01-23"
+    },
+    {
+      "category": "Tech",
+      "title": "일본, 양자컴퓨터 2025년 실용화 목표…슈퍼컴퓨터와 연결",
+      "media": "연합뉴스",
+      "img_name": "2023-01-03-yeunha.png",
+      "link": "https://www.yna.co.kr/view/AKR20230103056200073?input=1195m",
+      "date": "03-01-23"
+    },
+    {
+      "category": "Biz",
+      "title": "Biden Signs Quantum Computing Cybersecurity Act",
+      "media": "sdxcentral",
+      "img_name": "2023-01-04-sdxcen.png",
+      "link": "https://www.sdxcentral.com/articles/news/biden-signs-quantum-computing-cybersecurity-act/2023/01/",
+      "date": "04-01-23"
+    },
+    {
+      "category": "Biz",
+      "title": "미 국무부, AI·양자컴퓨터 등 핵심·신흥기술 담당 사무소 신설",
+      "media": "YTN",
+      "img_name": "2023-01-04-YTNsci.png",
+      "link": "https://science.ytn.co.kr/program/view.php?mcd=0082&hcd=&key=202301041152379683",
+      "date": "04-01-23"
+    },
+    {
+      "category": "Biz",
+      "title": "'걸음마 단계' 양자컴퓨팅…'퀀텀 점프' 위해 클라우드로 쓴다",
+      "media": "아이뉴스",
+      "img_name": "2023-01-06-eyenew.png",
+      "link": "https://www.inews24.com/view/1556261",
+      "date": "06-01-23"
+    },
+    {
+      "category": "Tech",
+      "title": "New Product Releases: Pasqal’s Pulser Studio, IBM’s Sherbrooke Processor, and Google Cirq v1.1.0",
+      "media": "Quantum Computing Report",
+      "img_name": "2023-01-07-qrepor.png",
+      "link": "https://quantumcomputingreport.com/new-product-releases-pasqals-pulser-studio-ibms-sherbrooke-processor-and-google-cirq-v1-1-0/",
+      "date": "07-01-23"
+    },
+    {
+      "category": "Tech",
+      "title": "‘양자컴퓨터 대비 암호’ 특허출원 10년 새 4배 급증",
+      "media": "KBS",
+      "img_name": "2023-01-09-kbsnew.png",
+      "link": "https://news.kbs.co.kr/news/view.do?ncd=6930046&ref=A",
+      "date": "09-01-23"
+    }
+  ]

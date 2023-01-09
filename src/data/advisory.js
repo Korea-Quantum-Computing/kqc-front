@@ -40,6 +40,14 @@ export const advisors = [
     desc: 'He served as Senior Secretary for Future Strategy of the Blue House and worked as Chief Executeve Officer at SK broadband. He have studied economics of technological innovation.'
    },
    {
+    name: 'Hyun-Soo Cho',
+    title: 'Professor',
+    image: 'Hyun-Soo-Cho.jpeg',
+    company: 'Yonsei University - Department of Systems Biology',
+    degree: 'PhD (Structural Biology, Pohang Science and Technology University)',
+    desc: 'He is researching the structure and function of recerptors and drug discovery. He is focusing on the G protein-coupled receptors'
+   },
+   {
     name: 'Daehyun Baek',
     title: 'Associated Professor',
     image: 'Daehyun-Baek.png',
